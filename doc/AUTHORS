@@ -239,6 +239,10 @@ ScummVM Team
        Sven Hesse
        Eugene Sandulenko
 
+    Got:
+       Paul Gilbert
+       Arnaud Boutonne
+
     Griffon:
        Eugene Sandulenko
 
@@ -324,6 +328,7 @@ ScummVM Team
 
     M4:
        Paul Gilbert
+       Arnaud Boutonne
 
     MacVenture:
        Borja Lorente                  - GSoC student
@@ -336,6 +341,9 @@ ScummVM Team
        Arnaud Boutonne
        Paul Gilbert
        Filippos Karapetis
+
+    Media Station:
+       Nathanael Gentry
 
     MM (Xeen):
        Paul Gilbert
@@ -1090,7 +1098,7 @@ Other contributions
      Hugues Valois                  - Game selection menu
      Jordi Vilalta                  - Numerous code and website clean-up
                                       patches
-     Petr Vyhnak                    - The DCL-INFLATE algorithm, many Win32
+     Petr Vyhnak                    - The DCL-IMPLODE algorithm, many Win32
                                       improvements
      Bas Zoetekouw                  - Man pages, debian package management,
                                       CVS maintenance

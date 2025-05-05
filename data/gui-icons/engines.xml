@@ -34,6 +34,7 @@
 	<engine id="glk" name="Glk" alt_name="" enabled="TRUE"/>
 	<engine id="gnap" name="Gnap" alt_name="" enabled="TRUE"/>
 	<engine id="gob" name="Gob" alt_name="" enabled="TRUE"/>
+	<engine id="got" name="God of Thunder" alt_name="" enabled="TRUE"/>
 	<engine id="griffon" name="The Griffon Legend" alt_name="" enabled="TRUE"/>
 	<engine id="grim" name="GrimE" alt_name="" enabled="TRUE"/>
 	<engine id="groovie" name="Groovie" alt_name="" enabled="TRUE"/>

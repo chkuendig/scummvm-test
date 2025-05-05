@@ -6,6 +6,14 @@ For a more comprehensive changelog of the latest experimental code, see:
  New games:
    - Added support for Dark Seed.
    - Added support for God of Thunder.
+   - Added support for The Adventures of Willy Beamish.
+   - Added support for Heart of China.
+
+ Freescape:
+   - Added roll rotation to Driller and Dark Side.
+
+ Hopkins:
+   - Fix crash using elevator to go to other floors.
 
  Nuvie:
    - Added "Transfer a Character" feature to main menu.
@@ -14,6 +22,19 @@ For a more comprehensive changelog of the latest experimental code, see:
    - Added support for the classic SE variants of MI1, MI2, DOTT and FT.
    - Added support for the remastered speech and sound effects in the
      remastered version of Day of the Tentacle.
+   - Added speech support in the SE versions of MI1 and MI2.
+   - Improved graphics support for Macintosh DOTT, Sam & Max, The Dig, Full
+     Throttle, and Maniac Mansion.
+   - Fixed pops in Sega CD MI1 sound effects.
+   - Added an option to render Sega CD MI1 with the "Shadow Mode" palette
+     which was originally used for that release. (It's unclear whether that
+     much darker rendering was used on purpose, or unintentionally.)
+
+ TwinE:
+   - Fixed meca penguin movement.
+   - Fixed sound related issues.
+   - Activate original bug fixes (FunFrock's HQ door and safe bugs).
+   - Fixed normal mode action triggering.
 
 
 #### 2.9.0 "Close Encounters of the 2.9th Kind" (2024-12-22)
@@ -315,7 +336,7 @@ For a more comprehensive changelog of the latest experimental code, see:
 
  iOS/iPadOS port:
    - Add Apple Pencil support.
-   - Add app icons for “Dark” and “Tinted” modes.
+   - Add app icons for "Dark" and "Tinted" modes.
    - Various stability fixes.
 
 
