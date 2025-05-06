@@ -1,0 +1,17 @@
+in vec2 Texcoord;
+in vec4 Color;
+
+uniform sampler2D tex;
+uniform float alphaRef;
+uniform UBOOL alphaTest;
+
+OUTPUT
+
+void main() {
+	vec4 texColor = texture(tex, Texcoord);
+	outColor.rgba = texColor.rgba * Color.rgba;
+
+	if (UBOOL_TEST(alphaTest) && outColor.a < alphaRef) {
+		discard;
+	}
+}
