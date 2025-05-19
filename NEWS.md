@@ -9,6 +9,10 @@ For a more comprehensive changelog of the latest experimental code, see:
    - Added support for The Adventures of Willy Beamish.
    - Added support for Heart of China.
 
+ Drascula:
+   - Fixed displaying accented characters.
+   - Added Text-to-Speech support.
+
  Freescape:
    - Added roll rotation to Driller and Dark Side.
 
@@ -33,7 +37,7 @@ For a more comprehensive changelog of the latest experimental code, see:
    - Fixed text rendering in Chinese and Japanese localizations.
    - Added support for Japanese DVD version of Schizm: Mysterious Journey.
 
-#### 2.9.1 (XXXX-XX-XX)
+#### 2.9.1 (2025-05-25)
 
  AGI:
    - Added support for early version of Christmas Card 1986 with advertisements
@@ -55,6 +59,9 @@ For a more comprehensive changelog of the latest experimental code, see:
  Asylum:
    - Fixed crash in Sanitarium main menu, when moving the cursor to the
      top part of the screen.
+
+ BAGEL:
+   - Fixed crash when inserting the credit card in the slot machine.
 
  Bladerunner:
    - Fixed 2x scaling and fullscreen support in non-interactive demo.
