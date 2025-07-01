@@ -8,6 +8,21 @@ For a more comprehensive changelog of the latest experimental code, see:
    - Added support for God of Thunder.
    - Added support for The Adventures of Willy Beamish.
    - Added support for Heart of China.
+   - Added support for Nancy Drew: Secret of the Scarlet Hand.
+   - Added support for Nancy Drew: Ghost Dogs of Moon Lake.
+   - Added support for Ripley's Believe It or Not!: The Riddle of Master Lu.
+   - Added support for Little Longnose.
+   - Added support for Pilot Brothers 3: Back Side of the Earth.
+   - Added support for Pilot Brothers 3D. The Case of Garden Pests.
+   - Added support for Pilot Brothers 3D-2. Kennel Club Secrets.
+   - Added support for Features of National Fishing.
+   - Added support for Mom Don't Worry.
+   - Added support for Dog-n-cat: In the Footsteps of Unprecedented Beasts.
+   - Added support for Dog-n-cat: Island of Dr Ratiarty.
+   - Added support for Out of this World (Another World).
+   - Added support for SLUDGE-based games, such as Out of Order,
+     The Secret of Tremendous Corporation, Robin's Rescue and
+     others, 12 titles so far.
 
  Drascula:
    - Fixed displaying accented characters.
@@ -25,7 +40,7 @@ For a more comprehensive changelog of the latest experimental code, see:
      remastered version of Day of the Tentacle.
    - Added speech support in the SE versions of MI1 and MI2.
    - Improved graphics support for Macintosh DOTT, Sam & Max, The Dig, Full
-     Throttle, and Maniac Mansion.
+     Throttle, Maniac Mansion, and the PowerPC version of Fate of Atlantis.
    - Added an option to render Sega CD MI1 with the "Shadow Mode" palette
      which was originally used for that release. (It's unclear whether that
      much darker rendering was used on purpose, or unintentionally.)
@@ -37,7 +52,7 @@ For a more comprehensive changelog of the latest experimental code, see:
    - Fixed text rendering in Chinese and Japanese localizations.
    - Added support for Japanese DVD version of Schizm: Mysterious Journey.
 
-#### 2.9.1 (2025-05-25)
+#### 2.9.1 "Slappin da BASS" (2025-05-25)
 
  AGI:
    - Added support for early version of Christmas Card 1986 with advertisements
