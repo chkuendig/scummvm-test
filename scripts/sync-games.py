@@ -1024,11 +1024,15 @@ Environment Variables:
     # Filter out testbed and playground3d
     game_ids = [g for g in args.games if g not in ['testbed', 'playground3d']]
     
+    # Fallback to environment variables if CLI args are not provided
+    scp_server = args.scp_server or os.environ.get('SSH_USER') + '@' + os.environ.get('SSH_HOST') if os.environ.get('SSH_USER') and os.environ.get('SSH_HOST') else None
+    scp_path = args.scp_path or os.environ.get('SSH_PATH')
+    scp_port = args.scp_port or (int(os.environ.get('SSH_PORT')) if os.environ.get('SSH_PORT') else None)
     downloader = GameDownloader(
         download_dir=args.download_dir,
-        scp_server=args.scp_server,
-        scp_path=args.scp_path,
-        scp_port=args.scp_port
+        scp_server=scp_server,
+        scp_path=scp_path,
+        scp_port=scp_port
     )
     
     try:

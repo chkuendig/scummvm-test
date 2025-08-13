@@ -18,13 +18,13 @@ permissions:
 
 env:
   SCUMMVM_CONFIGURE: "--enable-release --enable-plugins --enable-all-engines --default-dynamic --enable-cloud"
-  SCUMMVM_CONFIGURE_LIBS: "--enable-png --enable-ogg --enable-vorbis --enable-gif --enable-mpeg2 --enable-retrowave  --enable-freetype2 --enable-jpeg --enable-theoradec --enable-mad --enable-zlib --enable-fluidlite"
+  SCUMMVM_CONFIGURE_LIBS: " --enable-a52 --enable-faad --enable-fluidlite --enable-freetype2 --enable-fribidi --enable-gif --enable-gif --enable-jpeg --enable-jpeg --enable-mad --enable-mad --enable-mikmod --enable-mpcdec --enable-mpeg2 --enable-ogg --enable-png --enable-retrowave --enable-theoradec --enable-vorbis --enable-vpx --enable-zlib"
   DOWNLOAD_GAMES: "ft,testbed,playground3d,comi,grim,driller,warlock,monkey4,feeble,myst,lsl7,lure,myst,phantasmagoria,riven,tlj,sword2,sinistersix,sanitarium"
   # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build-scummvm:
     name: Build ScummVM 🔧
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout  🛎️
         uses: actions/checkout@v4
@@ -96,7 +96,7 @@ jobs:
   download-games:
     name: Download Games 🎲
     if: false
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout  🛎️
         uses: actions/checkout@v4
@@ -120,7 +120,7 @@ jobs:
   detect-games:
     name: Detect Games 🎲
     if: false
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     needs: [build-scummvm, download-games]
     steps:
       - name: Checkout  🛎️
@@ -156,7 +156,7 @@ jobs:
           key: scummvm-ini-${{ github.run_id }}
   update-icons:
     name: Update Icons 🎨
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     needs: build-scummvm
     steps:
       - name: Checkout  🛎️
@@ -176,10 +176,29 @@ jobs:
         run: |
           scripts/update-icons.sh
           python3 scummvm/dists/emscripten/build-make_http_index.py scummvm/build-emscripten/data/
+  sync-games:
+    name: Sync Games 🎮
+    runs-on: ubuntu-latest
+    needs: []
+    steps:
+      - name: Checkout  🛎️
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: Sync Games 🔄
+        run: |
+          scripts/sync-games.sh
+        env:
+          SSH_USER:  ${{ secrets.HOSTINGER_SSH_USERNAME }}
+          SSH_PASSWORD:  ${{ secrets.HOSTINGER_SSH_PASSWORD }}
+          SSH_HOST:  ${{ secrets.HOSTINGER_SSH_HOST }}
+          SSH_PORT:  ${{ secrets.HOSTINGER_SSH_PORT }}
+          SSH_PATH:   "~/domains/scummvm-data.kuendig.io/public_html"
+          DATA_BASEURL: "https://scummvm-data.kuendig.io"
 
   deploy-cloud:
     name: Deploy Cloud Backend ☁️
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     needs: []
     steps:
       - name: Checkout  🛎️
@@ -212,8 +231,8 @@ jobs:
 
   deploy-demo:
     name: Deploy Demo Page 🚀
-    runs-on: ubuntu-22.04
-    needs:  [update-icons] # [detect-games, update-icons]
+    runs-on: ubuntu-latest
+    needs:  [update-icons, sync-games] # [detect-games, update-icons]
     steps:
       - name: Checkout  🛎️
         uses: actions/checkout@v4

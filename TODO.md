@@ -1,4 +1,6 @@
-add a few z games, ogod start are what was recommended at https://www.ioccc.org/2024/mills/index.html:
+add testbed and playground3d
+
+add a few z games, good start are what was recommended at https://www.ioccc.org/2024/mills/index.html:
 
 https://ifdb.org/viewgame?id=plvzam05bmz3enh8
 https://ifdb.org/viewgame?id=fft6pu91j85y4acv
