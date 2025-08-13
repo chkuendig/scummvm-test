@@ -128,21 +128,44 @@ class GameDownloader:
             ])
 
         return cmd, env
-    def _open_ssh_connection(self):
-        """Open a persistent SSH connection"""
+    
+    def _build_controlpath_ssh_command(self, base_command='ssh'):
+        """Build SSH/SCP command that reuses the persistent connection (ControlPath only)."""
+        cmd = [base_command]
         control_path = "/tmp/scummvm-ssh-%r@%h:%p"
-        ssh_cmd = [
-            "ssh", "-MNf",
-            "-o", "ControlMaster=auto",
-            "-o", f"ControlPath={control_path}",
-            "-o", "ControlPersist=600",
-            f"{self.scp_server}"
-        ]
+        
+        # Add port if specified
+        if self.scp_port:
+            if base_command == 'scp':
+                cmd.extend(['-P', str(self.scp_port)])
+            else:
+                cmd.extend(['-p', str(self.scp_port)])
+        
+        # Only add ControlPath for reusing the connection
+        cmd.extend(['-o', f'ControlPath={control_path}'])
+        
+        return cmd
+    
+    def _open_ssh_connection(self):
+        """Open a persistent SSH connection. Exit if connection fails."""
+        ssh_cmd, env = self._build_ssh_command()
+        # Insert -MNf right after the ssh command (before any options)
+        # Find the position of the actual ssh command (could be 'ssh' or after 'sshpass -e')
+        ssh_pos = 0
+        for i, arg in enumerate(ssh_cmd):
+            if arg in ['ssh', 'scp']:
+                ssh_pos = i
+                break
+        
+        # Insert -MNf right after the ssh command
+        ssh_cmd.insert(ssh_pos + 1, '-MNf')
+        ssh_cmd.append(f"{self.scp_server}")
         try:
-            subprocess.run(ssh_cmd, check=True)
+            subprocess.run(ssh_cmd, check=True, env=env)
             self._temp_print("Opened SSH connection")
         except Exception as e:
-            self._print(f"Warning: Could not open SSH connection: {e}")
+            self._print(f"\033[31mError: Could not open SSH connection: {e}\033[0m")
+            raise SystemExit(2)
 
     def _close_ssh_connection(self):
         """Close the persistent SSH connection"""
@@ -570,7 +593,8 @@ class GameDownloader:
             return False
         
         try:
-            ssh_cmd, env = self._build_ssh_command()
+            ssh_cmd = self._build_controlpath_ssh_command()
+            env = os.environ.copy()
             ssh_cmd.extend([
                 self.scp_server,
                 f'test -d "{self.scp_path}/{folder_name}"'
@@ -617,7 +641,8 @@ class GameDownloader:
         
         # Clean up any existing temp folder first
         try:
-            cleanup_cmd, env = self._build_ssh_command()
+            cleanup_cmd = self._build_controlpath_ssh_command()
+            env = os.environ.copy()
             cleanup_cmd.extend([
                 self.scp_server,
                 f'rm -rf "{self.scp_path}/{temp_name}"'
@@ -632,7 +657,8 @@ class GameDownloader:
             self._temp_print(f"Uploading {folder_path} to {self.scp_server}:{self.scp_path}/{temp_name}")
             
             # Prepare SCP command - upload to temporary name
-            scp_cmd, env = self._build_ssh_command('scp')
+            scp_cmd = self._build_controlpath_ssh_command('scp')
+            env = os.environ.copy()
             scp_cmd.append('-r')  # Add recursive flag for SCP
             
             # Upload to temp location
@@ -645,7 +671,7 @@ class GameDownloader:
             subprocess.run(scp_cmd, check=True, env=env)
             
             # Prepare SSH command for atomic move
-            ssh_cmd, env = self._build_ssh_command()
+            ssh_cmd = self._build_controlpath_ssh_command()
             ssh_cmd.extend([
                 self.scp_server,
                 f'mv "{self.scp_path}/{temp_name}" "{self.scp_path}/{folder_name}"'
@@ -662,7 +688,8 @@ class GameDownloader:
             self._print(f"Upload failed for {folder_name}: {e}")
             # Clean up temp folder on remote if it exists
             try:
-                cleanup_cmd, env = self._build_ssh_command()
+                cleanup_cmd = self._build_controlpath_ssh_command()
+                env = os.environ.copy()
                 cleanup_cmd.extend([
                     self.scp_server,
                     f'rm -rf "{self.scp_path}/{temp_name}"'
@@ -765,7 +792,8 @@ if __name__ == "__main__":
 EOF
 python3 /tmp/build_http_index.py "{self.scp_path}" && rm /tmp/build_http_index.py'''
             
-            ssh_cmd, env = self._build_ssh_command()
+            ssh_cmd = self._build_controlpath_ssh_command()
+            env = os.environ.copy()
             ssh_cmd.extend([self.scp_server, remote_command])
             
             self._temp_print("Building HTTP index on remote server...")
@@ -846,115 +874,107 @@ python3 /tmp/build_http_index.py "{self.scp_path}" && rm /tmp/build_http_index.p
         transfer_count = 0
         any_uploads_occurred = False
 
-        # Open SSH connection
-        if self.scp_server and self.scp_path:
-            self._open_ssh_connection()
+        for game_id in game_ids:
+            if game_id.startswith('http'):
+                url = game_id
+                filename = url[url.rfind('/') + 1:]
+            elif game_id not in self.games:
+                self._print(f"GameID {game_id} not known")
+                sys.exit(1)
+            else:
+                url = f"https://downloads.scummvm.org{self.games[game_id]}"
+                if '/' in game_id:
+                    game_id = game_id[:game_id.rfind('/')]
+                game_id = game_id[game_id.rfind(':') + 1:]  # Remove target from target:gameId
+                filename = url[url.rfind('/') + 1:]
+                if not filename.startswith(game_id):
+                    filename = f"{game_id}-{filename}"
 
-        
-            for game_id in game_ids:
-                   
-                    if game_id.startswith('http'):
-                        url = game_id
-                        filename = url[url.rfind('/') + 1:]
-                    elif game_id not in self.games:
-                        self._print(f"GameID {game_id} not known")
-                        sys.exit(1)
+            # Determine the final folder/file name that would exist on remote
+            if filename.endswith('.zip'):
+                target_name = filename[:-4]  # Remove .zip extension
+                local_folder_path = self.download_dir / target_name
+                local_zip_path = self.download_dir / filename
+            else:
+                target_name = filename
+                local_folder_path = self.download_dir / filename
+                local_zip_path = None
+            # Blacklist check
+            if target_name in self.blacklist:
+                self._print(f"\033[93mSkipping blacklisted game: {target_name}\033[0m")
+                continue
+            # Check if already exists on remote server (do this check once)
+            exists_on_remote = self.folder_exists_on_remote(target_name)
+            if exists_on_remote:
+                self._print(f"\033[92mGame {target_name} already exists on remote server, skipping\033[0m")
+
+                # Add to processed games list (skipped) - always include skipped games regardless of transfer limit
+                metadata = self._find_game_metadata_by_target_name(target_name)
+                if metadata:
+                    self.processed_games_metadata.append(metadata)
+
+                # Clean up any local files for completed remote games
+                if local_folder_path.exists():
+                    if local_folder_path.is_dir():
+                        shutil.rmtree(local_folder_path)
                     else:
-                        url = f"https://downloads.scummvm.org{self.games[game_id]}"
-                        if '/' in game_id:
-                            game_id = game_id[:game_id.rfind('/')]
-                        game_id = game_id[game_id.rfind(':') + 1:]  # Remove target from target:gameId
-                        filename = url[url.rfind('/') + 1:]
-                        if not filename.startswith(game_id):
-                            filename = f"{game_id}-{filename}"
+                        local_folder_path.unlink()
+                    self._temp_print(f"Cleaned up local file/folder {local_folder_path.name} (already on remote)")
+                if local_zip_path and local_zip_path.exists():
+                    local_zip_path.unlink()
+                    self._temp_print(f"Cleaned up local zip file {local_zip_path.name} (already on remote)")
+                continue
 
-                    # Determine the final folder/file name that would exist on remote
-                    if filename.endswith('.zip'):
-                        target_name = filename[:-4]  # Remove .zip extension
-                        local_folder_path = self.download_dir / target_name
-                        local_zip_path = self.download_dir / filename
-                    else:
-                        target_name = filename
-                        local_folder_path = self.download_dir / filename
-                        local_zip_path = None
-                    # Blacklist check
-                    if target_name in self.blacklist:
-                        self._print(f"\033[93mSkipping blacklisted game: {target_name}\033[0m")
-                        continue
-                    # Check if already exists on remote server (do this check once)
-                    exists_on_remote = self.folder_exists_on_remote(target_name)
-                    if exists_on_remote:
-                        self._print(f"\033[92mGame {target_name} already exists on remote server, skipping\033[0m")
+            # Check if we've reached the transfer limit (only for actual transfers, not skipped games)
+            if max_transfers is not None and transfer_count >= max_transfers:
+                self._print(f"Reached transfer limit of {max_transfers}, stopping")
+                break
 
-                        # Add to processed games list (skipped) - always include skipped games regardless of transfer limit
-                        metadata = self._find_game_metadata_by_target_name(target_name)
-                        if metadata:
-                            self.processed_games_metadata.append(metadata)
+            # Check if extracted folder already exists locally
+            if filename.endswith('.zip') and local_folder_path.exists():
+                self._temp_print(f"Folder {local_folder_path} already exists, skipping download")
+                # Upload since we know it doesn't exist on remote
+                if self.upload_folder(local_folder_path):
+                    transfer_count += 1
+                    any_uploads_occurred = True
 
-                        # Clean up any local files for completed remote games
-                        if local_folder_path.exists():
-                            if local_folder_path.is_dir():
-                                shutil.rmtree(local_folder_path)
-                            else:
-                                local_folder_path.unlink()
-                            self._temp_print(f"Cleaned up local file/folder {local_folder_path.name} (already on remote)")
-                        if local_zip_path and local_zip_path.exists():
-                            local_zip_path.unlink()
-                            self._temp_print(f"Cleaned up local zip file {local_zip_path.name} (already on remote)")
-                        continue
+                    # Add to processed games list (uploaded)
+                    metadata = self._find_game_metadata_by_target_name(target_name)
+                    if metadata:
+                        self.processed_games_metadata.append(metadata)
+                continue
 
-                    # Check if we've reached the transfer limit (only for actual transfers, not skipped games)
-                    if max_transfers is not None and transfer_count >= max_transfers:
-                        self._print(f"Reached transfer limit of {max_transfers}, stopping")
-                        break
+            # Check if file already exists locally
+            file_path = self.download_dir / filename
+            temp_file_path = self.download_dir / f"{filename}.downloading"
 
-                    # Check if extracted folder already exists locally
-                    if filename.endswith('.zip') and local_folder_path.exists():
-                        self._temp_print(f"Folder {local_folder_path} already exists, skipping download")
-                        # Upload since we know it doesn't exist on remote
-                        if self.upload_folder(local_folder_path):
-                            transfer_count += 1
-                            any_uploads_occurred = True
+            # Clean up any stale temp download files
+            if temp_file_path.exists():
+                temp_file_path.unlink()
+                self._print(f"Cleaned up stale temp download: {temp_file_path}")
 
-                            # Add to processed games list (uploaded)
-                            metadata = self._find_game_metadata_by_target_name(target_name)
-                            if metadata:
-                                self.processed_games_metadata.append(metadata)
-                        continue
+            if not file_path.exists():
+                downloaded_file = self.download_file(url, filename)
+            else:
+                downloaded_file = file_path
+                self._temp_print(f"File {filename} already exists, skipping download")
 
-                    # Check if file already exists locally
-                    file_path = self.download_dir / filename
-                    temp_file_path = self.download_dir / f"{filename}.downloading"
+            # Extract if it's a zip file
+            if filename.endswith('.zip'):
+                extracted_folder = self.extract_zip(downloaded_file)
+                # Upload the extracted folder
+                if self.upload_folder(extracted_folder):
+                    transfer_count += 1
+                    any_uploads_occurred = True
 
-                    # Clean up any stale temp download files
-                    if temp_file_path.exists():
-                        temp_file_path.unlink()
-                        self._print(f"Cleaned up stale temp download: {temp_file_path}")
-
-                    if not file_path.exists():
-                        downloaded_file = self.download_file(url, filename)
-                    else:
-                        downloaded_file = file_path
-                        self._temp_print(f"File {filename} already exists, skipping download")
-
-                    # Extract if it's a zip file
-                    if filename.endswith('.zip'):
-                        extracted_folder = self.extract_zip(downloaded_file)
-                        # Upload the extracted folder
-                        if self.upload_folder(extracted_folder):
-                            transfer_count += 1
-                            any_uploads_occurred = True
-
-                            # Add to processed games list (uploaded)
-                            metadata = self._find_game_metadata_by_target_name(target_name)
-                            if metadata:
-                                self.processed_games_metadata.append(metadata)
+                    # Add to processed games list (uploaded)
+                    metadata = self._find_game_metadata_by_target_name(target_name)
+                    if metadata:
+                        self.processed_games_metadata.append(metadata)
 
 
 
-            # Close SSH connection
-            if self.scp_server and self.scp_path:
-                self._close_ssh_connection()
+
 
         # Build HTTP index once after all uploads are complete
         if any_uploads_occurred and self.scp_server and self.scp_path:
@@ -1025,7 +1045,7 @@ Environment Variables:
     game_ids = [g for g in args.games if g not in ['testbed', 'playground3d']]
     
     # Fallback to environment variables if CLI args are not provided
-    scp_server = args.scp_server or os.environ.get('SSH_USER') + '@' + os.environ.get('SSH_HOST') if os.environ.get('SSH_USER') and os.environ.get('SSH_HOST') else None
+    scp_server = args.scp_server or (os.environ.get('SSH_USER') + '@' + os.environ.get('SSH_HOST') if os.environ.get('SSH_USER') and os.environ.get('SSH_HOST') else None)
     scp_path = args.scp_path or os.environ.get('SSH_PATH')
     scp_port = args.scp_port or (int(os.environ.get('SSH_PORT')) if os.environ.get('SSH_PORT') else None)
     downloader = GameDownloader(
@@ -1034,12 +1054,22 @@ Environment Variables:
         scp_path=scp_path,
         scp_port=scp_port
     )
-    
+
+    # Open SSH connection before anything else and keep it open for reuse
+    if scp_server and scp_path:
+        downloader._open_ssh_connection()
+
     try:
         downloader.run(game_ids if game_ids else None, args.max_transfers)
     except KeyboardInterrupt:
         print("\nInterrupted by user")
         sys.exit(1)
+    finally:
+        if scp_server and scp_path:
+            try:
+                downloader._close_ssh_connection()
+            except Exception:
+                pass
 
 
 if __name__ == "__main__":

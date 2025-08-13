@@ -179,12 +179,17 @@ jobs:
   sync-games:
     name: Sync Games 🎮
     runs-on: ubuntu-latest
-    needs: []
+    needs: [build-scummvm]
     steps:
       - name: Checkout  🛎️
         uses: actions/checkout@v4
         with:
           submodules: true
+      # - name: Restore ScummVM build
+      #   uses: actions/cache/restore@v4
+      #   with:
+      #     path: scummvm/build-emscripten/
+      #     key: build-emscripten-${{ github.run_id }}
       - name: Sync Games 🔄
         run: |
           scripts/sync-games.sh
@@ -193,9 +198,14 @@ jobs:
           SSH_PASSWORD:  ${{ secrets.HOSTINGER_SSH_PASSWORD }}
           SSH_HOST:  ${{ secrets.HOSTINGER_SSH_HOST }}
           SSH_PORT:  ${{ secrets.HOSTINGER_SSH_PORT }}
-          SSH_PATH:   "~/domains/scummvm-data.kuendig.io/public_html"
-          DATA_BASEURL: "https://scummvm-data.kuendig.io"
-
+          SSH_PATH:   "/home/${{ secrets.HOSTINGER_SSH_USERNAME }}/domains/scummvm-data.kuendig.io/public_html"
+      - name: Save Games Metadata
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            scummvm/build-emscripten/games.html
+            scummvm/build-emscripten/games.json
+          key: games-metadata-${{ github.run_id }}
   deploy-cloud:
     name: Deploy Cloud Backend ☁️
     runs-on: ubuntu-latest
@@ -252,18 +262,30 @@ jobs:
         with:
           path: scummvm/build-emscripten/data/gui-icons
           key: gui-icons-${{ env.SCUMMVM_ICONS_COMMIT }}
-      - name: "Restore scummvm.ini"
+      - name: Restore Games Metadata
         uses: actions/cache/restore@v4
         with:
           path: |
-            scummvm/build-emscripten/scummvm.ini
-            scummvm/build-emscripten/index.json
-          key: scummvm-ini-${{ github.run_id }}
-      - name: "Restore games"
-        uses: actions/cache/restore@v4
-        with:
-          path: scummvm/build-emscripten/data/games
-          key: games-${{ hashFiles('download_games.txt') }}
+            scummvm/build-emscripten/games.html
+            scummvm/build-emscripten/games.json
+          key: games-metadata-${{ github.run_id }}
+      # - name: "Restore scummvm.ini"
+      #   uses: actions/cache/restore@v4
+      #   with:
+      #     path: |
+      #       scummvm/build-emscripten/scummvm.ini
+      #       scummvm/build-emscripten/index.json
+      #     key: scummvm-ini-${{ github.run_id }}
+      # - name: "Restore games"
+      #   uses: actions/cache/restore@v4
+      #   with:
+      #     path: scummvm/build-emscripten/data/games
+      #     key: games-${{ hashFiles('download_games.txt') }}
+      - name:  update baseURL
+        env:           
+          DATA_BASEURL: "https://scummvm-data.kuendig.io"
+        run: |
+          jq '.games +=  {"baseUrl":"${{ env.DATA_BASEURL }}"}' scummvm/build-emscripten/data/index.json > scummvm/build-emscripten/data/index.json.tmp && mv scummvm/build-emscripten/data/index.json.tmp scummvm/build-emscripten/data/index.json
       - run: |
           find scummvm/build-emscripten/
       - uses: JamesIves/github-pages-deploy-action@v4.7.2
