@@ -470,8 +470,9 @@
                 iconDiv.className = 'game-icon';
                 
                 const img = document.createElement('img');
-                img.src = iconPath;
+                img.setAttribute('data-src', iconPath);  // Use data-src for lazy loading
                 img.alt = gameName;
+                img.loading = 'lazy';  // Native lazy loading fallback
                 img.onerror = () => {
                     iconDiv.innerHTML = 'GAME';
                     iconDiv.classList.add('no-icon');
@@ -629,6 +630,36 @@
                     const gameElement = this.createGameElement(gameId, variants);
                     gamesList.appendChild(gameElement);
                 });
+
+                // Setup lazy loading for game icons after rendering
+                this.setupLazyIconLoading();
+            }
+
+            setupLazyIconLoading() {
+                const lazyImages = document.querySelectorAll('.game-icon img[data-src]');
+                
+                if ('IntersectionObserver' in window) {
+                    const imageObserver = new IntersectionObserver((entries, observer) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const img = entry.target;
+                                img.src = img.getAttribute('data-src');
+                                img.removeAttribute('data-src');
+                                observer.unobserve(img);
+                            }
+                        });
+                    }, {
+                        rootMargin: '100px'  // Start loading 100px before the element comes into view
+                    });
+
+                    lazyImages.forEach(img => imageObserver.observe(img));
+                } else {
+                    // Fallback for browsers that don't support IntersectionObserver
+                    lazyImages.forEach(img => {
+                        img.src = img.getAttribute('data-src');
+                        img.removeAttribute('data-src');
+                    });
+                }
             }
 
             setupSearch() {
@@ -655,6 +686,9 @@
                         entry.style.display = 'none';
                     }
                 });
+
+                // Re-setup lazy loading for newly visible images
+                this.setupLazyIconLoading();
             }
 
             showContent() {
