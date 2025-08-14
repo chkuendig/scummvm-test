@@ -51,6 +51,7 @@ For a more comprehensive changelog of the latest experimental code, see:
    - Fixed giving and dropping unequippable items.
    - Fixed being unable to replace 3rd party member.
    - Fixed quitting in status menu.
+   - Added Text-to-Speech support.
 
  Freescape:
    - Added roll rotation to Driller and Dark Side.
@@ -62,13 +63,20 @@ For a more comprehensive changelog of the latest experimental code, see:
  Lure:
    - Added Russian version support to lure.dat.
 
+ MADE:
+  - Added Text-to-Speech support.
+
  MM:
    - Fixed protection from elements spell.
+   - Added Text-to-Speech support.
 
  NANCY:
    - Added support for ScummVM's save/load screens.
    - Fixed a crash while reading files from the Zip disk in Secret of the
      Scarlet Hand.
+
+ Neverhood:
+   - Added keymapper support.
 
  NGI:
    - Added keymapper support.
@@ -81,6 +89,7 @@ For a more comprehensive changelog of the latest experimental code, see:
 
  Prince:
    - Added Text-to-Speech support.
+   - Added keymapper support.
 
  SCI:
    - Fixed the palette in SLATER Mac.
@@ -115,6 +124,7 @@ For a more comprehensive changelog of the latest experimental code, see:
      New teenagent.dat file is generated.
    - Added keymapper support.
    - Added Text-to-Speech support.
+   - Added support for Polish CD version with voice-over.
 
  Tetraedge:
    - Added keymapper support.
