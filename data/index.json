@@ -17,7 +17,7 @@
   "lure.dat": 768832,
   "myst3.dat": 358287,
   "games": {
-    "baseUrl": "$DATA_BASEURL"
+    "baseUrl": "https://scummvm-data.kuendig.io"
   },
   "shaders.dat": 657234,
   "supernova.dat": 523211,
