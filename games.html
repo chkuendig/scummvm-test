@@ -498,10 +498,7 @@
                     img.setAttribute('data-src', iconPath);  // Use data-src for lazy loading
                     img.alt = gameName;
                     img.loading = 'lazy';  // Native lazy loading fallback
-                    img.onerror = () => {
-                        iconDiv.innerHTML = 'GAME';
-                        iconDiv.classList.add('no-icon');
-                    };
+                 
                     iconDiv.appendChild(img);
                 } else {
                     // No icon or cover image available
