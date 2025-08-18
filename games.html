@@ -486,15 +486,11 @@
                 // Determine which image to use
                 if (!iconPath) {
                     // No icon exists, find cover image from first variant that has it
-                    const gameEntry = this.gamesData[gameId];
-                    if (gameEntry && gameEntry.variants) {
-                        for (const variant of gameEntry.variants) {
-                            if (variant.cover) {
-                                iconPath = variant.cover;
-                                break;
-                            }
+                    for (const variant of variants) {
+                        if (variant.cover) {
+                            iconPath = variant.cover;
+                            break;
                         }
-                    }
                 }
                 
                 if (iconPath) {
