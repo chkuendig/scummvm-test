@@ -286,6 +286,7 @@
                 this.gamesData = [];
                 this.gamesMetadata = {};
                 this.companiesMetadata = {};
+                this.iconIndex = {};
                 this.groupedGames = {};
                 this.init();
             }
@@ -307,6 +308,10 @@
                 // Load games.json
                 const gamesResponse = await fetch('./games.json');
                 this.gamesData = await gamesResponse.json();
+
+                // Load index.json for icon existence checking
+                const indexResponse = await fetch('data/gui-icons/icons/index.json');
+                this.iconIndex = await indexResponse.json();
 
                 // Load games.xml
                 const gamesXmlResponse = await fetch('data/gui-icons/games.xml');
@@ -450,14 +455,21 @@
 
             getIconPath(gameId) {
                 const engineGameId = gameId.replace(':', '-');
-                // Try main icons directory first, then default
-                return `data/gui-icons/icons/${engineGameId}.png`;
+                const iconFileName = `${engineGameId}.png`;
+                
+                // Check if the icon exists in our index
+                if (this.iconIndex && this.iconIndex.hasOwnProperty(iconFileName)) {
+                    return `data/gui-icons/icons/${iconFileName}`;
+                }
+                
+                // Icon doesn't exist, return null so we can use cover image fallback
+                return null;
             }
 
             createGameElement(gameId, variants) {
                 const gameName = this.getGameName(gameId);
                 const gamePublisher = this.getGamePublisher(gameId);
-                const iconPath = this.getIconPath(gameId);
+                let iconPath = this.getIconPath(gameId);
 
                 const gameDiv = document.createElement('div');
                 gameDiv.className = 'game-entry';
@@ -470,14 +482,35 @@
                 iconDiv.className = 'game-icon';
                 
                 const img = document.createElement('img');
-                img.setAttribute('data-src', iconPath);  // Use data-src for lazy loading
-                img.alt = gameName;
-                img.loading = 'lazy';  // Native lazy loading fallback
-                img.onerror = () => {
+                
+                // Determine which image to use
+                if (!iconPath) {
+                    // No icon exists, find cover image from first variant that has it
+                    const gameEntry = this.gamesData[gameId];
+                    if (gameEntry && gameEntry.variants) {
+                        for (const variant of gameEntry.variants) {
+                            if (variant.cover) {
+                                iconPath = variant.cover;
+                                break;
+                            }
+                        }
+                    }
+                }
+                
+                if (iconPath) {
+                    img.setAttribute('data-src', iconPath);  // Use data-src for lazy loading
+                    img.alt = gameName;
+                    img.loading = 'lazy';  // Native lazy loading fallback
+                    img.onerror = () => {
+                        iconDiv.innerHTML = 'GAME';
+                        iconDiv.classList.add('no-icon');
+                    };
+                    iconDiv.appendChild(img);
+                } else {
+                    // No icon or cover image available
                     iconDiv.innerHTML = 'GAME';
                     iconDiv.classList.add('no-icon');
-                };
-                iconDiv.appendChild(img);
+                }
 
                 // Game content (header + variants)
                 const contentDiv = document.createElement('div');
