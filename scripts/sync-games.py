@@ -49,7 +49,9 @@ class GameDownloader:
         self.games_data = {}  # Cache for games data
         self.processed_games_metadata = []  # List to store metadata for actually processed games
         self.blacklist = set()
+        self.whitelist = {}
         self._load_blacklist()
+        self._load_whitelist()
 
     def _load_blacklist(self):
         """Load blacklist from ../assets/blacklist.json"""
@@ -60,6 +62,80 @@ class GameDownloader:
                     self.blacklist = set(json.load(f).keys())
             except Exception as e:
                 self._print(f"Warning: Could not load blacklist: {e}")
+
+    def _load_whitelist(self):
+        """Load whitelist from ../assets/whitelist.json"""
+        whitelist_path = Path(__file__).parent.parent / "assets" / "whitelist.json"
+        if whitelist_path.exists():
+            try:
+                with open(whitelist_path, "r", encoding="utf-8") as f:
+                    self.whitelist = json.load(f)
+            except Exception as e:
+                self._print(f"Warning: Could not load whitelist: {e}")
+
+    def _apply_whitelist_overrides(self, game_metadata):
+        """Apply whitelist overrides to game metadata"""
+        relative_path = game_metadata.get('relative_path', '')
+        if relative_path in self.whitelist:
+            whitelist_entry = self.whitelist[relative_path]
+            
+            # Override game ID if specified
+            if 'id' in whitelist_entry:
+                game_metadata['id'] = whitelist_entry['id']
+            
+            # Override description if specified
+            if 'description' in whitelist_entry:
+                game_metadata['description'] = whitelist_entry['description']
+            
+            # Add cover image if specified
+            if 'cover' in whitelist_entry:
+                game_metadata['cover'] = whitelist_entry['cover']
+            
+            # Override company if specified
+            if 'company' in whitelist_entry:
+                game_metadata['company'] = whitelist_entry['company']
+            
+            # Override languages if specified
+            if 'languages' in whitelist_entry:
+                game_metadata['languages'] = whitelist_entry['languages']
+            
+            # Add comment if specified
+            if 'comment' in whitelist_entry:
+                game_metadata['comment'] = whitelist_entry['comment']
+        
+        return game_metadata
+
+    def _add_whitelist_only_games(self):
+        """Add games that exist only in whitelist (not from Google Sheets)"""
+        # Get all relative paths that already exist in games_metadata
+        existing_paths = set(metadata['relative_path'] for metadata in self.games_metadata)
+        
+        # Add whitelist entries that don't exist in existing games
+        for relative_path, whitelist_entry in self.whitelist.items():
+            if relative_path not in existing_paths:
+                # Check if this whitelist entry has enough info to create a standalone game
+                if 'id' in whitelist_entry:
+                    game_metadata = {
+                        'id': whitelist_entry['id'],
+                        'relative_path': relative_path,
+                        'description': whitelist_entry.get('description', relative_path),
+                        'languages': whitelist_entry.get('languages', ['en']),
+                        'platform': 'Unknown'  # Default platform for whitelist-only games
+                    }
+                    
+                    # Add cover image if specified
+                    if 'cover' in whitelist_entry:
+                        game_metadata['cover'] = whitelist_entry['cover']
+                    
+                    # Add company if specified
+                    if 'company' in whitelist_entry:
+                        game_metadata['company'] = whitelist_entry['company']
+                    
+                    # Add comment if specified
+                    if 'comment' in whitelist_entry:
+                        game_metadata['comment'] = whitelist_entry['comment']
+                    
+                    self.games_metadata.append(game_metadata)
     
     def _temp_print(self, message, file=sys.stderr):
         """Print a temporary message that will be overwritten, padded to terminal width"""
@@ -348,14 +424,19 @@ class GameDownloader:
             platform_id = download.get('platform', '')
             platform_name = self.platforms_data.get(platform_id, {}).get('name', platform_id)
             
-            self.games_metadata.append({
+            game_metadata = {
                 'id': game_id,
                 'relative_path': relative_path,
                 'description': description,
                 'download_url': f"https://downloads.scummvm.org{download_url}",  # Full download URL
                 'languages': languages,
                 'platform': platform_name
-            })
+            }
+            
+            # Apply whitelist overrides
+            game_metadata = self._apply_whitelist_overrides(game_metadata)
+            
+            self.games_metadata.append(game_metadata)
         
         summary_parts = [f"Found {len(unique_urls)} compatible game downloads"]
         if skipped_games_count > 0:
@@ -416,14 +497,19 @@ class GameDownloader:
             # Extract languages
             languages = self._extract_languages(download)
 
-            self.games_metadata.append({
+            game_metadata = {
                 'id': game_id,
                 'relative_path': relative_path,
                 'description': description,
                 'download_url': demo_url,  # Direct demo URL
                 'languages': languages,
                 'platform': platform_name
-            })
+            }
+            
+            # Apply whitelist overrides
+            game_metadata = self._apply_whitelist_overrides(game_metadata)
+
+            self.games_metadata.append(game_metadata)
         
         self._print(f"Found {len(unique_urls)} compatible demos ({skipped_demos_count} skipped as incompatible)")
     
@@ -479,14 +565,19 @@ class GameDownloader:
             # Extract languages
             languages = self._extract_languages(download)
 
-            self.games_metadata.append({
+            game_metadata = {
                 'id': game_id,
                 'relative_path': relative_path,
                 'description': description,
                 'download_url': director_demo_url,  # Direct director demo URL
                 'languages': languages,
                 'platform': platform_name
-            })
+            }
+            
+            # Apply whitelist overrides
+            game_metadata = self._apply_whitelist_overrides(game_metadata)
+
+            self.games_metadata.append(game_metadata)
         
         self._print(f"Found {len(unique_urls)} compatible director demos ({skipped_director_demos_count} skipped as incompatible)")
     
@@ -701,111 +792,140 @@ class GameDownloader:
             return False
     
     def build_http_index(self):
-        """Run the HTTP index building script on the remote server"""
+        """Build HTTP index locally from remote directory listing and upload index.json files only if they don't exist"""
         if not self.scp_server or not self.scp_path:
             return
         
-        # Embedded HTTP index building script content
-        index_script = '''#!/usr/bin/env python3
-import os
-import json
-import sys
-from pathlib import Path
-
-sym_links = {}
-ignore_files = ['.git', 'index.json']
-
-def rd_sync(dpath, tree, name):
-    """Recursively scan directory and build file tree structure."""
-    try:
-        files = os.listdir(dpath)
-    except (OSError, PermissionError):
-        return tree
-    
-    for file in files:
-        # ignore non-essential directories / files
-        if file in ignore_files or file.startswith('.'):
-            continue
-            
-        fpath = os.path.join(dpath, file)
-        
         try:
-            # Avoid infinite loops with symbolic links
-            lstat = os.lstat(fpath)
-            if os.path.islink(fpath):
-                dev = lstat.st_dev
-                ino = lstat.st_ino
-                
-                if dev not in sym_links:
-                    sym_links[dev] = {}
-                
-                # Ignore if we've seen it before
-                if ino in sym_links[dev]:
-                    continue
-                    
-                sym_links[dev][ino] = True
+            self._temp_print("Getting remote directory listing...")
             
-            if os.path.isdir(fpath):
-                child = {}
-                tree[file] = child
-                rd_sync(fpath, child, file)
-                
-                # Write index.json for this directory
-                fs_listing = json.dumps(child)
-                fname = os.path.join(fpath, "index.json")
-                with open(fname, 'w', encoding='utf-8') as f:
-                    f.write(fs_listing)
-                
-                # Reset tree entry to empty dict after writing index
-                tree[file] = {}
-            else:
-                # Store file size
-                stat = os.stat(fpath)
-                tree[file] = stat.st_size
-                
-        except (OSError, PermissionError):
-            # Ignore and move on
-            continue
-    
-    return tree
-
-def main():
-    if len(sys.argv) == 2:
-        root_folder = sys.argv[1]
-        fs_listing = json.dumps(rd_sync(root_folder, {}, '/'))
-        fname = os.path.join(root_folder, "index.json")
-        with open(fname, 'w', encoding='utf-8') as f:
-            f.write(fs_listing)
-    else:
-        root_folder = os.getcwd()
-        fs_listing = json.dumps(rd_sync(root_folder, {}, '/'))
-        print(fs_listing)
-
-if __name__ == "__main__":
-    main()
-'''
-        
-        try:
-            # Create a command that writes the script and executes it
-            remote_command = f'''cat > /tmp/build_http_index.py << 'EOF'
-{index_script}
-EOF
-python3 /tmp/build_http_index.py "{self.scp_path}" && rm /tmp/build_http_index.py'''
-            
+            # Get recursive directory listing from remote server
             ssh_cmd = self._build_controlpath_ssh_command()
             env = os.environ.copy()
-            ssh_cmd.extend([self.scp_server, remote_command])
             
-            self._temp_print("Building HTTP index on remote server...")
-            result = subprocess.run(ssh_cmd, capture_output=True, check=False, env=env)
+            # Use find to get all directories and files with their sizes
+            find_command = f'cd "{self.scp_path}" && find . -type f -exec stat -c "%s %n" {{}} \\; 2>/dev/null'
+            ssh_cmd.extend([self.scp_server, find_command])
             
-            if result.returncode == 0:
-                self._temp_print("HTTP index built successfully")
-            else:
-                self._print(f"Warning: HTTP index build failed: {result.stderr.decode('utf-8', errors='ignore')}")
+            result = subprocess.run(ssh_cmd, capture_output=True, check=False, env=env, text=True)
+            
+            if result.returncode != 0:
+                self._print(f"Warning: Could not get remote directory listing: {result.stderr}")
+                return
+            
+            # Parse the output to build directory structure
+            file_tree = {}
+            
+            for line in result.stdout.strip().split('\n'):
+                if not line.strip():
+                    continue
+                    
+                parts = line.strip().split(' ', 1)
+                if len(parts) != 2:
+                    continue
+                    
+                size_str, filepath = parts
+                try:
+                    size = int(size_str)
+                except ValueError:
+                    continue
                 
+                # Remove leading ./
+                if filepath.startswith('./'):
+                    filepath = filepath[2:]
+                
+                # Skip hidden files and existing index.json files
+                if any(part.startswith('.') for part in filepath.split('/')) or filepath.endswith('index.json'):
+                    continue
+                
+                # Build nested directory structure
+                path_parts = filepath.split('/')
+                current_tree = file_tree
+                
+                # Navigate/create directory structure
+                for i, part in enumerate(path_parts[:-1]):
+                    if part not in current_tree:
+                        current_tree[part] = {}
+                    current_tree = current_tree[part]
+                
+                # Add file with size
+                filename = path_parts[-1]
+                current_tree[filename] = size
+            
+            # Generate index.json files for each directory (only if they don't exist)
+            self._generate_index_files(file_tree, self.scp_path)
+            
+            self._temp_print("HTTP index built successfully")
+            
         except Exception as e:
             self._print(f"Error building HTTP index: {e}")
+    
+    def _generate_index_files(self, tree, remote_path, current_path=""):
+        """Recursively generate and upload index.json files for directory tree (only if they don't exist)"""
+        try:
+            # Check if index.json already exists in this directory
+            remote_index_path = f"{remote_path}/{current_path}/index.json" if current_path else f"{remote_path}/index.json"
+            
+            # Test if index.json exists on remote
+            ssh_cmd = self._build_controlpath_ssh_command()
+            env = os.environ.copy()
+            ssh_cmd.extend([
+                self.scp_server,
+                f'test -f "{remote_index_path}"'
+            ])
+            
+            result = subprocess.run(ssh_cmd, capture_output=True, check=False, env=env, timeout=10)
+            
+            if result.returncode == 0:
+                # index.json already exists, skip uploading
+                self._temp_print(f"Skipping existing index.json in {current_path or 'root'}")
+            else:
+                # index.json doesn't exist, create and upload it
+                # Create a simplified tree where directories are empty objects
+                simplified_tree = {}
+                for key, value in tree.items():
+                    if isinstance(value, dict):  # It's a directory
+                        simplified_tree[key] = {}  # Empty object for directories
+                    else:  # It's a file
+                        simplified_tree[key] = value  # Keep file size
+                
+                index_content = json.dumps(simplified_tree, indent=2, ensure_ascii=False)
+                
+                # Create temporary local index.json file
+                temp_index_file = self.download_dir / "temp_index.json"
+                with open(temp_index_file, 'w', encoding='utf-8') as f:
+                    f.write(index_content)
+                
+                # Upload index.json to remote directory
+                scp_cmd = self._build_controlpath_ssh_command('scp')
+                env = os.environ.copy()
+                scp_cmd.extend([
+                    str(temp_index_file),
+                    f"{self.scp_server}:{remote_index_path}"
+                ])
+                
+                subprocess.run(scp_cmd, check=True, env=env)
+                self._temp_print(f"Uploaded index.json to {current_path or 'root'}")
+                
+                # Clean up temp file
+                temp_index_file.unlink()
+            
+            # Recursively process subdirectories
+            for key, value in tree.items():
+                if isinstance(value, dict):  # It's a directory
+                    subdir_path = f"{current_path}/{key}" if current_path else key
+                    # Create a copy of the tree with only this subdirectory's contents
+                    subdir_tree = value.copy()
+                    self._generate_index_files(subdir_tree, remote_path, subdir_path)
+                    
+        except subprocess.TimeoutExpired:
+            self._print(f"Timeout checking index.json in {current_path or 'root'}")
+        except Exception as e:
+            self._print(f"Error generating index for {current_path or 'root'}: {e}")
+            # Clean up temp file if it exists
+            temp_index_file = self.download_dir / "temp_index.json"
+            if temp_index_file.exists():
+                temp_index_file.unlink()
     
     def generate_games_json(self):
         """Generate games.json file with all available games metadata"""
@@ -874,6 +994,29 @@ python3 /tmp/build_http_index.py "{self.scp_path}" && rm /tmp/build_http_index.p
         transfer_count = 0
         any_uploads_occurred = False
 
+        # Process whitelist-only games (games with no download URL) first
+        if self.scp_server and self.scp_path:
+            whitelist_only_games = [metadata for metadata in self.games_metadata 
+                                  if metadata['relative_path'] in self.whitelist and 
+                                  'download_url' not in metadata]
+            
+            for metadata in whitelist_only_games:
+                target_name = metadata['relative_path']
+                
+                # Skip blacklisted games
+                if target_name in self.blacklist:
+                    continue
+                    
+                # Check if already exists on remote server
+                try:
+                    exists_on_remote = self.folder_exists_on_remote(target_name)
+                    if exists_on_remote:
+                        self._print(f"\033[92mWhitelist game {target_name} already exists on remote server\033[0m")
+                        self.processed_games_metadata.append(metadata)
+                except Exception as e:
+                    self._print(f"Warning: Could not check remote status for whitelist game {target_name}: {e}")
+
+        # Now process games that need to be downloaded/uploaded
         for game_id in game_ids:
             if game_id.startswith('http'):
                 url = game_id
@@ -903,6 +1046,7 @@ python3 /tmp/build_http_index.py "{self.scp_path}" && rm /tmp/build_http_index.p
             if target_name in self.blacklist:
                 self._print(f"\033[93mSkipping blacklisted game: {target_name}\033[0m")
                 continue
+                
             # Check if already exists on remote server (do this check once)
             exists_on_remote = self.folder_exists_on_remote(target_name)
             if exists_on_remote:
@@ -1001,6 +1145,9 @@ python3 /tmp/build_http_index.py "{self.scp_path}" && rm /tmp/build_http_index.p
         self.get_demos()
         self.get_director_demos()
         
+        # Add whitelist-only games (games that don't exist in Google Sheets)
+        self._add_whitelist_only_games()
+        
         # If no game IDs specified, download all games
         if not game_ids:
             # Use all collected URLs, but convert them to a format that download_and_process_games expects
@@ -1017,6 +1164,14 @@ python3 /tmp/build_http_index.py "{self.scp_path}" && rm /tmp/build_http_index.p
         
         # Sort game_ids by their target filename/foldername for consistent processing order (case-insensitive)
         game_ids.sort(key=lambda x: self._get_target_name_for_game_id(x).lower())
+        
+        # If no server is configured, add all non-blacklisted whitelist games to processed list
+        # This ensures they appear in the final games.json even without server connectivity
+        if not self.scp_server or not self.scp_path:
+            whitelist_games = [metadata for metadata in self.games_metadata 
+                             if metadata['relative_path'] in self.whitelist and 
+                             metadata['relative_path'] not in self.blacklist]
+            self.processed_games_metadata.extend(whitelist_games)
         
         self.download_and_process_games(game_ids, max_transfers)
 

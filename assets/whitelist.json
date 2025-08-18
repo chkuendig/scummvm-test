@@ -1,0 +1,95 @@
+{
+    "shivah-demo": {
+        "id": "ags:shivahkosher"
+    },
+    "meetmediaband": {
+        "id": "director:mediaband",
+        "company": "Canter Technology",
+        "cover": "https://scummvm-data.kuendig.io/meetmediaband/cover.png",
+        "description": "Freeware",
+        "languages": ["en"],
+        "comment": "Freeware, from https://archive.org/details/meetmediaband"
+    },
+    "minizork": {
+        "id": "glk:minizork1",
+        "company": "Infocom",
+        "description": "Demo/Freeware",
+        "languages": ["en"],
+        "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    },
+    "asylum-demo": {
+        "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
+    },
+    "asylum-demo2": {
+        "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
+    },
+    "zcode-sampler2": {
+        "id": "glk:infocomsample3ztl",
+        "company": "Infocom",
+        "description": "Demo/Freeware",
+        "languages": ["en"],
+        "cover": "https://scummvm-data.kuendig.io/zcode-sampler2/cover.jpg",
+        "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    },
+    "zcode-sampler1": {
+        "id": "glk:infocomsample4zpiw",
+        "company": "Infocom",
+        "languages": ["en"],
+        "description": "Demo/Freeware",
+        "cover": "https://scummvm-data.kuendig.io/zcode-sampler1/cover.jpg",
+        "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    },
+    "zcode-curses": {
+        "id": "glk:curses",
+        "company": "Graham Nelson",
+        "description": "Freeware",
+        "languages": ["en"],
+        "cover": "https://scummvm-data.kuendig.io/zcode-curses/cover.jpg",
+        "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    },
+    "zcode-advent": {
+        "id": "glk:adv350_zcode",
+        "company": "William Crowther and Donald Woods",
+        "description": "Freeware",
+        "languages": ["en"],
+        "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    },
+    "zcode-fantasydimension": {
+        "id": "glk:pj3_fantadimension",
+        "company": "Johan Berntsson",
+        "description": "Freeware",
+        "languages": ["en"],
+        "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    },
+    "zcode-moonglow": {
+        "id": "glk:moonglow",
+        "company": "Dave Bernazzani",
+        "description": "Freeware",
+        "languages": ["en"],
+        "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    },
+    "zcode-submarine": {
+        "id": "glk:pj3_submarinesabot",
+        "company": "Garry Francis",
+        "description": "Freeware",
+        "languages": ["en"],
+        "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    },
+    "zcode-tristam": {
+        "id": "glk:tristamisland",
+        "company": "Hugo Labrande",
+        "description": "Freeware",
+        "languages": ["en"],
+        "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    },
+    "riddle-dos-demo-en": {
+        "id": "m4:riddle",
+        "description":"DOS Demo",
+        "comment": "https://downloads.scummvm.org/frs/demos/m4/riddle-dos-demo-en.zip but renamed lowercase"
+    },
+    "burger-dos-demo-en": {
+        "id": "m4:burger",
+        "description":"DOS Demo",
+        "comment": "https://downloads.scummvm.org/frs/demos/m4/burger-dos-demo-en.zip but renamed lowercase"
+    }
+}
