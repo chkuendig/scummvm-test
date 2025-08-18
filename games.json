@@ -328,6 +328,16 @@
     "platform": "Windows"
   },
   {
+    "id": "ags:shivahkosher",
+    "relative_path": "shivah-demo",
+    "description": "Windows  Demo",
+    "download_url": "/frs/demos/ags/shivah-demo.zip",
+    "languages": [
+      "en"
+    ],
+    "platform": "Windows"
+  },
+  {
     "id": "ags:technobabylon",
     "relative_path": "technobabylon-demo",
     "description": "Windows  Demo",
@@ -343,7 +353,8 @@
     "description": "Windows  Demo",
     "download_url": "/frs/demos/asylum/asylum-demo.zip",
     "languages": [],
-    "platform": "Windows"
+    "platform": "Windows",
+    "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
   },
   {
     "id": "asylum:asylum",
@@ -351,7 +362,8 @@
     "description": "Windows Alternative Demo",
     "download_url": "/frs/demos/asylum/asylum-demo2.zip",
     "languages": [],
-    "platform": "Windows"
+    "platform": "Windows",
+    "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
   },
   {
     "id": "bagel:spacebar",
@@ -628,6 +640,18 @@
     "platform": "Windows"
   },
   {
+    "id": "director:mediaband",
+    "relative_path": "meetmediaband",
+    "description": "Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "cover": "https://scummvm-data.kuendig.io/meetmediaband/cover.png",
+    "company": "Canter Technology",
+    "comment": "Freeware, from https://archive.org/details/meetmediaband"
+  },
+  {
     "id": "director:warlock",
     "relative_path": "warlock-demo-mac-100",
     "description": "Macintosh Spaceship Warlock Demo",
@@ -882,6 +906,108 @@
       "en"
     ],
     "platform": "ZX Spectrum"
+  },
+  {
+    "id": "glk:adv350_zcode",
+    "relative_path": "zcode-advent",
+    "description": "Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "company": "William Crowther and Donald Woods",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+  },
+  {
+    "id": "glk:curses",
+    "relative_path": "zcode-curses",
+    "description": "Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "cover": "https://scummvm-data.kuendig.io/zcode-curses/cover.jpg",
+    "company": "Graham Nelson",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+  },
+  {
+    "id": "glk:infocomsample3ztl",
+    "relative_path": "zcode-sampler2",
+    "description": "Demo/Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "cover": "https://scummvm-data.kuendig.io/zcode-sampler2/cover.jpg",
+    "company": "Infocom",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+  },
+  {
+    "id": "glk:infocomsample4zpiw",
+    "relative_path": "zcode-sampler1",
+    "description": "Demo/Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "cover": "https://scummvm-data.kuendig.io/zcode-sampler1/cover.jpg",
+    "company": "Infocom",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+  },
+  {
+    "id": "glk:minizork1",
+    "relative_path": "minizork",
+    "description": "Demo/Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "company": "Infocom",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+  },
+  {
+    "id": "glk:moonglow",
+    "relative_path": "zcode-moonglow",
+    "description": "Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "company": "Dave Bernazzani",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+  },
+  {
+    "id": "glk:pj3_fantadimension",
+    "relative_path": "zcode-fantasydimension",
+    "description": "Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "company": "Johan Berntsson",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+  },
+  {
+    "id": "glk:pj3_submarinesabot",
+    "relative_path": "zcode-submarine",
+    "description": "Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "company": "Garry Francis",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+  },
+  {
+    "id": "glk:tristamisland",
+    "relative_path": "zcode-tristam",
+    "description": "Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "company": "Hugo Labrande",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
   },
   {
     "id": "gob:adibou2",

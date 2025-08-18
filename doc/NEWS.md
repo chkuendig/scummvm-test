@@ -31,6 +31,9 @@ For a more comprehensive changelog of the latest experimental code, see:
  ADL:
    - Added Text-to-Speech support.
 
+ AGI:
+   - Added Text-to-Speech support.
+
  Buried:
    - Added keymapper support.
 
@@ -46,12 +49,14 @@ For a more comprehensive changelog of the latest experimental code, see:
  Drascula:
    - Fixed displaying accented characters.
    - Added Text-to-Speech support.
+   - Added keymapper support.
 
  EFH:
    - Fixed giving and dropping unequippable items.
    - Fixed being unable to replace 3rd party member.
    - Fixed quitting in status menu.
    - Added Text-to-Speech support.
+   - Added keymapper support.
 
  Freescape:
    - Added roll rotation to Driller and Dark Side.
@@ -59,6 +64,9 @@ For a more comprehensive changelog of the latest experimental code, see:
  Kyra:
    - Reduce CPU usage in the LoL main menu.
    - Reduce CPU usage in EoB 1 and 2.
+
+ Lab:
+   - Added keymapper support.
 
  Lure:
    - Added Russian version support to lure.dat.
@@ -86,6 +94,9 @@ For a more comprehensive changelog of the latest experimental code, see:
 
  Parallaction:
    - Added Text-to-Speech support.
+
+ Pink:
+   - Added keymapper support.
 
  Prince:
    - Added Text-to-Speech support.
