@@ -48,94 +48,96 @@ class GameDownloader:
         self.platforms_data = {}  # Cache for platform data
         self.games_data = {}  # Cache for games data
         self.processed_games_metadata = []  # List to store metadata for actually processed games
-        self.blacklist = set()
-        self.whitelist = {}
-        self._load_blacklist()
-        self._load_whitelist()
+        self.metadata = {}
+        self._load_metadata()
 
-    def _load_blacklist(self):
-        """Load blacklist from ../assets/blacklist.json"""
-        blacklist_path = Path(__file__).parent.parent / "assets" / "blacklist.json"
-        if blacklist_path.exists():
-            try:
-                with open(blacklist_path, "r", encoding="utf-8") as f:
-                    self.blacklist = set(json.load(f).keys())
-            except Exception as e:
-                self._print(f"Warning: Could not load blacklist: {e}")
-
-    def _load_whitelist(self):
-        """Load whitelist from ../assets/whitelist.json"""
-        whitelist_path = Path(__file__).parent.parent / "assets" / "whitelist.json"
-        if whitelist_path.exists():
-            try:
-                with open(whitelist_path, "r", encoding="utf-8") as f:
-                    self.whitelist = json.load(f)
-            except Exception as e:
-                self._print(f"Warning: Could not load whitelist: {e}")
-
-    def _apply_whitelist_overrides(self, game_metadata):
-        """Apply whitelist overrides to game metadata"""
-        relative_path = game_metadata.get('relative_path', '')
-        if relative_path in self.whitelist:
-            whitelist_entry = self.whitelist[relative_path]
-            
-            # Override game ID if specified
-            if 'id' in whitelist_entry:
-                game_metadata['id'] = whitelist_entry['id']
-            
-            # Override description if specified
-            if 'description' in whitelist_entry:
-                game_metadata['description'] = whitelist_entry['description']
-            
-            # Add cover image if specified
-            if 'cover' in whitelist_entry:
-                game_metadata['cover'] = whitelist_entry['cover']
-            
-            # Override company if specified
-            if 'company' in whitelist_entry:
-                game_metadata['company'] = whitelist_entry['company']
-            
-            # Override languages if specified
-            if 'languages' in whitelist_entry:
-                game_metadata['languages'] = whitelist_entry['languages']
-            
-            # Add comment if specified
-            if 'comment' in whitelist_entry:
-                game_metadata['comment'] = whitelist_entry['comment']
+    def _load_metadata(self):
+        """Load metadata from ../assets/metadata.json"""
+        metadata_path = Path(__file__).parent.parent / "assets" / "metadata.json"
+        if metadata_path.exists():
+            with open(metadata_path, "r", encoding="utf-8") as f:
+                self.metadata = json.load(f)
         
-        return game_metadata
-
-    def _add_whitelist_only_games(self):
-        """Add games that exist only in whitelist (not from Google Sheets)"""
-        # Get all relative paths that already exist in games_metadata
-        existing_paths = set(metadata['relative_path'] for metadata in self.games_metadata)
+    def _apply_metadata(self):
+        """Apply metadata overrides to existing games and add metadata-only games"""
+        # Create a map of relative_path to metadata for quick lookup
+        metadata_by_path = {metadata['relative_path']: metadata for metadata in self.games_metadata}
         
-        # Add whitelist entries that don't exist in existing games
-        for relative_path, whitelist_entry in self.whitelist.items():
-            if relative_path not in existing_paths:
-                # Check if this whitelist entry has enough info to create a standalone game
-                if 'id' in whitelist_entry:
+        for relative_path, metadata_entry in self.metadata.items():
+            # Skip if skip: true is set
+            if metadata_entry.get("skip", False):
+                continue
+
+            if relative_path in metadata_by_path:
+                # Apply overrides to existing game
+                existing_metadata = metadata_by_path[relative_path]
+                self._apply_metadata_properties(existing_metadata, metadata_entry)
+            else:
+                # Create new game if it doesn't exist and has enough info
+                if 'id' in metadata_entry:
                     game_metadata = {
-                        'id': whitelist_entry['id'],
+                        'id': metadata_entry['id'],
                         'relative_path': relative_path,
-                        'description': whitelist_entry.get('description', relative_path),
-                        'languages': whitelist_entry.get('languages', ['en']),
-                        'platform': 'Unknown'  # Default platform for whitelist-only games
+                        'description': metadata_entry.get('description', relative_path),
+                        'languages': metadata_entry.get('languages', ['en']),
+                        'platform': 'Unknown'  # Default platform for metadata-only games
                     }
                     
-                    # Add cover image if specified
-                    if 'cover' in whitelist_entry:
-                        game_metadata['cover'] = whitelist_entry['cover']
-                    
-                    # Add company if specified
-                    if 'company' in whitelist_entry:
-                        game_metadata['company'] = whitelist_entry['company']
-                    
-                    # Add comment if specified
-                    if 'comment' in whitelist_entry:
-                        game_metadata['comment'] = whitelist_entry['comment']
+                    # Apply all metadata properties
+                    game_metadata = self._apply_metadata_properties(game_metadata, metadata_entry)
                     
                     self.games_metadata.append(game_metadata)
+
+    def _apply_metadata_properties(self, game_metadata, metadata_entry):
+        """Apply metadata properties to game metadata (helper method)"""
+        # Override game ID if specified
+        if 'id' in metadata_entry:
+            game_metadata['id'] = metadata_entry['id']
+        
+        # Override description if specified
+        if 'description' in metadata_entry:
+            game_metadata['description'] = metadata_entry['description']
+
+        # Override download_url if specified
+        if 'download_url' in metadata_entry:
+            game_metadata['download_url'] = metadata_entry['download_url']
+
+        # Add cover image if specified
+        if 'cover' in metadata_entry:
+            game_metadata['cover'] = metadata_entry['cover']
+        
+        # Override company if specified
+        if 'company' in metadata_entry:
+            game_metadata['company'] = metadata_entry['company']
+        
+        # Override languages if specified
+        if 'languages' in metadata_entry:
+            game_metadata['languages'] = metadata_entry['languages']
+
+        # Add name if specified
+        if 'name' in metadata_entry:
+            game_metadata['name'] = metadata_entry['name']
+
+        # Add comment if specified
+        if 'comment' in metadata_entry:
+            game_metadata['comment'] = metadata_entry['comment']
+
+        return game_metadata
+
+    def _create_and_add_game_metadata(self, game_id, relative_path, description, download_url, languages, platform_name):
+        """Create game metadata and add to games_metadata list (whitelist overrides applied later)"""
+        game_metadata = {
+            'id': game_id,
+            'relative_path': relative_path,
+            'description': description,
+            'download_url': download_url,
+            'languages': languages,
+            'platform': platform_name
+        }
+        
+        self.games_metadata.append(game_metadata)
+        return game_metadata
+
     
     def _temp_print(self, message, file=sys.stderr):
         """Print a temporary message that will be overwritten, padded to terminal width"""
@@ -252,8 +254,16 @@ class GameDownloader:
             f"{self.scp_server}"
         ]
         try:
-            subprocess.run(close_cmd, check=True)
-            self._temp_print("Closed SSH connection")
+            result = subprocess.run(close_cmd, check=False, capture_output=True)
+            if result.returncode == 0:
+                self._temp_print("Closed SSH connection")
+            elif result.returncode == 255:
+                # Connection already closed or control socket doesn't exist - this is normal
+                self._temp_print("SSH connection already closed")
+            else:
+                # Only show warning for unexpected errors
+                stderr_output = result.stderr.decode('utf-8', errors='ignore').strip()
+                self._print(f"Warning: Could not close SSH connection (exit code {result.returncode}): {stderr_output}")
         except Exception as e:
             self._print(f"Warning: Could not close SSH connection: {e}")
         
@@ -416,6 +426,10 @@ class GameDownloader:
             
             # Get description from the "name" column in game_downloads table
             description = game_name  # Use the "name" column from game_downloads
+            if description.startswith("SLUDGE engine game."):
+                description = description[len("SLUDGE engine game."):].strip()
+                if not description:  # If description is empty after stripping
+                    description = "Freeware"
             
             # Extract languages
             languages = self._extract_languages(download)
@@ -424,19 +438,15 @@ class GameDownloader:
             platform_id = download.get('platform', '')
             platform_name = self.platforms_data.get(platform_id, {}).get('name', platform_id)
             
-            game_metadata = {
-                'id': game_id,
-                'relative_path': relative_path,
-                'description': description,
-                'download_url': f"https://downloads.scummvm.org{download_url}",  # Full download URL
-                'languages': languages,
-                'platform': platform_name
-            }
-            
-            # Apply whitelist overrides
-            game_metadata = self._apply_whitelist_overrides(game_metadata)
-            
-            self.games_metadata.append(game_metadata)
+            # Create and add game metadata
+            self._create_and_add_game_metadata(
+                game_id=game_id,
+                relative_path=relative_path,
+                description=description,
+                download_url=f"https://downloads.scummvm.org{download_url}",
+                languages=languages,
+                platform_name=platform_name
+            )
         
         summary_parts = [f"Found {len(unique_urls)} compatible game downloads"]
         if skipped_games_count > 0:
@@ -497,19 +507,15 @@ class GameDownloader:
             # Extract languages
             languages = self._extract_languages(download)
 
-            game_metadata = {
-                'id': game_id,
-                'relative_path': relative_path,
-                'description': description,
-                'download_url': demo_url,  # Direct demo URL
-                'languages': languages,
-                'platform': platform_name
-            }
-            
-            # Apply whitelist overrides
-            game_metadata = self._apply_whitelist_overrides(game_metadata)
-
-            self.games_metadata.append(game_metadata)
+            # Create and add game metadata
+            self._create_and_add_game_metadata(
+                game_id=game_id,
+                relative_path=relative_path,
+                description=description,
+                download_url=demo_url,
+                languages=languages,
+                platform_name=platform_name
+            )
         
         self._print(f"Found {len(unique_urls)} compatible demos ({skipped_demos_count} skipped as incompatible)")
     
@@ -565,19 +571,15 @@ class GameDownloader:
             # Extract languages
             languages = self._extract_languages(download)
 
-            game_metadata = {
-                'id': game_id,
-                'relative_path': relative_path,
-                'description': description,
-                'download_url': director_demo_url,  # Direct director demo URL
-                'languages': languages,
-                'platform': platform_name
-            }
-            
-            # Apply whitelist overrides
-            game_metadata = self._apply_whitelist_overrides(game_metadata)
-
-            self.games_metadata.append(game_metadata)
+            # Create and add game metadata
+            self._create_and_add_game_metadata(
+                game_id=game_id,
+                relative_path=relative_path,
+                description=description,
+                download_url=director_demo_url,
+                languages=languages,
+                platform_name=platform_name
+            )
         
         self._print(f"Found {len(unique_urls)} compatible director demos ({skipped_director_demos_count} skipped as incompatible)")
     
@@ -994,27 +996,23 @@ class GameDownloader:
         transfer_count = 0
         any_uploads_occurred = False
 
-        # Process whitelist-only games (games with no download URL) first
-        if self.scp_server and self.scp_path:
-            whitelist_only_games = [metadata for metadata in self.games_metadata 
-                                  if metadata['relative_path'] in self.whitelist and 
-                                  'download_url' not in metadata]
+        # Process metadata-only games first (games with no download URL)
+        metadata_only_games = [metadata for metadata in self.games_metadata 
+                                if metadata['relative_path'] in self.metadata and 
+                                not self.metadata[metadata['relative_path']].get("skip", False) 
+                               ]
+        
+        for metadata in metadata_only_games:
+            target_name = metadata['relative_path']
             
-            for metadata in whitelist_only_games:
-                target_name = metadata['relative_path']
-                
-                # Skip blacklisted games
-                if target_name in self.blacklist:
-                    continue
-                    
-                # Check if already exists on remote server
-                try:
-                    exists_on_remote = self.folder_exists_on_remote(target_name)
-                    if exists_on_remote:
-                        self._print(f"\033[92mWhitelist game {target_name} already exists on remote server\033[0m")
-                        self.processed_games_metadata.append(metadata)
-                except Exception as e:
-                    self._print(f"Warning: Could not check remote status for whitelist game {target_name}: {e}")
+            # Check if already exists on remote server
+            exists_on_remote = self.folder_exists_on_remote(target_name)
+            if exists_on_remote:
+                self._print(f"\033[92mMetadata game {target_name} already exists on remote server\033[0m")
+                self.processed_games_metadata.append(metadata)
+            else:
+                self._print(f"\033[91mMetadata game {target_name} does not exist on remote server\033[0m")
+                raise FileNotFoundError(f"Metadata game {target_name} not found on remote server")
 
         # Now process games that need to be downloaded/uploaded
         for game_id in game_ids:
@@ -1042,9 +1040,9 @@ class GameDownloader:
                 target_name = filename
                 local_folder_path = self.download_dir / filename
                 local_zip_path = None
-            # Blacklist check
-            if target_name in self.blacklist:
-                self._print(f"\033[93mSkipping blacklisted game: {target_name}\033[0m")
+            # Skip check
+            if self.metadata.get(target_name, {}).get("skip", False):
+                self._print(f"\033[93mSkipping game based on metadata skip flag: {target_name}\033[0m")
                 continue
                 
             # Check if already exists on remote server (do this check once)
@@ -1070,22 +1068,31 @@ class GameDownloader:
                 continue
 
             # Check if we've reached the transfer limit (only for actual transfers, not skipped games)
-            if max_transfers is not None and transfer_count >= max_transfers:
-                self._print(f"Reached transfer limit of {max_transfers}, stopping")
-                break
+            allow_transfers = max_transfers is None or transfer_count < max_transfers
+            if not allow_transfers:
+                self._print(f"Reached transfer limit of {max_transfers}, skipping downloads/uploads but continuing to process games")
 
             # Check if extracted folder already exists locally
             if filename.endswith('.zip') and local_folder_path.exists():
                 self._temp_print(f"Folder {local_folder_path} already exists, skipping download")
-                # Upload since we know it doesn't exist on remote
-                if self.upload_folder(local_folder_path):
+                # Upload since we know it doesn't exist on remote (but only if transfers allowed)
+                if allow_transfers and self.upload_folder(local_folder_path):
                     transfer_count += 1
                     any_uploads_occurred = True
 
-                    # Add to processed games list (uploaded)
-                    metadata = self._find_game_metadata_by_target_name(target_name)
-                    if metadata:
-                        self.processed_games_metadata.append(metadata)
+                # Always add to processed games list and clean up local folder
+                metadata = self._find_game_metadata_by_target_name(target_name)
+                if metadata:
+                    self.processed_games_metadata.append(metadata)
+                
+                # Clean up local folder
+                if local_folder_path.exists():
+                    if local_folder_path.is_dir():
+                        shutil.rmtree(local_folder_path)
+                    else:
+                        local_folder_path.unlink()
+                    cleanup_reason = "already uploaded" if allow_transfers else "transfer limit reached"
+                    self._temp_print(f"Cleaned up local file/folder {local_folder_path.name} ({cleanup_reason})")
                 continue
 
             # Check if file already exists locally
@@ -1097,33 +1104,50 @@ class GameDownloader:
                 temp_file_path.unlink()
                 self._print(f"Cleaned up stale temp download: {temp_file_path}")
 
-            if not file_path.exists():
-                downloaded_file = self.download_file(url, filename)
-            else:
-                downloaded_file = file_path
-                self._temp_print(f"File {filename} already exists, skipping download")
+            # Download file if needed and transfers are allowed
+            downloaded_file = None
+            if allow_transfers:
+                if not file_path.exists():
+                    downloaded_file = self.download_file(url, filename)
+                else:
+                    downloaded_file = file_path
+                    self._temp_print(f"File {filename} already exists, skipping download")
 
-            # Extract if it's a zip file
-            if filename.endswith('.zip'):
-                extracted_folder = self.extract_zip(downloaded_file)
-                # Upload the extracted folder
-                if self.upload_folder(extracted_folder):
-                    transfer_count += 1
-                    any_uploads_occurred = True
+                # Extract if it's a zip file
+                if filename.endswith('.zip'):
+                    extracted_folder = self.extract_zip(downloaded_file)
+                    # Upload the extracted folder
+                    if self.upload_folder(extracted_folder):
+                        transfer_count += 1
+                        any_uploads_occurred = True
 
-                    # Add to processed games list (uploaded)
-                    metadata = self._find_game_metadata_by_target_name(target_name)
-                    if metadata:
-                        self.processed_games_metadata.append(metadata)
+            # Always add to processed games list and clean up
+            metadata = self._find_game_metadata_by_target_name(target_name)
+            if metadata:
+                self.processed_games_metadata.append(metadata)
+            
+            # Clean up any local files when transfers not allowed
+            if not allow_transfers:
+                if file_path.exists():
+                    file_path.unlink()
+                    self._temp_print(f"Cleaned up local file {file_path.name} (transfer limit reached)")
+                if local_folder_path and local_folder_path.exists():
+                    if local_folder_path.is_dir():
+                        shutil.rmtree(local_folder_path)
+                    else:
+                        local_folder_path.unlink()
+                    self._temp_print(f"Cleaned up local file/folder {local_folder_path.name} (transfer limit reached)")
+                if local_zip_path and local_zip_path.exists():
+                    local_zip_path.unlink()
+                    self._temp_print(f"Cleaned up local zip file {local_zip_path.name} (transfer limit reached)")
 
 
 
 
 
         # Build HTTP index once after all uploads are complete
-        if any_uploads_occurred and self.scp_server and self.scp_path:
-            self._print("Building HTTP index after all uploads...")
-            self.build_http_index()
+        self._print("Building HTTP index after all uploads...")
+        self.build_http_index()
 
         # Generate games.json file with only processed games
         if self.processed_games_metadata:
@@ -1145,8 +1169,9 @@ class GameDownloader:
         self.get_demos()
         self.get_director_demos()
         
-        # Add whitelist-only games (games that don't exist in Google Sheets)
-        self._add_whitelist_only_games()
+        
+        # Apply metadata overrides and add new games from metadata
+        self._apply_metadata()
         
         # If no game IDs specified, download all games
         if not game_ids:
@@ -1164,14 +1189,6 @@ class GameDownloader:
         
         # Sort game_ids by their target filename/foldername for consistent processing order (case-insensitive)
         game_ids.sort(key=lambda x: self._get_target_name_for_game_id(x).lower())
-        
-        # If no server is configured, add all non-blacklisted whitelist games to processed list
-        # This ensures they appear in the final games.json even without server connectivity
-        if not self.scp_server or not self.scp_path:
-            whitelist_games = [metadata for metadata in self.games_metadata 
-                             if metadata['relative_path'] in self.whitelist and 
-                             metadata['relative_path'] not in self.blacklist]
-            self.processed_games_metadata.extend(whitelist_games)
         
         self.download_and_process_games(game_ids, max_transfers)
 
