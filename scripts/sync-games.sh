@@ -20,9 +20,11 @@
 
 set -e # exit when any command fails
 
+# adjust index to data baseurl
+jq '.games +=  {"baseUrl":env.DATA_BASEURL}' scummvm/build-emscripten/data/index.json > scummvm/build-emscripten/data/index.json.tmp && mv scummvm/build-emscripten/data/index.json.tmp scummvm/build-emscripten/data/index.json
 
 # keep demos in sync and create games.json
-python3 scripts/sync-games.py --max-transfers 10
+python3 scripts/sync-games.py $@
 
 # copy everything
 mkdir -p scummvm/build-emscripten/ 

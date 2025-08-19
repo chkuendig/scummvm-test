@@ -371,6 +371,11 @@
             }
 
             getGameName(gameId) {
+                const variants = this.groupedGames[gameId];
+                if (variants && variants.length > 0 && variants[0].name) {
+                    return variants[0].name;
+                }
+
                 const gameIdParts = gameId.split(':');
                 const simpleId = gameIdParts.length > 1 ? gameIdParts[1] : gameId;
                 const gameInfo = this.gamesMetadata[simpleId];
@@ -378,6 +383,11 @@
             }
 
             getGamePublisher(gameId) {
+                const variants = this.groupedGames[gameId];
+                if (variants && variants.length > 0 && variants[0].company) {
+                    return variants[0].company;
+                }
+
                 const gameIdParts = gameId.split(':');
                 const simpleId = gameIdParts.length > 1 ? gameIdParts[1] : gameId;
                 const gameInfo = this.gamesMetadata[simpleId];

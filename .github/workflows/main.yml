@@ -20,6 +20,8 @@ env:
   SCUMMVM_CONFIGURE: "--enable-release --enable-plugins --enable-all-engines --default-dynamic --enable-cloud"
   SCUMMVM_CONFIGURE_LIBS: " --enable-a52 --enable-faad --enable-fluidlite --enable-freetype2 --enable-fribidi --enable-gif --enable-gif --enable-jpeg --enable-jpeg --enable-mad --enable-mad --enable-mikmod --enable-mpcdec --enable-mpeg2 --enable-ogg --enable-png --enable-retrowave --enable-theoradec --enable-vorbis --enable-vpx --enable-zlib"
   DOWNLOAD_GAMES: "ft,testbed,playground3d,comi,grim,driller,warlock,monkey4,feeble,myst,lsl7,lure,myst,phantasmagoria,riven,tlj,sword2,sinistersix,sanitarium"
+  EMSDK_VERSION: "4.0.13"
+  DATA_BASEURL: "https://scummvm-data.kuendig.io"
   # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build-scummvm:
@@ -282,8 +284,6 @@ jobs:
       #     path: scummvm/build-emscripten/data/games
       #     key: games-${{ hashFiles('download_games.txt') }}
       - name:  update baseURL
-        env:           
-          DATA_BASEURL: "https://scummvm-data.kuendig.io"
         run: |
           jq '.games +=  {"baseUrl":"${{ env.DATA_BASEURL }}"}' scummvm/build-emscripten/data/index.json > scummvm/build-emscripten/data/index.json.tmp && mv scummvm/build-emscripten/data/index.json.tmp scummvm/build-emscripten/data/index.json
       - run: |
@@ -292,3 +292,9 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: scummvm/build-emscripten # The folder the action should deploy.
+      - name: Archive website artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-emscripten
+          path: |
+            scummvm/build-emscripten
