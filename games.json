@@ -18,6 +18,15 @@
     "platform": ""
   },
   {
+    "id": "age:cantitoe",
+    "relative_path": "cantitoe",
+    "description": "Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown"
+  },
+  {
     "id": "agi:kq4",
     "relative_path": "kq4-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
@@ -338,6 +347,16 @@
     "platform": "Windows"
   },
   {
+    "id": "ags:shivahkosher",
+    "relative_path": "shivah-demo",
+    "description": "Windows  Demo",
+    "download_url": "/frs/demos/ags/shivah-demo.zip",
+    "languages": [
+      "en"
+    ],
+    "platform": "Windows"
+  },
+  {
     "id": "ags:technobabylon",
     "relative_path": "technobabylon-demo",
     "description": "Windows  Demo",
@@ -346,6 +365,24 @@
       "en"
     ],
     "platform": "Windows"
+  },
+  {
+    "id": "asylum:asylum",
+    "relative_path": "asylum-demo",
+    "description": "Windows  Demo",
+    "download_url": "/frs/demos/asylum/asylum-demo.zip",
+    "languages": [],
+    "platform": "Windows",
+    "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
+  },
+  {
+    "id": "asylum:asylum",
+    "relative_path": "asylum-demo2",
+    "description": "Windows Alternative Demo",
+    "download_url": "/frs/demos/asylum/asylum-demo2.zip",
+    "languages": [],
+    "platform": "Windows",
+    "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
   },
   {
     "id": "asylum:asylum",
@@ -577,7 +614,19 @@
     "languages": [
       "en"
     ],
-    "platform": "DOS"
+    "platform": "DOS",
+    "cover": "https://scummvm-data.kuendig.io/darkseed-dos-demo-en/cover.png"
+  },
+  {
+    "id": "darkseed:darkseed",
+    "relative_path": "darkseed-dos-demo-en",
+    "description": "DOS  Demo",
+    "download_url": "/frs/demos/darkseed/darkseed-dos-demo-en.zip",
+    "languages": [
+      "en"
+    ],
+    "platform": "DOS",
+    "cover": "https://scummvm-data.kuendig.io/darkseed-dos-demo-en/cover.png"
   },
   {
     "id": "darkseed:darkseed",
@@ -588,6 +637,17 @@
       "en"
     ],
     "platform": "DOS"
+  },
+  {
+    "id": "dgds:beamish",
+    "relative_path": "beamish-dos-demo2-en",
+    "description": "DOS  Demo",
+    "download_url": "/frs/demos/dgds/beamish-dos-demo2-en.zip",
+    "languages": [
+      "en"
+    ],
+    "platform": "DOS",
+    "cover": "https://scummvm-data.kuendig.io/beamish-dos-demo2-en/cover.png"
   },
   {
     "id": "dgds:beamish",
@@ -607,7 +667,8 @@
     "languages": [
       "en"
     ],
-    "platform": "DOS"
+    "platform": "DOS",
+    "cover": "https://scummvm-data.kuendig.io/beamish-dos-demo2-en/cover.png"
   },
   {
     "id": "director:betterd",
@@ -617,7 +678,19 @@
     "languages": [
       "ja"
     ],
-    "platform": "Macintosh"
+    "platform": "Macintosh",
+    "cover": "https://scummvm-data.kuendig.io/betterd-demo-mac-ja/cover.png"
+  },
+  {
+    "id": "director:betterd",
+    "relative_path": "betterd-demo-mac-ja",
+    "description": "Macintosh The Better Dead Ratification Demo",
+    "download_url": "/frs/demos/director/d4/ja/betterd-demo-mac-ja.zip",
+    "languages": [
+      "ja"
+    ],
+    "platform": "Macintosh",
+    "cover": "https://scummvm-data.kuendig.io/betterd-demo-mac-ja/cover.png"
   },
   {
     "id": "director:gadget",
@@ -647,9 +720,10 @@
       "en"
     ],
     "platform": "Unknown",
+    "download_url": "https://archive.org/details/meetmediaband",
     "cover": "https://scummvm-data.kuendig.io/meetmediaband/cover.png",
     "company": "Canter Technology",
-    "comment": "Freeware, from https://archive.org/details/meetmediaband"
+    "comment": "declared Freeware by Marc Canter"
   },
   {
     "id": "director:warlock",
@@ -915,7 +989,9 @@
       "en"
     ],
     "platform": "Unknown",
+    "download_url": "https://ifdb.org/viewgame?id=fft6pu91j85y4acv",
     "company": "William Crowther and Donald Woods",
+    "name": "Colossal Cave Adventure",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
   },
   {
@@ -926,8 +1002,10 @@
       "en"
     ],
     "platform": "Unknown",
+    "download_url": "https://ifdb.org/viewgame?id=plvzam05bmz3enh8",
     "cover": "https://scummvm-data.kuendig.io/zcode-curses/cover.jpg",
     "company": "Graham Nelson",
+    "name": "Curses",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
   },
   {
@@ -938,8 +1016,10 @@
       "en"
     ],
     "platform": "Unknown",
+    "download_url": "https://ifdb.org/viewgame?id=p00ucaayobrt2paz",
     "cover": "https://scummvm-data.kuendig.io/zcode-sampler2/cover.jpg",
     "company": "Infocom",
+    "name": "Four-In-One Sampler II",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
   },
   {
@@ -950,8 +1030,10 @@
       "en"
     ],
     "platform": "Unknown",
+    "download_url": "https://ifdb.org/viewgame?id=wa8crlfz82pra14i",
     "cover": "https://scummvm-data.kuendig.io/zcode-sampler1/cover.jpg",
     "company": "Infocom",
+    "name": "Four-In-One Sampler I",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
   },
   {
@@ -962,7 +1044,9 @@
       "en"
     ],
     "platform": "Unknown",
+    "download_url": "https://ifdb.org/viewgame?id=1rea34vqnz3mtyq1",
     "company": "Infocom",
+    "name": "Mini-Zork",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
   },
   {
@@ -973,7 +1057,9 @@
       "en"
     ],
     "platform": "Unknown",
+    "download_url": "https://ifdb.org/viewgame?id=5e9zrkcfgq2moinh",
     "company": "Dave Bernazzani",
+    "name": "Moonglow",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
   },
   {
@@ -984,7 +1070,10 @@
       "en"
     ],
     "platform": "Unknown",
+    "download_url": "https://ifdb.org/viewgame?id=9gcujue3zpxbhj6k",
+    "cover": "https://scummvm-data.kuendig.io/zcode-fantasydimension/cover.png",
     "company": "Johan Berntsson",
+    "name": "The Fantasy Dimension",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
   },
   {
@@ -995,7 +1084,10 @@
       "en"
     ],
     "platform": "Unknown",
+    "download_url": "https://ifdb.org/viewgame?id=rw2jsnyoqxsdvyug",
+    "cover": "https://scummvm-data.kuendig.io/zcode-submarine/cover.png",
     "company": "Garry Francis",
+    "name": "Submarine Sabotage",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
   },
   {
@@ -1006,7 +1098,9 @@
       "en"
     ],
     "platform": "Unknown",
+    "download_url": "https://ifdb.org/viewgame?id=6gtq9ahrolz2ry2",
     "company": "Hugo Labrande",
+    "name": "Tristam Island",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
   },
   {
@@ -1276,6 +1370,16 @@
       "en"
     ],
     "platform": "Windows"
+  },
+  {
+    "id": "grim:monkey4",
+    "relative_path": "efmi_large_demo.sea",
+    "description": "Macintosh  Demo",
+    "download_url": "/frs/demos/grim/efmi_large_demo.sea",
+    "languages": [
+      "en"
+    ],
+    "platform": "Macintosh"
   },
   {
     "id": "grim:monkey4",
@@ -1865,7 +1969,19 @@
     "languages": [
       "en"
     ],
-    "platform": "Windows"
+    "platform": "Windows",
+    "cover": "https://scummvm-data.kuendig.io/lastexpress-win-demo-en/cover.png"
+  },
+  {
+    "id": "lastexpress:lastexpress",
+    "relative_path": "lastexpress-win-demo-en",
+    "description": "Windows  Demo",
+    "download_url": "/frs/demos/lastexpress/lastexpress-win-demo-en.zip",
+    "languages": [
+      "en"
+    ],
+    "platform": "Windows",
+    "cover": "https://scummvm-data.kuendig.io/lastexpress-win-demo-en/cover.png"
   },
   {
     "id": "lure:lure",
@@ -1919,6 +2035,28 @@
   },
   {
     "id": "m4:burger",
+    "relative_path": "burger-dos-demo-en",
+    "description": "DOS Demo",
+    "download_url": "/frs/demos/m4/burger-dos-demo-en.zip",
+    "languages": [
+      "en"
+    ],
+    "platform": "DOS",
+    "comment": "https://downloads.scummvm.org/frs/demos/m4/burger-dos-demo-en.zip but renamed lowercase"
+  },
+  {
+    "id": "m4:burger",
+    "relative_path": "burger-dos-demo-en",
+    "description": "DOS Demo",
+    "download_url": "/frs/demos/m4/burger-dos-demo-en.zip",
+    "languages": [
+      "en"
+    ],
+    "platform": "DOS",
+    "comment": "https://downloads.scummvm.org/frs/demos/m4/burger-dos-demo-en.zip but renamed lowercase"
+  },
+  {
+    "id": "m4:burger",
     "relative_path": "burger-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/m4/burger-dos-ni-demo-en.zip",
@@ -1926,6 +2064,28 @@
       "en"
     ],
     "platform": "DOS"
+  },
+  {
+    "id": "m4:riddle",
+    "relative_path": "riddle-dos-demo-en",
+    "description": "DOS Demo",
+    "download_url": "/frs/demos/m4/riddle-dos-demo-en.zip",
+    "languages": [
+      "en"
+    ],
+    "platform": "DOS",
+    "comment": "https://downloads.scummvm.org/frs/demos/m4/riddle-dos-demo-en.zip but renamed lowercase"
+  },
+  {
+    "id": "m4:riddle",
+    "relative_path": "riddle-dos-demo-en",
+    "description": "DOS Demo",
+    "download_url": "/frs/demos/m4/riddle-dos-demo-en.zip",
+    "languages": [
+      "en"
+    ],
+    "platform": "DOS",
+    "comment": "https://downloads.scummvm.org/frs/demos/m4/riddle-dos-demo-en.zip but renamed lowercase"
   },
   {
     "id": "made:rtz",
@@ -5018,23 +5178,45 @@
   {
     "id": "sludge:atw",
     "relative_path": "atw",
-    "description": "SLUDGE engine game. Version v0.1",
+    "description": "Version v0.1",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/atw.zip",
     "languages": [],
-    "platform": ""
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/atw/cover.png",
+    "company": "JBush Productions"
+  },
+  {
+    "id": "sludge:atw",
+    "relative_path": "atw",
+    "description": "Version v0.1",
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/atw.zip",
+    "languages": [],
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/atw/cover.png",
+    "company": "JBush Productions"
   },
   {
     "id": "sludge:cubert",
     "relative_path": "cubert",
-    "description": "SLUDGE engine game. Version Dec 15, 2005",
+    "description": "Version Dec 15, 2005",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert.zip",
     "languages": [],
-    "platform": ""
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/cubert/cover.png"
+  },
+  {
+    "id": "sludge:cubert",
+    "relative_path": "cubert",
+    "description": "Version Dec 15, 2005",
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert.zip",
+    "languages": [],
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/cubert/cover.png"
   },
   {
     "id": "sludge:cubert",
     "relative_path": "cubert-04",
-    "description": "SLUDGE engine game. Version Mar 9, 2004",
+    "description": "Version Mar 9, 2004",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-04.zip",
     "languages": [],
     "platform": ""
@@ -5042,7 +5224,7 @@
   {
     "id": "sludge:cubert",
     "relative_path": "cubert-1.1",
-    "description": "SLUDGE engine game. Version v1.1, August 4, 2002",
+    "description": "Version v1.1, August 4, 2002",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-1.1.zip",
     "languages": [],
     "platform": ""
@@ -5050,7 +5232,7 @@
   {
     "id": "sludge:cubert",
     "relative_path": "cubert-1.1-1",
-    "description": "SLUDGE engine game. Version v1.1, June 11, 2003",
+    "description": "Version v1.1, June 11, 2003",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-1.1-1.zip",
     "languages": [],
     "platform": ""
@@ -5058,7 +5240,7 @@
   {
     "id": "sludge:cubert",
     "relative_path": "cubert-1.2",
-    "description": "SLUDGE engine game. Version v1.2, August 16, 2002",
+    "description": "Version v1.2, August 16, 2002",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-1.2.zip",
     "languages": [],
     "platform": ""
@@ -5066,7 +5248,7 @@
   {
     "id": "sludge:cubert",
     "relative_path": "cubert-1.25",
-    "description": "SLUDGE engine game. Version v1.25, September 5, 2002",
+    "description": "Version v1.25, September 5, 2002",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-1.25.zip",
     "languages": [],
     "platform": ""
@@ -5074,7 +5256,7 @@
   {
     "id": "sludge:frasse",
     "relative_path": "frasse-1.03",
-    "description": "SLUDGE engine game. Version v1.03",
+    "description": "Version v1.03",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/frasse-1.03.zip",
     "languages": [],
     "platform": ""
@@ -5082,7 +5264,7 @@
   {
     "id": "sludge:frasse",
     "relative_path": "frasse-1.04",
-    "description": "SLUDGE engine game. Version v1.04",
+    "description": "Version v1.04",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/frasse-1.04.zip",
     "languages": [],
     "platform": ""
@@ -5090,7 +5272,7 @@
   {
     "id": "sludge:frasse",
     "relative_path": "frasse-2.02",
-    "description": "SLUDGE engine game. Version v2.02",
+    "description": "Version v2.02",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/frasse-2.02.zip",
     "languages": [],
     "platform": ""
@@ -5098,7 +5280,7 @@
   {
     "id": "sludge:frasse",
     "relative_path": "frasse-2.03",
-    "description": "SLUDGE engine game. Version v2.03",
+    "description": "Version v2.03",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/frasse-2.03.zip",
     "languages": [],
     "platform": ""
@@ -5106,23 +5288,43 @@
   {
     "id": "sludge:interview",
     "relative_path": "interview",
-    "description": "SLUDGE engine game.",
+    "description": "Freeware",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/interview.zip",
     "languages": [],
-    "platform": ""
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/interview/cover.png"
+  },
+  {
+    "id": "sludge:interview",
+    "relative_path": "interview",
+    "description": "Freeware",
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/interview.zip",
+    "languages": [],
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/interview/cover.png"
   },
   {
     "id": "sludge:leptonsquest",
     "relative_path": "leptonsquest",
-    "description": "SLUDGE engine game. Windows version",
+    "description": "Windows version",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/leptonsquest.zip",
     "languages": [],
-    "platform": ""
+    "platform": "",
+    "company": "IndieSquish"
+  },
+  {
+    "id": "sludge:leptonsquest",
+    "relative_path": "leptonsquest",
+    "description": "Windows version",
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/leptonsquest.zip",
+    "languages": [],
+    "platform": "",
+    "company": "IndieSquish"
   },
   {
     "id": "sludge:leptonsquest",
     "relative_path": "leptonsquest-linux",
-    "description": "SLUDGE engine game. Linux version",
+    "description": "Linux version",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/leptonsquest-linux.zip",
     "languages": [],
     "platform": ""
@@ -5130,7 +5332,7 @@
   {
     "id": "sludge:leptonsquest",
     "relative_path": "leptonsquest-mac",
-    "description": "SLUDGE engine game. Mac version",
+    "description": "Mac version",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/leptonsquest-mac.zip",
     "languages": [],
     "platform": ""
@@ -5138,7 +5340,7 @@
   {
     "id": "sludge:life",
     "relative_path": "life",
-    "description": "SLUDGE engine game.",
+    "description": "Freeware",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/life.zip",
     "languages": [],
     "platform": ""
@@ -5146,15 +5348,23 @@
   {
     "id": "sludge:life",
     "relative_path": "lifeflashesby",
-    "description": "SLUDGE engine game. SLG version",
+    "description": "SLG version",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/lifeflashesby.zip",
+    "languages": [],
+    "platform": ""
+  },
+  {
+    "id": "sludge:life",
+    "relative_path": "LifeFlashesBy-setup.exe",
+    "description": "Windows installer version",
+    "download_url": "https://downloads.scummvm.org/frs/extras/https://games.squinky.me/downloads/lfb/LifeFlashesBy-setup.exe",
     "languages": [],
     "platform": ""
   },
   {
     "id": "sludge:mandy",
     "relative_path": "mandy-1.2",
-    "description": "SLUDGE engine game. English, Slovak, v1.2",
+    "description": "English, Slovak, v1.2",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/mandy-1.2.zip",
     "languages": [],
     "platform": ""
@@ -5162,7 +5372,7 @@
   {
     "id": "sludge:mandy",
     "relative_path": "mandy-1.3",
-    "description": "SLUDGE engine game. English, Italian, Slovak, v1.3",
+    "description": "English, Italian, Slovak, v1.3",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/mandy-1.3.zip",
     "languages": [],
     "platform": ""
@@ -5170,7 +5380,7 @@
   {
     "id": "sludge:mandy",
     "relative_path": "mandy-1.4",
-    "description": "SLUDGE engine game. English, Italian, Polish, Slovak, v1.4",
+    "description": "English, Italian, Polish, Slovak, v1.4",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/mandy-1.4.zip",
     "languages": [],
     "platform": ""
@@ -5178,15 +5388,25 @@
   {
     "id": "sludge:nsc",
     "relative_path": "nsc",
-    "description": "SLUDGE engine game. Version v1.03",
+    "description": "Version v1.03",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/nsc.zip",
     "languages": [],
-    "platform": ""
+    "platform": "",
+    "company": "Upper Orbit Software"
+  },
+  {
+    "id": "sludge:nsc",
+    "relative_path": "nsc",
+    "description": "Version v1.03",
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/nsc.zip",
+    "languages": [],
+    "platform": "",
+    "company": "Upper Orbit Software"
   },
   {
     "id": "sludge:outoforder",
     "relative_path": "ooo",
-    "description": "SLUDGE engine game. Windows version, June 5, 2003",
+    "description": "Windows version, June 5, 2003",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/ooo.zip",
     "languages": [],
     "platform": ""
@@ -5194,7 +5414,7 @@
   {
     "id": "sludge:outoforder",
     "relative_path": "outoforder",
-    "description": "SLUDGE engine game. Linux version",
+    "description": "Linux version",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/outoforder.zip",
     "languages": [],
     "platform": ""
@@ -5202,15 +5422,25 @@
   {
     "id": "sludge:robinsrescue",
     "relative_path": "robinsrescue",
-    "description": "SLUDGE engine game. SLG version",
+    "description": "SLG version",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/robinsrescue.zip",
     "languages": [],
-    "platform": ""
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/robinsrescue/cover.png"
+  },
+  {
+    "id": "sludge:robinsrescue",
+    "relative_path": "robinsrescue",
+    "description": "SLG version",
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/robinsrescue.zip",
+    "languages": [],
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/robinsrescue/cover.png"
   },
   {
     "id": "sludge:robinsrescue",
     "relative_path": "robinsrescue-alt",
-    "description": "SLUDGE engine game. Alternative Version",
+    "description": "Alternative Version",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/robinsrescue-alt.zip",
     "languages": [],
     "platform": ""
@@ -5218,7 +5448,7 @@
   {
     "id": "sludge:robinsrescue",
     "relative_path": "robinsrescue-linux",
-    "description": "SLUDGE engine game. Linux version",
+    "description": "Linux version",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/robinsrescue-linux.zip",
     "languages": [],
     "platform": ""
@@ -5226,18 +5456,40 @@
   {
     "id": "sludge:tgttpoacs",
     "relative_path": "tgttpoacs",
-    "description": "SLUDGE engine game.",
+    "description": "Freeware",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/tgttpoacs.zip",
     "languages": [],
-    "platform": ""
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/tgttpoacs/cover.png"
+  },
+  {
+    "id": "sludge:tgttpoacs",
+    "relative_path": "tgttpoacs",
+    "description": "Freeware",
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/tgttpoacs.zip",
+    "languages": [],
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/tgttpoacs/cover.png"
   },
   {
     "id": "sludge:tsotc",
     "relative_path": "tsotc-v6",
-    "description": "SLUDGE engine game. Version v6",
+    "description": "Version v6",
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/tsotc-v6.zip",
     "languages": [],
-    "platform": ""
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/tsotc-v6/cover.jpg",
+    "company": "Sebastian Krzyszkowiak"
+  },
+  {
+    "id": "sludge:tsotc",
+    "relative_path": "tsotc-v6",
+    "description": "Version v6",
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/tsotc-v6.zip",
+    "languages": [],
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/tsotc-v6/cover.jpg",
+    "company": "Sebastian Krzyszkowiak"
   },
   {
     "id": "stark:tlj",
@@ -5654,6 +5906,72 @@
       "en"
     ],
     "platform": "Windows"
+  },
+  {
+    "id": "wage:afm",
+    "relative_path": "afm-1.8",
+    "description": "Version 1.8",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown"
+  },
+  {
+    "id": "wage:amot",
+    "relative_path": "amot-1.8",
+    "description": "Version 1.8",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown"
+  },
+  {
+    "id": "wage:drakmythcastle",
+    "relative_path": "drakmythcastle",
+    "description": "Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "company": "James C. Gehrig & Virginia Batcheff"
+  },
+  {
+    "id": "wage:grailquest",
+    "relative_path": "grailquest-demo",
+    "description": "Demo",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "company": "Artworx",
+    "name": "GrailQuest: Adventure in the Age of King Arthur"
+  },
+  {
+    "id": "wage:raysmaze",
+    "relative_path": "raysmaze",
+    "description": "Freeware",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown"
+  },
+  {
+    "id": "wage:raysmaze",
+    "relative_path": "raysmaze-alt",
+    "description": "Alternative Version",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown"
+  },
+  {
+    "id": "wage:twisted",
+    "relative_path": "twisted-1.6",
+    "description": "Version 1.6",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown"
   },
   {
     "id": "wintermute:helga",
