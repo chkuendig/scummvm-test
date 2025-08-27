@@ -2035,28 +2035,6 @@
   },
   {
     "id": "m4:burger",
-    "relative_path": "burger-dos-demo-en",
-    "description": "DOS Demo",
-    "download_url": "/frs/demos/m4/burger-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "DOS",
-    "comment": "https://downloads.scummvm.org/frs/demos/m4/burger-dos-demo-en.zip but renamed lowercase"
-  },
-  {
-    "id": "m4:burger",
-    "relative_path": "burger-dos-demo-en",
-    "description": "DOS Demo",
-    "download_url": "/frs/demos/m4/burger-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "DOS",
-    "comment": "https://downloads.scummvm.org/frs/demos/m4/burger-dos-demo-en.zip but renamed lowercase"
-  },
-  {
-    "id": "m4:burger",
     "relative_path": "burger-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/m4/burger-dos-ni-demo-en.zip",
@@ -2064,28 +2042,6 @@
       "en"
     ],
     "platform": "DOS"
-  },
-  {
-    "id": "m4:riddle",
-    "relative_path": "riddle-dos-demo-en",
-    "description": "DOS Demo",
-    "download_url": "/frs/demos/m4/riddle-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "DOS",
-    "comment": "https://downloads.scummvm.org/frs/demos/m4/riddle-dos-demo-en.zip but renamed lowercase"
-  },
-  {
-    "id": "m4:riddle",
-    "relative_path": "riddle-dos-demo-en",
-    "description": "DOS Demo",
-    "download_url": "/frs/demos/m4/riddle-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "DOS",
-    "comment": "https://downloads.scummvm.org/frs/demos/m4/riddle-dos-demo-en.zip but renamed lowercase"
   },
   {
     "id": "made:rtz",
@@ -5183,7 +5139,8 @@
     "languages": [],
     "platform": "",
     "cover": "https://scummvm-data.kuendig.io/atw/cover.png",
-    "company": "JBush Productions"
+    "company": "JBush Productions",
+    "comment": "wrong folder structure, only subfolder data/ is needed"
   },
   {
     "id": "sludge:atw",
@@ -5193,7 +5150,8 @@
     "languages": [],
     "platform": "",
     "cover": "https://scummvm-data.kuendig.io/atw/cover.png",
-    "company": "JBush Productions"
+    "company": "JBush Productions",
+    "comment": "wrong folder structure, only subfolder data/ is needed"
   },
   {
     "id": "sludge:cubert",
@@ -5818,16 +5776,6 @@
       "en"
     ],
     "platform": "Windows"
-  },
-  {
-    "id": "tsage:blueforce",
-    "relative_path": "blueforce-dos-ni-demo-en",
-    "description": "DOS Non-Interactive Demo",
-    "download_url": "/frs/demos/tsage/blueforce-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "DOS"
   },
   {
     "id": "tsage:ringworld",

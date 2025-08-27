@@ -24,6 +24,7 @@ For a more comprehensive changelog of the latest experimental code, see:
      The Secret of Tremendous Corporation, Robin's Rescue and
      others, 12 titles so far.
    - Added support for Adibou 2: Nature & Sciences.
+   - Added support for WAGE-based game. More than 160 titles so far.
 
  Access:
    - Added keymapper support.
@@ -61,6 +62,9 @@ For a more comprehensive changelog of the latest experimental code, see:
  Freescape:
    - Added roll rotation to Driller and Dark Side.
 
+ Gob:
+   - Added Text-to-Speech support.
+
  Kyra:
    - Reduce CPU usage in the LoL main menu.
    - Reduce CPU usage in EoB 1 and 2.
@@ -77,6 +81,9 @@ For a more comprehensive changelog of the latest experimental code, see:
  MM:
    - Fixed protection from elements spell.
    - Added Text-to-Speech support.
+
+ Mohawk:
+   - Fixed popping noise in speech in some game releases (bug in the original).
 
  NANCY:
    - Added support for ScummVM's save/load screens.
@@ -102,6 +109,9 @@ For a more comprehensive changelog of the latest experimental code, see:
    - Added Text-to-Speech support.
    - Added keymapper support.
 
+ Queen:
+   - Added keymapper support.
+
  SCI:
    - Fixed the palette in SLATER Mac.
    - Fixed LSL6 temporary freeze after control panel.
@@ -123,6 +133,10 @@ For a more comprehensive changelog of the latest experimental code, see:
    - Fixed game detection for the Macintosh version of MI1 from the first
      first LucasArts Mac CD Game Pack. Previously you had to make sure to
      only copy the data fork, not the (empty) resource fork.
+   - Added Text-to-Speech support.
+
+ Sherlock:
+   - Added keymapper support.
 
  Supernova:
    - Added keymapper support.
@@ -141,6 +155,9 @@ For a more comprehensive changelog of the latest experimental code, see:
    - Added keymapper support.
 
  Titanic:
+   - Added keymapper support.
+
+ Toltecs:
    - Added keymapper support.
 
  TwinE:
