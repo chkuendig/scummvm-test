@@ -80,7 +80,7 @@ class GameDownloader:
                         'relative_path': relative_path,
                         'description': metadata_entry.get('description', relative_path),
                         'languages': metadata_entry.get('languages', ['en']),
-                        'platform': 'Unknown'  # Default platform for metadata-only games
+                        'platform': metadata_entry.get('platform', 'Unknown')  
                     }
                     if 'cover' in metadata_entry:
                         game_metadata['cover'] = metadata_entry['cover']
