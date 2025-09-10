@@ -18,6 +18,14 @@
     "platform": ""
   },
   {
+    "id": "adl:hires1",
+    "relative_path": "mysthous-fr",
+    "description": "public domain version (French) (Apple II)",
+    "download_url": "https://downloads.scummvm.org/frs/extras/Mystery House/mysthous-fr.zip",
+    "languages": [],
+    "platform": ""
+  },
+  {
     "id": "age:cantitoe",
     "relative_path": "cantitoe",
     "description": "Freeware",
@@ -33,6 +41,16 @@
     "download_url": "/frs/demos/agi/kq4-dos-ni-demo-en.zip",
     "languages": [
       "en"
+    ],
+    "platform": "DOS"
+  },
+  {
+    "id": "agi:lsl1",
+    "relative_path": "lsl1-demo-pl",
+    "description": "DOS Polish Demo",
+    "download_url": "/frs/demos/agi/lsl1-demo-pl.zip",
+    "languages": [
+      "pl"
     ],
     "platform": "DOS"
   },
@@ -347,16 +365,6 @@
     "platform": "Windows"
   },
   {
-    "id": "ags:shivahkosher",
-    "relative_path": "shivah-demo",
-    "description": "Windows  Demo",
-    "download_url": "/frs/demos/ags/shivah-demo.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "Windows"
-  },
-  {
     "id": "ags:technobabylon",
     "relative_path": "technobabylon-demo",
     "description": "Windows  Demo",
@@ -367,22 +375,17 @@
     "platform": "Windows"
   },
   {
-    "id": "asylum:asylum",
-    "relative_path": "asylum-demo",
-    "description": "Windows  Demo",
-    "download_url": "/frs/demos/asylum/asylum-demo.zip",
-    "languages": [],
-    "platform": "Windows",
-    "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
-  },
-  {
-    "id": "asylum:asylum",
-    "relative_path": "asylum-demo2",
-    "description": "Windows Alternative Demo",
-    "download_url": "/frs/demos/asylum/asylum-demo2.zip",
-    "languages": [],
-    "platform": "Windows",
-    "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
+    "id": "alcachofa:aventuradecine",
+    "relative_path": "CleverSmartDemoCD",
+    "description": "Demo",
+    "languages": [
+      "de"
+    ],
+    "platform": "Unknown",
+    "cover": "https://scummvm-data.kuendig.io/CleverSmartDemoCD/cover.png",
+    "company": "Alcachofa Soft",
+    "name": "Clever & Smart - A Movie Adventure",
+    "comment": "Source: https://archive.org/details/pca-1105"
   },
   {
     "id": "asylum:asylum",
@@ -401,6 +404,18 @@
     "languages": [],
     "platform": "Windows",
     "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
+  },
+  {
+    "id": "bagel:mazeodoom",
+    "relative_path": "MAZEDOOM",
+    "description": "Maze O' Doom (Demo)",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "cover": "https://scummvm-data.kuendig.io/MAZEDOOM/cover.png",
+    "company": "Boffo Games",
+    "name": "Hodj 'n' Podj"
   },
   {
     "id": "bagel:spacebar",
@@ -504,6 +519,14 @@
   },
   {
     "id": "cge:soltys",
+    "relative_path": "soltys-demo",
+    "description": "DOS  Demo",
+    "download_url": "/frs/demos/cge/soltys-demo.zip",
+    "languages": [],
+    "platform": "DOS"
+  },
+  {
+    "id": "cge:soltys",
     "relative_path": "soltys-en-v1.0",
     "description": "English v1.0",
     "download_url": "https://downloads.scummvm.org/frs/extras/Soltys/soltys-en-v1.0.zip",
@@ -525,6 +548,16 @@
     "download_url": "https://downloads.scummvm.org/frs/extras/Soltys/soltys-pl-v1.0.zip",
     "languages": [],
     "platform": ""
+  },
+  {
+    "id": "chewy:chewy",
+    "relative_path": "chewy-dos-demo-de",
+    "description": "DOS German Demo",
+    "download_url": "/frs/demos/chewy/chewy-dos-demo-de.zip",
+    "languages": [
+      "de"
+    ],
+    "platform": "DOS"
   },
   {
     "id": "cine:fw",
@@ -619,17 +652,6 @@
   },
   {
     "id": "darkseed:darkseed",
-    "relative_path": "darkseed-dos-demo-en",
-    "description": "DOS  Demo",
-    "download_url": "/frs/demos/darkseed/darkseed-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "DOS",
-    "cover": "https://scummvm-data.kuendig.io/darkseed-dos-demo-en/cover.png"
-  },
-  {
-    "id": "darkseed:darkseed",
     "relative_path": "darkseed-dos-demo1-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/darkseed/darkseed-dos-demo1-en.zip",
@@ -637,17 +659,6 @@
       "en"
     ],
     "platform": "DOS"
-  },
-  {
-    "id": "dgds:beamish",
-    "relative_path": "beamish-dos-demo2-en",
-    "description": "DOS  Demo",
-    "download_url": "/frs/demos/dgds/beamish-dos-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "DOS",
-    "cover": "https://scummvm-data.kuendig.io/beamish-dos-demo2-en/cover.png"
   },
   {
     "id": "dgds:beamish",
@@ -682,15 +693,16 @@
     "cover": "https://scummvm-data.kuendig.io/betterd-demo-mac-ja/cover.png"
   },
   {
-    "id": "director:betterd",
-    "relative_path": "betterd-demo-mac-ja",
-    "description": "Macintosh The Better Dead Ratification Demo",
-    "download_url": "/frs/demos/director/d4/ja/betterd-demo-mac-ja.zip",
+    "id": "director:director",
+    "relative_path": "theapartment3",
+    "description": "Interactive Demo (D3)",
     "languages": [
-      "ja"
+      "en"
     ],
-    "platform": "Macintosh",
-    "cover": "https://scummvm-data.kuendig.io/betterd-demo-mac-ja/cover.png"
+    "platform": "Unknown",
+    "download_url": "https://downloads.scummvm.org/frs/demos/director/theapartment3.zip",
+    "cover": "https://scummvm-data.kuendig.io/theapartment3/cover.png",
+    "name": "The Apartment"
   },
   {
     "id": "director:gadget",
@@ -1302,6 +1314,14 @@
       "en"
     ],
     "platform": "DOS"
+  },
+  {
+    "id": "got:got",
+    "relative_path": "gotfree",
+    "description": "Freeware Version",
+    "download_url": "https://downloads.scummvm.org/frs/extras/God of Thunder/gotfree.zip",
+    "languages": [],
+    "platform": ""
   },
   {
     "id": "griffon:griffon",
@@ -1932,6 +1952,16 @@
     "platform": "DOS"
   },
   {
+    "id": "kyra:kyra3",
+    "relative_path": "kyra3-dos-ni-demo-en",
+    "description": "DOS Non-Engine Demo",
+    "download_url": "/frs/demos/kyra/Non-Engine/kyra3-dos-ni-demo-en.zip",
+    "languages": [
+      "en"
+    ],
+    "platform": "DOS"
+  },
+  {
     "id": "kyra:lol",
     "relative_path": "lol-dos-cd-demo-en",
     "description": "DOS CD Demo",
@@ -1963,14 +1993,13 @@
   },
   {
     "id": "lastexpress:lastexpress",
-    "relative_path": "lastexpress-win-demo-en",
-    "description": "Windows  Demo",
-    "download_url": "/frs/demos/lastexpress/lastexpress-win-demo-en.zip",
+    "relative_path": "lastexpress-trailer-en",
+    "description": "Windows Trailer Demo",
+    "download_url": "/frs/demos/lastexpress/lastexpress-trailer-en.zip",
     "languages": [
       "en"
     ],
-    "platform": "Windows",
-    "cover": "https://scummvm-data.kuendig.io/lastexpress-win-demo-en/cover.png"
+    "platform": "Windows"
   },
   {
     "id": "lastexpress:lastexpress",
@@ -2036,24 +2065,12 @@
   {
     "id": "m4:burger",
     "relative_path": "burger-dos-demo-en",
-    "description": "DOS Demo",
+    "description": "DOS  Demo",
     "download_url": "/frs/demos/m4/burger-dos-demo-en.zip",
     "languages": [
       "en"
     ],
-    "platform": "DOS",
-    "comment": "https://downloads.scummvm.org/frs/demos/m4/burger-dos-demo-en.zip but renamed lowercase"
-  },
-  {
-    "id": "m4:burger",
-    "relative_path": "burger-dos-demo-en",
-    "description": "DOS Demo",
-    "download_url": "/frs/demos/m4/burger-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "DOS",
-    "comment": "https://downloads.scummvm.org/frs/demos/m4/burger-dos-demo-en.zip but renamed lowercase"
+    "platform": "DOS"
   },
   {
     "id": "m4:burger",
@@ -2068,24 +2085,12 @@
   {
     "id": "m4:riddle",
     "relative_path": "riddle-dos-demo-en",
-    "description": "DOS Demo",
+    "description": "DOS  Demo",
     "download_url": "/frs/demos/m4/riddle-dos-demo-en.zip",
     "languages": [
       "en"
     ],
-    "platform": "DOS",
-    "comment": "https://downloads.scummvm.org/frs/demos/m4/riddle-dos-demo-en.zip but renamed lowercase"
-  },
-  {
-    "id": "m4:riddle",
-    "relative_path": "riddle-dos-demo-en",
-    "description": "DOS Demo",
-    "download_url": "/frs/demos/m4/riddle-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "DOS",
-    "comment": "https://downloads.scummvm.org/frs/demos/m4/riddle-dos-demo-en.zip but renamed lowercase"
+    "platform": "DOS"
   },
   {
     "id": "made:rtz",
@@ -2672,6 +2677,16 @@
       "ru"
     ],
     "platform": "Windows"
+  },
+  {
+    "id": "playground3d",
+    "relative_path": "playground3d",
+    "description": "The Testing and Playground Environment for 3D Renderers",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "name": "Playground 3D"
   },
   {
     "id": "private:private-eye",
@@ -5183,26 +5198,8 @@
     "languages": [],
     "platform": "",
     "cover": "https://scummvm-data.kuendig.io/atw/cover.png",
-    "company": "JBush Productions"
-  },
-  {
-    "id": "sludge:atw",
-    "relative_path": "atw",
-    "description": "Version v0.1",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/atw.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/atw/cover.png",
-    "company": "JBush Productions"
-  },
-  {
-    "id": "sludge:cubert",
-    "relative_path": "cubert",
-    "description": "Version Dec 15, 2005",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/cubert/cover.png"
+    "company": "JBush Productions",
+    "comment": "wrong folder structure, only subfolder data/ is needed"
   },
   {
     "id": "sludge:cubert",
@@ -5295,24 +5292,6 @@
     "cover": "https://scummvm-data.kuendig.io/interview/cover.png"
   },
   {
-    "id": "sludge:interview",
-    "relative_path": "interview",
-    "description": "Freeware",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/interview.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/interview/cover.png"
-  },
-  {
-    "id": "sludge:leptonsquest",
-    "relative_path": "leptonsquest",
-    "description": "Windows version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/leptonsquest.zip",
-    "languages": [],
-    "platform": "",
-    "company": "IndieSquish"
-  },
-  {
     "id": "sludge:leptonsquest",
     "relative_path": "leptonsquest",
     "description": "Windows version",
@@ -5395,15 +5374,6 @@
     "company": "Upper Orbit Software"
   },
   {
-    "id": "sludge:nsc",
-    "relative_path": "nsc",
-    "description": "Version v1.03",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/nsc.zip",
-    "languages": [],
-    "platform": "",
-    "company": "Upper Orbit Software"
-  },
-  {
     "id": "sludge:outoforder",
     "relative_path": "ooo",
     "description": "Windows version, June 5, 2003",
@@ -5418,15 +5388,6 @@
     "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/outoforder.zip",
     "languages": [],
     "platform": ""
-  },
-  {
-    "id": "sludge:robinsrescue",
-    "relative_path": "robinsrescue",
-    "description": "SLG version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/robinsrescue.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/robinsrescue/cover.png"
   },
   {
     "id": "sludge:robinsrescue",
@@ -5461,25 +5422,6 @@
     "languages": [],
     "platform": "",
     "cover": "https://scummvm-data.kuendig.io/tgttpoacs/cover.png"
-  },
-  {
-    "id": "sludge:tgttpoacs",
-    "relative_path": "tgttpoacs",
-    "description": "Freeware",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/tgttpoacs.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/tgttpoacs/cover.png"
-  },
-  {
-    "id": "sludge:tsotc",
-    "relative_path": "tsotc-v6",
-    "description": "Version v6",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/tsotc-v6.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/tsotc-v6/cover.jpg",
-    "company": "Sebastian Krzyszkowiak"
   },
   {
     "id": "sludge:tsotc",
@@ -5658,6 +5600,16 @@
       "en"
     ],
     "platform": "DOS"
+  },
+  {
+    "id": "testbed",
+    "relative_path": "testbed",
+    "description": "The Backend Testing Framework",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "name": "Testbed"
   },
   {
     "id": "tinsel:dw",

@@ -42,7 +42,7 @@
 	<engine id="hadesch" name="Hades' Challenge" alt_name="" enabled="TRUE"/>
 	<engine id="hdb" name="Hyperspace Delivery Boy!" alt_name="" enabled="TRUE"/>
 	<engine id="hopkins" name="Hopkins FBI" alt_name="" enabled="TRUE"/>
-	<engine id="hpl1" name="HPL 1" alt_name="" enabled="FALSE"/>
+	<engine id="hpl1" name="HPL 1" alt_name="" enabled="TRUE"/>
 	<engine id="hugo" name="Hugo" alt_name="" enabled="TRUE"/>
 	<engine id="hypno" name="Hypnotix Inc." alt_name="" enabled="TRUE"/>
 	<engine id="icb" name="In Cold Blood" alt_name="" enabled="FALSE"/>
@@ -107,7 +107,7 @@
 	<engine id="ultima" name="Ultima" alt_name="" enabled="TRUE"/>
 	<engine id="vcruise" name="V-Cruise" alt_name="" enabled="TRUE"/>
 	<engine id="voyeur" name="Voyeur" alt_name="" enabled="TRUE"/>
-	<engine id="wage" name="WAGE" alt_name="World Builder" enabled="FALSE"/>
+	<engine id="wage" name="WAGE" alt_name="World Builder" enabled="TRUE"/>
 	<engine id="watchmaker" name="The Watchmaker" alt_name="" enabled="FALSE"/>
 	<engine id="wintermute" name="Wintermute Engine" alt_name="" enabled="TRUE"/>
 	<engine id="zvision" name="ZVision" alt_name="" enabled="TRUE"/>
