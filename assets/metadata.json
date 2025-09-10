@@ -188,7 +188,7 @@
         "cover": "https://scummvm-data.kuendig.io/theapartment3/cover.png",
         "description": "Interactive Demo (D3)",
         "download_url": "https://downloads.scummvm.org/frs/demos/director/theapartment3.zip",
-        "id": "director:director",
+        "id": "director:theapartment",
         "languages": [
             "en"
         ],

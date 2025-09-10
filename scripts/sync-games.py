@@ -82,7 +82,9 @@ class GameDownloader:
                         'languages': metadata_entry.get('languages', ['en']),
                         'platform': 'Unknown'  # Default platform for metadata-only games
                     }
-                    
+                    if 'cover' in metadata_entry:
+                        game_metadata['cover'] = metadata_entry['cover']
+ 
                     # Apply all metadata properties
                     game_metadata = self._apply_metadata_properties(game_metadata, metadata_entry)
                     
