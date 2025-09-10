@@ -693,18 +693,6 @@
     "cover": "https://scummvm-data.kuendig.io/betterd-demo-mac-ja/cover.png"
   },
   {
-    "id": "director:director",
-    "relative_path": "theapartment3",
-    "description": "Interactive Demo (D3)",
-    "languages": [
-      "en"
-    ],
-    "platform": "Unknown",
-    "download_url": "https://downloads.scummvm.org/frs/demos/director/theapartment3.zip",
-    "cover": "https://scummvm-data.kuendig.io/theapartment3/cover.png",
-    "name": "The Apartment"
-  },
-  {
     "id": "director:gadget",
     "relative_path": "gadget-demo-mac",
     "description": "Macintosh Gadget: Invention, Travel & Adventure Demo",
@@ -732,10 +720,22 @@
       "en"
     ],
     "platform": "Unknown",
-    "download_url": "https://archive.org/details/meetmediaband",
     "cover": "https://scummvm-data.kuendig.io/meetmediaband/cover.png",
+    "download_url": "https://archive.org/details/meetmediaband",
     "company": "Canter Technology",
     "comment": "declared Freeware by Marc Canter"
+  },
+  {
+    "id": "director:theapartment",
+    "relative_path": "theapartment3",
+    "description": "Interactive Demo (D3)",
+    "languages": [
+      "en"
+    ],
+    "platform": "Unknown",
+    "cover": "https://scummvm-data.kuendig.io/theapartment3/cover.png",
+    "download_url": "https://downloads.scummvm.org/frs/demos/director/theapartment3.zip",
+    "name": "The Apartment"
   },
   {
     "id": "director:warlock",
@@ -1014,8 +1014,8 @@
       "en"
     ],
     "platform": "Unknown",
-    "download_url": "https://ifdb.org/viewgame?id=plvzam05bmz3enh8",
     "cover": "https://scummvm-data.kuendig.io/zcode-curses/cover.jpg",
+    "download_url": "https://ifdb.org/viewgame?id=plvzam05bmz3enh8",
     "company": "Graham Nelson",
     "name": "Curses",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
@@ -1028,8 +1028,8 @@
       "en"
     ],
     "platform": "Unknown",
-    "download_url": "https://ifdb.org/viewgame?id=p00ucaayobrt2paz",
     "cover": "https://scummvm-data.kuendig.io/zcode-sampler2/cover.jpg",
+    "download_url": "https://ifdb.org/viewgame?id=p00ucaayobrt2paz",
     "company": "Infocom",
     "name": "Four-In-One Sampler II",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
@@ -1042,8 +1042,8 @@
       "en"
     ],
     "platform": "Unknown",
-    "download_url": "https://ifdb.org/viewgame?id=wa8crlfz82pra14i",
     "cover": "https://scummvm-data.kuendig.io/zcode-sampler1/cover.jpg",
+    "download_url": "https://ifdb.org/viewgame?id=wa8crlfz82pra14i",
     "company": "Infocom",
     "name": "Four-In-One Sampler I",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
@@ -1082,8 +1082,8 @@
       "en"
     ],
     "platform": "Unknown",
-    "download_url": "https://ifdb.org/viewgame?id=9gcujue3zpxbhj6k",
     "cover": "https://scummvm-data.kuendig.io/zcode-fantasydimension/cover.png",
+    "download_url": "https://ifdb.org/viewgame?id=9gcujue3zpxbhj6k",
     "company": "Johan Berntsson",
     "name": "The Fantasy Dimension",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
@@ -1096,8 +1096,8 @@
       "en"
     ],
     "platform": "Unknown",
-    "download_url": "https://ifdb.org/viewgame?id=rw2jsnyoqxsdvyug",
     "cover": "https://scummvm-data.kuendig.io/zcode-submarine/cover.png",
+    "download_url": "https://ifdb.org/viewgame?id=rw2jsnyoqxsdvyug",
     "company": "Garry Francis",
     "name": "Submarine Sabotage",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
