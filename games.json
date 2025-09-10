@@ -381,7 +381,7 @@
     "languages": [
       "de"
     ],
-    "platform": "Unknown",
+    "platform": "Windows",
     "cover": "https://scummvm-data.kuendig.io/CleverSmartDemoCD/cover.png",
     "company": "Alcachofa Soft",
     "name": "Clever & Smart - A Movie Adventure",
@@ -412,7 +412,7 @@
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
+    "platform": "Windows",
     "cover": "https://scummvm-data.kuendig.io/MAZEDOOM/cover.png",
     "company": "Boffo Games",
     "name": "Hodj 'n' Podj"
@@ -732,7 +732,7 @@
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
+    "platform": "Macintosh",
     "cover": "https://scummvm-data.kuendig.io/theapartment3/cover.png",
     "download_url": "https://downloads.scummvm.org/frs/demos/director/theapartment3.zip",
     "name": "The Apartment"
@@ -2679,13 +2679,14 @@
     "platform": "Windows"
   },
   {
-    "id": "playground3d",
+    "id": "playground3d:playground3d",
     "relative_path": "playground3d",
     "description": "The Testing and Playground Environment for 3D Renderers",
     "languages": [
       "en"
     ],
     "platform": "Unknown",
+    "company": "ScummVM",
     "name": "Playground 3D"
   },
   {
@@ -5602,13 +5603,14 @@
     "platform": "DOS"
   },
   {
-    "id": "testbed",
+    "id": "testbed:testbed",
     "relative_path": "testbed",
     "description": "The Backend Testing Framework",
     "languages": [
       "en"
     ],
     "platform": "Unknown",
+    "company": "ScummVM",
     "name": "Testbed"
   },
   {
@@ -5866,7 +5868,7 @@
     "languages": [
       "en"
     ],
-    "platform": "Unknown"
+    "platform": "Macintosh"
   },
   {
     "id": "wage:amot",
@@ -5875,7 +5877,7 @@
     "languages": [
       "en"
     ],
-    "platform": "Unknown"
+    "platform": "Macintosh"
   },
   {
     "id": "wage:drakmythcastle",
@@ -5884,7 +5886,7 @@
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
+    "platform": "Macintosh",
     "company": "James C. Gehrig & Virginia Batcheff"
   },
   {
@@ -5894,7 +5896,7 @@
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
+    "platform": "Macintosh",
     "company": "Artworx",
     "name": "GrailQuest: Adventure in the Age of King Arthur"
   },
@@ -5905,7 +5907,7 @@
     "languages": [
       "en"
     ],
-    "platform": "Unknown"
+    "platform": "Macintosh"
   },
   {
     "id": "wage:raysmaze",
@@ -5914,7 +5916,7 @@
     "languages": [
       "en"
     ],
-    "platform": "Unknown"
+    "platform": "Macintosh"
   },
   {
     "id": "wage:twisted",
@@ -5923,7 +5925,7 @@
     "languages": [
       "en"
     ],
-    "platform": "Unknown"
+    "platform": "Macintosh"
   },
   {
     "id": "wintermute:helga",
