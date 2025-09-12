@@ -76,6 +76,13 @@
         "comment": "Game data not found: doesn't work on native either",
         "skip": true
     },
+    "gotfree": {
+        "company": "Adept Software",
+        "cover": "https://scummvm-data.kuendig.io/gotfree/cover.png",
+        "description": "Freeware",
+        "id": "got:got",
+        "name": "God of Thunder"
+    },
     "grailquest-demo": {
         "company": "Artworx",
         "description": "Demo",

@@ -45,6 +45,15 @@ jobs:
         with:
           path: scummvm/dists/emscripten/emsdk-* # Cache the Emscripten SDK
           key: emsdk-${{ env.EMSDK_VERSION }}
+      - name: Patch Emscripten SDK 🔨
+        run: |
+          cd scummvm/ && dists/emscripten/build.sh 
+          cd ..
+          cp update-xiph.diff scummvm/dists/emscripten/emsdk-4.0.13/upstream/emscripten 
+          cp update-sdl3.diff scummvm/dists/emscripten/emsdk-4.0.13/upstream/emscripten
+          cd scummvm/dists/emscripten/emsdk-4.0.13/upstream/emscripten 
+          patch -p1 < update-xiph.diff 
+          patch -p1 < update-sdl3.diff 
       - uses: actions/cache@v4
         name: Cache Dependencies 📦
         id: cache-libs
