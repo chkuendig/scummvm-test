@@ -6,7 +6,7 @@
   "bagel.dat": 20584,
   "got.aud": 11313,
   "helpdialog.zip": 207764,
-  "scummremastered.zip": 92714,
+  "scummremastered.zip": 92763,
   "tony.dat": 24584,
   "wintermute.zip": 4520,
   "toon.dat": 20996,
@@ -16,7 +16,7 @@
   "supernova.dat": 523211,
   "scummclassic.zip": 15872,
   "got.gfx": 288199,
-  "residualvm.zip": 93360,
+  "residualvm.zip": 93418,
   "encoding.dat": 179670,
   "myst3.dat": 358287,
   "mort.dat": 76302,
@@ -27,7 +27,7 @@
   "freescape.dat": 55247,
   "sky.cpt": 419427,
   "plugins": {},
-  "scummmodern.zip": 64149,
+  "scummmodern.zip": 64209,
   "hugo.dat": 189584,
   "darkseed.dat": 37183,
   "prince_translation.dat": 168060,
@@ -39,6 +39,7 @@
   "games": {
     "baseUrl": "https://scummvm-data.kuendig.io"
   },
+  "fonts-imgui.dat": 4000965,
   "shaders": {},
   "grim-patch.lab": 9341,
   "macgui.dat": 65656,
@@ -51,5 +52,5 @@
   "pred.dic": 126481,
   "achievements.dat": 249239,
   "ultima8.dat": 238149,
-  "fonts.dat": 8649222
+  "fonts.dat": 6449829
 }

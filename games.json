@@ -1318,10 +1318,13 @@
   {
     "id": "got:got",
     "relative_path": "gotfree",
-    "description": "Freeware Version",
+    "description": "Freeware",
     "download_url": "https://downloads.scummvm.org/frs/extras/God of Thunder/gotfree.zip",
     "languages": [],
-    "platform": ""
+    "platform": "",
+    "cover": "https://scummvm-data.kuendig.io/gotfree/cover.png",
+    "company": "Adept Software",
+    "name": "God of Thunder"
   },
   {
     "id": "griffon:griffon",
