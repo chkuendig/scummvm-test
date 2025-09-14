@@ -168,6 +168,18 @@
         "id": "wage:raysmaze",
         "platform": "Macintosh"
     },
+    "RedNex": {
+        "company": "BMG Interactive",
+        "cover": "https://scummvm-data.kuendig.io/RedNex/cover.png",
+        "description": "MacFormat August 1996 Demo",
+        "download_url": "https://discmaster.textfiles.com/browse/27017/macformat-040.iso/mac/Demos/RedNex",
+        "id": "director:director",
+        "languages": [
+            "en"
+        ],
+        "name": "RedNex",
+        "platform": "Macintosh"
+    },
     "riddle-dos-demo-en": {
         "comment": "https://downloads.scummvm.org/frs/demos/m4/riddle-dos-demo-en.zip but renamed lowercase",
         "description": "DOS Demo",
@@ -216,6 +228,11 @@
     "wage-games-master-1.0": {
         "comment": "278+ games, only 9 are actually in the metadata (these are listed separately)",
         "skip": true
+    },
+    "ween-dos-demo-en": {
+        "languages": [
+            "en_US"
+        ]
     },
     "zcode-advent": {
         "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
