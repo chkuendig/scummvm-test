@@ -693,6 +693,18 @@
     "cover": "https://scummvm-data.kuendig.io/betterd-demo-mac-ja/cover.png"
   },
   {
+    "id": "director:director",
+    "relative_path": "RedNex",
+    "description": "MacFormat August 1996 Demo",
+    "languages": [
+      "en"
+    ],
+    "platform": "Macintosh",
+    "download_url": "https://discmaster.textfiles.com/browse/27017/macformat-040.iso/mac/Demos/RedNex",
+    "company": "BMG Interactive",
+    "name": "RedNex"
+  },
+  {
     "id": "director:gadget",
     "relative_path": "gadget-demo-mac",
     "description": "Macintosh Gadget: Invention, Travel & Adventure Demo",
