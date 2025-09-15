@@ -562,7 +562,7 @@
                     
                     // Add language parameter if we have a specific language (not 'Unknown')
                     if (languages.length > 0 && languages[0] !== 'Unknown') {
-                        scummvmUrl += ` --language=${languages[0]}`;
+                        scummvmUrl += ` --language=${languages[0].slice(-2).toLowerCase()}`;
                     }
                     
                     scummvmUrl += ` ${gameId}`;

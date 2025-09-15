@@ -1304,7 +1304,7 @@
     "description": "DOS  Demo",
     "download_url": "/frs/demos/gob/ween-dos-demo-en.zip",
     "languages": [
-      "en"
+      "en_US"
     ],
     "platform": "DOS"
   },
