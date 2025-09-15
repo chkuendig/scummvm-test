@@ -49,95 +49,93 @@ class GameDownloader:
         self.games_data = {}  # Cache for games data
         self.processed_games_metadata = []  # List to store metadata for actually processed games
         self.metadata = {}
-        self._load_metadata()
 
-    def _load_metadata(self):
-        """Load metadata from ../assets/metadata.json"""
+    def _load_and_apply_metadata(self):
+        """Load metadata from ../assets/metadata.json and apply overrides to existing games"""
+        # Load metadata file
         metadata_path = Path(__file__).parent.parent / "assets" / "metadata.json"
         if metadata_path.exists():
             with open(metadata_path, "r", encoding="utf-8") as f:
                 self.metadata = json.load(f)
         
-    def _apply_metadata(self):
-        """Apply metadata overrides to existing games and add metadata-only games"""
-        # Create a map of relative_path to metadata for quick lookup
-        metadata_by_path = {metadata['relative_path']: metadata for metadata in self.games_metadata}
-        
+        # Apply metadata overrides to existing games and add metadata-only games
         for relative_path, metadata_entry in self.metadata.items():
             # Skip if skip: true is set
             if metadata_entry.get("skip", False):
                 continue
-
-            if relative_path in metadata_by_path:
-                # Apply overrides to existing game
-                existing_metadata = metadata_by_path[relative_path]
-                self._apply_metadata_properties(existing_metadata, metadata_entry)
-            else:
-                # Create new game if it doesn't exist and has enough info
-                if 'id' in metadata_entry:
-                    game_metadata = {
-                        'id': metadata_entry['id'],
-                        'relative_path': relative_path,
-                        'description': metadata_entry.get('description', relative_path),
-                        'languages': metadata_entry.get('languages', ['en']),
-                        'platform': metadata_entry.get('platform', 'Unknown')  
-                    }
-                    if 'cover' in metadata_entry:
-                        game_metadata['cover'] = metadata_entry['cover']
- 
-                    # Apply all metadata properties
-                    game_metadata = self._apply_metadata_properties(game_metadata, metadata_entry)
-                    
-                    self.games_metadata.append(game_metadata)
-
-    def _apply_metadata_properties(self, game_metadata, metadata_entry):
-        """Apply metadata properties to game metadata (helper method)"""
-        # Override game ID if specified
-        if 'id' in metadata_entry:
-            game_metadata['id'] = metadata_entry['id']
+            
+            # For metadata.json entries, we need at least an 'id' to create new entries
+            if 'id' not in metadata_entry:
+                continue
+                
+            # Use the unified method to add or update metadata
+            self.add_or_update_game_metadata(
+                game_id=metadata_entry.get('id'),
+                relative_path=relative_path,
+                description=metadata_entry.get('description'),
+                platform=metadata_entry.get('platform'),
+                metadata_overrides=metadata_entry
+            )
         
-        # Override description if specified
-        if 'description' in metadata_entry:
-            game_metadata['description'] = metadata_entry['description']
-
-        # Override download_url if specified
-        if 'download_url' in metadata_entry:
-            game_metadata['download_url'] = metadata_entry['download_url']
-
-        # Add cover image if specified
-        if 'cover' in metadata_entry:
-            game_metadata['cover'] = metadata_entry['cover']
+    def add_or_update_game_metadata(self, game_id=None, relative_path=None, description=None, 
+                                   download_url=None, languages=None, platform=None, 
+                                   metadata_overrides=None):
+        """
+        Unified method to add new game metadata or update existing metadata.
         
-        # Override company if specified
-        if 'company' in metadata_entry:
-            game_metadata['company'] = metadata_entry['company']
+        Args:
+            game_id: Game identifier
+            relative_path: Path where game will be stored
+            description: Game description
+            download_url: URL to download the game
+            languages: List of supported languages
+            platform: Platform name
+            metadata_overrides: Dict of metadata properties to override/add
+        """
+        # Find existing metadata by relative_path if it exists
+        existing_metadata = None
+        existing_index = None
         
-        # Override languages if specified
-        if 'languages' in metadata_entry:
-            game_metadata['languages'] = metadata_entry['languages']
-
-        # Add name if specified
-        if 'name' in metadata_entry:
-            game_metadata['name'] = metadata_entry['name']
-
-        # Add comment if specified
-        if 'comment' in metadata_entry:
-            game_metadata['comment'] = metadata_entry['comment']
-
-        return game_metadata
-
-    def _create_and_add_game_metadata(self, game_id, relative_path, description, download_url, languages, platform_name):
-        """Create game metadata and add to games_metadata list (whitelist overrides applied later)"""
-        game_metadata = {
-            'id': game_id,
-            'relative_path': relative_path,
-            'description': description,
-            'download_url': download_url,
-            'languages': languages,
-            'platform': platform_name
-        }
+        for i, metadata in enumerate(self.games_metadata):
+            if metadata.get('relative_path') == relative_path:
+                existing_metadata = metadata
+                existing_index = i
+                break
         
-        self.games_metadata.append(game_metadata)
+        if existing_metadata:
+            # Update existing metadata
+            game_metadata = existing_metadata.copy()
+        else:
+            # Create new metadata with base properties
+            game_metadata = {
+                'id': game_id,
+                'relative_path': relative_path,
+                'description': description,
+            }
+            
+            # Add optional properties if provided
+            if download_url:
+                game_metadata['download_url'] = download_url
+            if languages:
+                # Remove 'en' (it's often wrong - should be en_US or en_GB to launch game)     
+                if 'en' in languages:
+                    languages.remove('en')
+                if languages:
+                    game_metadata['languages'] = languages
+
+            if platform:
+                game_metadata['platform'] = platform
+        # Apply metadata overrides if provided
+        if metadata_overrides:
+            for key, value in metadata_overrides.items():
+                game_metadata[key] = value
+    
+        # Update existing or add new metadata
+        if existing_metadata:
+            self.games_metadata[existing_index] = game_metadata
+        else:
+            self.games_metadata.append(game_metadata)
+        
         return game_metadata
 
     
@@ -438,13 +436,13 @@ class GameDownloader:
             platform_name = self.platforms_data.get(platform_id, {}).get('name', platform_id)
             
             # Create and add game metadata
-            self._create_and_add_game_metadata(
+            self.add_or_update_game_metadata(
                 game_id=game_id,
                 relative_path=relative_path,
                 description=description,
                 download_url=f"https://downloads.scummvm.org{download_url}",
                 languages=languages,
-                platform_name=platform_name
+                platform=platform_name
             )
         
         summary_parts = [f"Found {len(unique_urls)} compatible game downloads"]
@@ -507,13 +505,13 @@ class GameDownloader:
             languages = self._extract_languages(download)
 
             # Create and add game metadata
-            self._create_and_add_game_metadata(
+            self.add_or_update_game_metadata(
                 game_id=game_id,
                 relative_path=relative_path,
                 description=description,
                 download_url=demo_url,
                 languages=languages,
-                platform_name=platform_name
+                platform=platform_name
             )
         
         self._print(f"Found {len(unique_urls)} compatible demos ({skipped_demos_count} skipped as incompatible)")
@@ -571,13 +569,13 @@ class GameDownloader:
             languages = self._extract_languages(download)
 
             # Create and add game metadata
-            self._create_and_add_game_metadata(
+            self.add_or_update_game_metadata(
                 game_id=game_id,
                 relative_path=relative_path,
                 description=description,
                 download_url=director_demo_url,
                 languages=languages,
-                platform_name=platform_name
+                platform=platform_name
             )
         
         self._print(f"Found {len(unique_urls)} compatible director demos ({skipped_director_demos_count} skipped as incompatible)")
@@ -1016,13 +1014,6 @@ class GameDownloader:
         except Exception as e:
             self._print(f"Error generating games.json: {e}")
     
-    def _find_game_metadata_by_target_name(self, target_name):
-        """Find game metadata by target name (relative path)"""
-        for metadata in self.games_metadata:
-            if metadata['relative_path'] == target_name:
-                return metadata
-        return None
-
     def _get_target_name_for_game_id(self, game_id):
         """Get the target filename/foldername that would be created for a game_id"""
         if game_id.startswith('http'):
@@ -1127,6 +1118,7 @@ class GameDownloader:
             has_scummvm_download = False
             url = None
             filename = None
+            should_process_metadata = False
             
             # Check for download URL in priority order: url (Google Sheets) -> download_url (metadata)
             if 'url' in game_data:
@@ -1159,21 +1151,9 @@ class GameDownloader:
             is_skipped = self.metadata.get(target_name, {}).get("skip", False)
             if is_skipped and not exists_on_remote:
                 self._print(f"\033[93mSkipping game based on metadata skip flag: {target_name}\033[0m")
-                continue
             elif is_skipped and exists_on_remote:
                 self._print(f"\033[93mGame {target_name} is marked as skip but exists on remote server, including in export\033[0m")
-                
-            if exists_on_remote:
-                self._print(f"\033[92mGame {target_name} already exists on remote server, skipping\033[0m")
-
-                # Add to processed games list
-                if 'metadata' in game_data:
-                    self.processed_games_metadata.append(game_data['metadata'])
-                else:
-                    metadata = self._find_game_metadata_by_target_name(target_name)
-                    if metadata:
-                        self.processed_games_metadata.append(metadata)
-
+                should_process_metadata = True
                 # Clean up any local files for completed remote games
                 if has_scummvm_download and filename:
                     local_folder_path = self.download_dir / target_name
@@ -1185,89 +1165,101 @@ class GameDownloader:
                             local_folder_path.unlink()
                     if local_zip_path and local_zip_path.exists():
                         local_zip_path.unlink()
-                continue
-
-            # If the game doesn't exist on remote and has no ScummVM download URL, that's an error
-            if not has_scummvm_download:
-                self._print(f"\033[91mGame {target_name} does not exist on remote server and has no downloadable URL\033[0m")
-                raise FileNotFoundError(f"Game {target_name} not found on remote server and cannot be downloaded")
-
-            # From here on, we know the game has a ScummVM download URL and doesn't exist on remote
-            local_folder_path = self.download_dir / target_name
-            local_zip_path = self.download_dir / filename if filename.endswith('.zip') else None
-
-            # Check if we've reached the transfer limit
-            allow_transfers = max_transfers is None or transfer_count < max_transfers
-            if not allow_transfers:
-                self._print(f"Reached transfer limit of {max_transfers}, skipping downloads/uploads but continuing to process games")
-
-            # Check if extracted folder already exists locally
-            if filename.endswith('.zip') and local_folder_path.exists():
-                # Upload since we know it doesn't exist on remote (but only if transfers allowed)
-                if allow_transfers and self.upload_folder(local_folder_path):
-                    transfer_count += 1
-                    any_uploads_occurred = True
-
-                # Always add to processed games list and clean up local folder
-                if 'metadata' in game_data:
-                    self.processed_games_metadata.append(game_data['metadata'])
-                else:
-                    metadata = self._find_game_metadata_by_target_name(target_name)
-                    if metadata:
-                        self.processed_games_metadata.append(metadata)
+            elif exists_on_remote:
+                self._print(f"\033[92mGame {target_name} already exists on remote server, skipping\033[0m")
+                should_process_metadata = True
+                # Clean up any local files for completed remote games
+                if has_scummvm_download and filename:
+                    local_folder_path = self.download_dir / target_name
+                    local_zip_path = self.download_dir / filename
+                    if local_folder_path.exists():
+                        if local_folder_path.is_dir():
+                            shutil.rmtree(local_folder_path)
+                        else:
+                            local_folder_path.unlink()
+                    if local_zip_path and local_zip_path.exists():
+                        local_zip_path.unlink()
+            else:
+                # Game doesn't exist on remote - need to process it
+                if not has_scummvm_download:
+                    self._print(f"\033[91mGame {target_name} does not exist on remote server and has no downloadable URL\033[0m")
+                    raise FileNotFoundError(f"Game {target_name} not found on remote server and cannot be downloaded")
                 
-                # Clean up local folder
-                if local_folder_path.exists():
-                    if local_folder_path.is_dir():
-                        shutil.rmtree(local_folder_path)
-                    else:
-                        local_folder_path.unlink()
-                continue
+                # From here on, we know the game has a ScummVM download URL and doesn't exist on remote
+                local_folder_path = self.download_dir / target_name
+                local_zip_path = self.download_dir / filename if filename.endswith('.zip') else None
 
-            # Check if file already exists locally
-            file_path = self.download_dir / filename
-            temp_file_path = self.download_dir / f"{filename}.downloading"
+                # Check if we've reached the transfer limit
+                allow_transfers = max_transfers is None or transfer_count < max_transfers
+                if not allow_transfers:
+                    self._print(f"Reached transfer limit of {max_transfers}, skipping downloads/uploads but continuing to process games")
 
-            # Clean up any stale temp download files
-            if temp_file_path.exists():
-                temp_file_path.unlink()
-                self._print(f"Cleaned up stale temp download: {temp_file_path}")
-
-            # Download file if needed and transfers are allowed
-            downloaded_file = None
-            if allow_transfers:
-                if not file_path.exists():
-                    downloaded_file = self.download_file(url, filename)
-                else:
-                    downloaded_file = file_path
-
-                # Extract if it's a zip file
-                if filename.endswith('.zip'):
-                    extracted_folder = self.extract_zip(downloaded_file)
-                    # Upload the extracted folder
-                    if self.upload_folder(extracted_folder):
+                # Check if extracted folder already exists locally
+                if filename.endswith('.zip') and local_folder_path.exists():
+                    # Upload since we know it doesn't exist on remote (but only if transfers allowed)
+                    if allow_transfers and self.upload_folder(local_folder_path):
                         transfer_count += 1
                         any_uploads_occurred = True
 
-            # Always add to processed games list and clean up
-            if 'metadata' in game_data:
-                self.processed_games_metadata.append(game_data['metadata'])
-            else:
-                metadata = self._find_game_metadata_by_target_name(target_name)
-                if metadata:
-                    self.processed_games_metadata.append(metadata)
-            
-            # Clean up any local files when transfers not allowed
-            if not allow_transfers:
-                if file_path.exists():
-                    file_path.unlink()
-                if local_folder_path and local_folder_path.exists():
-                    if local_folder_path.is_dir():
-                        shutil.rmtree(local_folder_path)
+                    should_process_metadata = True
+                    # Clean up local folder
+                    if local_folder_path.exists():
+                        if local_folder_path.is_dir():
+                            shutil.rmtree(local_folder_path)
+                        else:
+                            local_folder_path.unlink()
+                else:
+                    # Need to download and process the game
+                    file_path = self.download_dir / filename
+                    temp_file_path = self.download_dir / f"{filename}.downloading"
+
+                    # Clean up any stale temp download files
+                    if temp_file_path.exists():
+                        temp_file_path.unlink()
+                        self._print(f"Cleaned up stale temp download: {temp_file_path}")
+
+                    # Download file if needed and transfers are allowed
+                    downloaded_file = None
+                    if allow_transfers:
+                        if not file_path.exists():
+                            downloaded_file = self.download_file(url, filename)
+                        else:
+                            downloaded_file = file_path
+
+                        # Extract if it's a zip file
+                        if filename.endswith('.zip'):
+                            extracted_folder = self.extract_zip(downloaded_file)
+                            # Upload the extracted folder
+                            if self.upload_folder(extracted_folder):
+                                transfer_count += 1
+                                any_uploads_occurred = True
+
+                        should_process_metadata = True
                     else:
-                        local_folder_path.unlink()
-                if local_zip_path and local_zip_path.exists():
-                    local_zip_path.unlink()
+                        # Clean up any local files when transfers not allowed
+                        if file_path.exists():
+                            file_path.unlink()
+                        if local_folder_path and local_folder_path.exists():
+                            if local_folder_path.is_dir():
+                                shutil.rmtree(local_folder_path)
+                            else:
+                                local_folder_path.unlink()
+                        if local_zip_path and local_zip_path.exists():
+                            local_zip_path.unlink()
+
+            # Add to processed games list (single place for all cases)
+            if should_process_metadata:
+                # Find the metadata for this game by target_name (relative_path)
+                game_metadata = None
+                for metadata in self.games_metadata:
+                    if metadata.get('relative_path') == target_name:
+                        game_metadata = metadata
+                        break
+                
+                if game_metadata:
+                    self.processed_games_metadata.append(game_metadata)
+                else:
+                    self._print(f"Warning: No metadata found for {target_name}")
 
         # Check for orphaned folders on remote server
         if remote_folders:
@@ -1277,15 +1269,15 @@ class GameDownloader:
                 self._print(f"  - {folder}")
             raise Exception(f"Orphaned folders found on remote server: {', '.join(sorted(orphaned_folders))}")
 
-        # Build HTTP index once after all uploads are complete
-        self._print("Building HTTP index after all uploads...")
-        self.build_http_index()
-
-        # Generate games.json file with only processed games
+        # Generate games.json file with only processed games before building HTTP index
         if self.processed_games_metadata:
             self.generate_processed_games_json()
         else:
             self._print("No games were processed, skipping games.json generation")
+
+        # Build HTTP index once after all uploads are complete
+        self._print("Building HTTP index after all uploads...")
+        self.build_http_index()
     
     
 
@@ -1356,9 +1348,8 @@ Environment Variables:
         downloader.get_demos()
         downloader.get_director_demos()
         
-        
-        # Apply metadata overrides and add new games from metadata
-        downloader._apply_metadata()
+        # Load metadata and apply overrides to existing games and add new games from metadata
+        downloader._load_and_apply_metadata()
         
         # If no game IDs specified, download all games
         if not args.games:
