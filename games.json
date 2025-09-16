@@ -29,9 +29,7 @@
     "id": "age:cantitoe",
     "relative_path": "cantitoe",
     "description": "Freeware",
-    "languages": [
-      "en"
-    ],
+    "languages": null,
     "platform": "Unknown"
   },
   {
@@ -409,9 +407,7 @@
     "id": "bagel:mazeodoom",
     "relative_path": "MAZEDOOM",
     "description": "Maze O' Doom (Demo)",
-    "languages": [
-      "en"
-    ],
+    "languages": null,
     "platform": "Windows",
     "cover": "https://scummvm-data.kuendig.io/MAZEDOOM/cover.png",
     "company": "Boffo Games",
@@ -2698,9 +2694,7 @@
     "id": "playground3d:playground3d",
     "relative_path": "playground3d",
     "description": "The Testing and Playground Environment for 3D Renderers",
-    "languages": [
-      "en"
-    ],
+    "languages": null,
     "platform": "Unknown",
     "company": "ScummVM",
     "name": "Playground 3D"
@@ -5622,9 +5616,7 @@
     "id": "testbed:testbed",
     "relative_path": "testbed",
     "description": "The Backend Testing Framework",
-    "languages": [
-      "en"
-    ],
+    "languages": null,
     "platform": "Unknown",
     "company": "ScummVM",
     "name": "Testbed"
@@ -5881,27 +5873,21 @@
     "id": "wage:afm",
     "relative_path": "afm-1.8",
     "description": "Version 1.8",
-    "languages": [
-      "en"
-    ],
+    "languages": null,
     "platform": "Macintosh"
   },
   {
     "id": "wage:amot",
     "relative_path": "amot-1.8",
     "description": "Version 1.8",
-    "languages": [
-      "en"
-    ],
+    "languages": null,
     "platform": "Macintosh"
   },
   {
     "id": "wage:drakmythcastle",
     "relative_path": "drakmythcastle",
     "description": "Freeware",
-    "languages": [
-      "en"
-    ],
+    "languages": null,
     "platform": "Macintosh",
     "company": "James C. Gehrig & Virginia Batcheff"
   },
@@ -5909,9 +5895,7 @@
     "id": "wage:grailquest",
     "relative_path": "grailquest-demo",
     "description": "Demo",
-    "languages": [
-      "en"
-    ],
+    "languages": null,
     "platform": "Macintosh",
     "company": "Artworx",
     "name": "GrailQuest: Adventure in the Age of King Arthur"
@@ -5920,27 +5904,21 @@
     "id": "wage:raysmaze",
     "relative_path": "raysmaze",
     "description": "Freeware",
-    "languages": [
-      "en"
-    ],
+    "languages": null,
     "platform": "Macintosh"
   },
   {
     "id": "wage:raysmaze",
     "relative_path": "raysmaze-alt",
     "description": "Alternative Version",
-    "languages": [
-      "en"
-    ],
+    "languages": null,
     "platform": "Macintosh"
   },
   {
     "id": "wage:twisted",
     "relative_path": "twisted-1.6",
     "description": "Version 1.6",
-    "languages": [
-      "en"
-    ],
+    "languages": null,
     "platform": "Macintosh"
   },
   {
