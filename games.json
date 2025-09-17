@@ -4,42 +4,30 @@
     "relative_path": "amazon-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/access/amazon-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
     "id": "adl:hires1",
     "relative_path": "MYSTHOUS",
     "description": "public domain version (Apple II)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Mystery House/MYSTHOUS.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Mystery House/MYSTHOUS.zip"
   },
   {
     "id": "adl:hires1",
     "relative_path": "mysthous-fr",
     "description": "public domain version (French) (Apple II)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Mystery House/mysthous-fr.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Mystery House/mysthous-fr.zip"
   },
   {
     "id": "age:cantitoe",
     "relative_path": "cantitoe",
-    "description": "Freeware",
-    "languages": null,
-    "platform": "Unknown"
+    "description": "Freeware"
   },
   {
     "id": "agi:kq4",
     "relative_path": "kq4-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/agi/kq4-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -57,9 +45,6 @@
     "relative_path": "elvira1-amiga-ni-demo-en",
     "description": "Amiga Non-Interactive Demo",
     "download_url": "/frs/demos/agos/elvira1-amiga-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -67,9 +52,6 @@
     "relative_path": "elvira1-atari-ni-demo-en",
     "description": "Atari ST Non-Interactive Demo",
     "download_url": "/frs/demos/agos/elvira1-atari-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Atari ST"
   },
   {
@@ -77,9 +59,6 @@
     "relative_path": "elvira1-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/agos/elvira1-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -97,9 +76,6 @@
     "relative_path": "feeble-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/agos/feeble-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -107,9 +83,6 @@
     "relative_path": "pn-atari-ni-demo-en",
     "description": "Atari ST Non-Interactive Demo",
     "download_url": "/frs/demos/agos/pn-atari-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Atari ST"
   },
   {
@@ -117,9 +90,6 @@
     "relative_path": "simon1-acorn-cd-demo-en",
     "description": "Acorn 32-bit CD Demo",
     "download_url": "/frs/demos/agos/simon1-acorn-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Acorn 32-bit"
   },
   {
@@ -127,9 +97,6 @@
     "relative_path": "simon1-acorn-demo-en",
     "description": "Acorn 32-bit  Demo",
     "download_url": "/frs/demos/agos/simon1-acorn-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Acorn 32-bit"
   },
   {
@@ -137,9 +104,6 @@
     "relative_path": "simon1-acorn-ni-demo-en",
     "description": "Acorn 32-bit Non-Interactive Demo",
     "download_url": "/frs/demos/agos/simon1-acorn-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Acorn 32-bit"
   },
   {
@@ -147,9 +111,6 @@
     "relative_path": "simon1-amiga-cd32-demo-en",
     "description": "Amiga CD32  Demo",
     "download_url": "/frs/demos/agos/simon1-amiga-cd32-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga CD32"
   },
   {
@@ -157,9 +118,6 @@
     "relative_path": "simon1-amiga-floppy-demo-en",
     "description": "Amiga  Demo",
     "download_url": "/frs/demos/agos/simon1-amiga-floppy-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -167,9 +125,6 @@
     "relative_path": "simon1-dos-cd-demo-en",
     "description": "DOS CD Demo",
     "download_url": "/frs/demos/agos/simon1-dos-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -177,9 +132,6 @@
     "relative_path": "simon1-dos-cd-demo2-en",
     "description": "DOS Alternative Demo",
     "download_url": "/frs/demos/agos/simon1-dos-cd-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -187,9 +139,6 @@
     "relative_path": "simon1-dos-floppy-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/agos/simon1-dos-floppy-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -207,9 +156,6 @@
     "relative_path": "simon2-dos-cd-demo-en",
     "description": "DOS CD Demo",
     "download_url": "/frs/demos/agos/simon2-dos-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -227,9 +173,6 @@
     "relative_path": "waxworks-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/agos/waxworks-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -237,9 +180,6 @@
     "relative_path": "blackwell_legacy-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/blackwell_legacy-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -247,9 +187,6 @@
     "relative_path": "blackwell_unbound-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/blackwell_unbound-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -257,9 +194,6 @@
     "relative_path": "blackwell_convergence-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/blackwell_convergence-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -267,9 +201,6 @@
     "relative_path": "blackwell_deception-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/blackwell_deception-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -277,9 +208,6 @@
     "relative_path": "blackwell_epiphany-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/blackwell_epiphany-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -287,9 +215,6 @@
     "relative_path": "da_new_guys2-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/da_new_guys2-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -297,9 +222,6 @@
     "relative_path": "gemini_rue-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/gemini_rue-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -307,9 +229,6 @@
     "relative_path": "golden_wake-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/golden_wake-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -317,9 +236,6 @@
     "relative_path": "my_big_sister-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/my_big_sister-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -327,9 +243,6 @@
     "relative_path": "primordia-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/primordia-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -337,9 +250,6 @@
     "relative_path": "resonance-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/resonance-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -347,9 +257,6 @@
     "relative_path": "shardlight-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/shardlight-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -357,9 +264,6 @@
     "relative_path": "shivah-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/shivah-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -367,50 +271,42 @@
     "relative_path": "technobabylon-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/ags/technobabylon-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
     "id": "alcachofa:aventuradecine",
     "relative_path": "CleverSmartDemoCD",
     "description": "Demo",
+    "platform": "Windows",
+    "comment": "Source: https://archive.org/details/pca-1105",
+    "company": "Alcachofa Soft",
+    "cover": "https://scummvm-data.kuendig.io/CleverSmartDemoCD/cover.png",
     "languages": [
       "de"
     ],
-    "platform": "Windows",
-    "cover": "https://scummvm-data.kuendig.io/CleverSmartDemoCD/cover.png",
-    "company": "Alcachofa Soft",
-    "name": "Clever & Smart - A Movie Adventure",
-    "comment": "Source: https://archive.org/details/pca-1105"
+    "name": "Clever & Smart - A Movie Adventure"
   },
   {
     "id": "asylum:asylum",
     "relative_path": "asylum-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/asylum/asylum-demo.zip",
-    "languages": [],
-    "platform": "Windows",
-    "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
+    "platform": "Windows"
   },
   {
     "id": "asylum:asylum",
     "relative_path": "asylum-demo2",
     "description": "Windows Alternative Demo",
     "download_url": "/frs/demos/asylum/asylum-demo2.zip",
-    "languages": [],
-    "platform": "Windows",
-    "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
+    "platform": "Windows"
   },
   {
     "id": "bagel:mazeodoom",
     "relative_path": "MAZEDOOM",
     "description": "Maze O' Doom (Demo)",
-    "languages": null,
     "platform": "Windows",
-    "cover": "https://scummvm-data.kuendig.io/MAZEDOOM/cover.png",
     "company": "Boffo Games",
+    "cover": "https://scummvm-data.kuendig.io/MAZEDOOM/cover.png",
     "name": "Hodj 'n' Podj"
   },
   {
@@ -418,9 +314,6 @@
     "relative_path": "spacebar-win-demo-medium",
     "description": "Windows Medium Demo",
     "download_url": "/frs/demos/bagel/spacebar-win-demo-medium.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -428,9 +321,6 @@
     "relative_path": "spacebar-win-demo-small",
     "description": "Windows Small Demo",
     "download_url": "/frs/demos/bagel/spacebar-win-demo-small.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -438,7 +328,6 @@
     "relative_path": "bbvs-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/bbvs/bbvs-demo.zip",
-    "languages": [],
     "platform": "Windows"
   },
   {
@@ -446,7 +335,6 @@
     "relative_path": "bbvs-demo-loogie",
     "description": "Windows Loogie Demo",
     "download_url": "/frs/demos/bbvs/bbvs-demo-loogie.zip",
-    "languages": [],
     "platform": "Windows"
   },
   {
@@ -454,7 +342,6 @@
     "relative_path": "bbvs-demo-loogie-2",
     "description": "Windows Loogie Alternative Demo",
     "download_url": "/frs/demos/bbvs/bbvs-demo-loogie-2.zip",
-    "languages": [],
     "platform": "Windows"
   },
   {
@@ -462,9 +349,6 @@
     "relative_path": "bladerunner-win-ni-demo-en",
     "description": "Windows Non-Interactive Demo",
     "download_url": "/frs/demos/bladerunner/bladerunner-win-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -482,9 +366,6 @@
     "relative_path": "buried-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/buried/buried-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -501,49 +382,38 @@
     "id": "cge2:sfinx",
     "relative_path": "sfinx-en-v1.1",
     "description": "English v1.1",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Sfinx/sfinx-en-v1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Sfinx/sfinx-en-v1.1.zip"
   },
   {
     "id": "cge2:sfinx",
     "relative_path": "sfinx-pl-v1.1",
     "description": "Polish v1.1",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Sfinx/sfinx-pl-v1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Sfinx/sfinx-pl-v1.1.zip"
   },
   {
     "id": "cge:soltys",
     "relative_path": "soltys-demo",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/cge/soltys-demo.zip",
-    "languages": [],
     "platform": "DOS"
   },
   {
     "id": "cge:soltys",
     "relative_path": "soltys-en-v1.0",
     "description": "English v1.0",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Soltys/soltys-en-v1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Soltys/soltys-en-v1.0.zip"
   },
   {
     "id": "cge:soltys",
     "relative_path": "soltys-es-v1.0",
     "description": "Spanish v1.0",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Soltys/soltys-es-v1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Soltys/soltys-es-v1.0.zip"
   },
   {
     "id": "cge:soltys",
     "relative_path": "soltys-pl-v1.0",
     "description": "Polish v1.0",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Soltys/soltys-pl-v1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Soltys/soltys-pl-v1.0.zip"
   },
   {
     "id": "chewy:chewy",
@@ -560,9 +430,6 @@
     "relative_path": "fw-amiga-ni-demo-en",
     "description": "Amiga Non-Interactive Demo",
     "download_url": "/frs/demos/cine/fw-amiga-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -570,9 +437,6 @@
     "relative_path": "os-amiga-ni-demo-en",
     "description": "Amiga Non-Interactive Demo",
     "download_url": "/frs/demos/cine/os-amiga-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -580,9 +444,6 @@
     "relative_path": "os-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/cine/os-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -590,7 +451,6 @@
     "relative_path": "babayaga-demo-mac",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/composer/babayaga-demo-mac.zip",
-    "languages": [],
     "platform": "Macintosh"
   },
   {
@@ -598,7 +458,6 @@
     "relative_path": "babayaga-demo-win",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/composer/babayaga-demo-win.zip",
-    "languages": [],
     "platform": "Windows"
   },
   {
@@ -606,7 +465,6 @@
     "relative_path": "littlesamurai-demo-mac",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/composer/littlesamurai-demo-mac.zip",
-    "languages": [],
     "platform": "Macintosh"
   },
   {
@@ -614,7 +472,6 @@
     "relative_path": "littlesamurai-demo-win",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/composer/littlesamurai-demo-win.zip",
-    "languages": [],
     "platform": "Windows"
   },
   {
@@ -622,7 +479,6 @@
     "relative_path": "unrest-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/crab/unrest-demo.zip",
-    "languages": [],
     "platform": "Windows"
   },
   {
@@ -640,20 +496,13 @@
     "relative_path": "darkseed-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/darkseed/darkseed-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "DOS",
-    "cover": "https://scummvm-data.kuendig.io/darkseed-dos-demo-en/cover.png"
+    "platform": "DOS"
   },
   {
     "id": "darkseed:darkseed",
     "relative_path": "darkseed-dos-demo1-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/darkseed/darkseed-dos-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -661,9 +510,6 @@
     "relative_path": "beamish-dos-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/dgds/beamish-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -671,11 +517,7 @@
     "relative_path": "beamish-dos-demo2-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/dgds/beamish-dos-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "DOS",
-    "cover": "https://scummvm-data.kuendig.io/beamish-dos-demo2-en/cover.png"
+    "platform": "DOS"
   },
   {
     "id": "director:betterd",
@@ -685,20 +527,19 @@
     "languages": [
       "ja"
     ],
-    "platform": "Macintosh",
-    "cover": "https://scummvm-data.kuendig.io/betterd-demo-mac-ja/cover.png"
+    "platform": "Macintosh"
   },
   {
     "id": "director:director",
     "relative_path": "RedNex",
     "description": "MacFormat August 1996 Demo",
+    "platform": "Macintosh",
+    "company": "BMG Interactive",
+    "cover": "https://scummvm-data.kuendig.io/RedNex/cover.png",
+    "download_url": "https://discmaster.textfiles.com/browse/27017/macformat-040.iso/mac/Demos/RedNex",
     "languages": [
       "en"
     ],
-    "platform": "Macintosh",
-    "cover": "https://scummvm-data.kuendig.io/RedNex/cover.png",
-    "download_url": "https://discmaster.textfiles.com/browse/27017/macformat-040.iso/mac/Demos/RedNex",
-    "company": "BMG Interactive",
     "name": "RedNex"
   },
   {
@@ -706,9 +547,6 @@
     "relative_path": "gadget-demo-mac",
     "description": "Macintosh Gadget: Invention, Travel & Adventure Demo",
     "download_url": "/frs/demos/director/d3/en/gadget-demo-mac.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -716,34 +554,30 @@
     "relative_path": "gadget-demo-win",
     "description": "Windows Gadget: Invention, Travel & Adventure Demo",
     "download_url": "/frs/demos/director/d3/en/gadget-demo-win.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
     "id": "director:mediaband",
     "relative_path": "meetmediaband",
     "description": "Freeware",
-    "languages": [
-      "en"
-    ],
-    "platform": "Unknown",
+    "comment": "declared Freeware by Marc Canter",
+    "company": "Canter Technology",
     "cover": "https://scummvm-data.kuendig.io/meetmediaband/cover.png",
     "download_url": "https://archive.org/details/meetmediaband",
-    "company": "Canter Technology",
-    "comment": "declared Freeware by Marc Canter"
+    "languages": [
+      "en"
+    ]
   },
   {
     "id": "director:theapartment",
     "relative_path": "theapartment3",
     "description": "Interactive Demo (D3)",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh",
     "cover": "https://scummvm-data.kuendig.io/theapartment3/cover.png",
     "download_url": "https://downloads.scummvm.org/frs/demos/director/theapartment3.zip",
+    "languages": [
+      "en"
+    ],
     "name": "The Apartment"
   },
   {
@@ -751,9 +585,6 @@
     "relative_path": "warlock-demo-mac-100",
     "description": "Macintosh Spaceship Warlock Demo",
     "download_url": "/frs/demos/director/d2/en/warlock-demo-mac-100.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -761,9 +592,6 @@
     "relative_path": "warlock-demo-mac-111",
     "description": "Macintosh Spaceship Warlock Demo",
     "download_url": "/frs/demos/director/d2/en/warlock-demo-mac-111.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -771,9 +599,6 @@
     "relative_path": "warlock-demo-mac-1994",
     "description": "Macintosh Spaceship Warlock (1994) Demo",
     "download_url": "/frs/demos/director/d3/en/warlock-demo-mac-1994.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -781,9 +606,6 @@
     "relative_path": "warlock-demo-win",
     "description": "Windows Spaceship Warlock Demo",
     "download_url": "/frs/demos/director/d3/en/warlock-demo-win.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -791,9 +613,6 @@
     "relative_path": "warlock-win-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/director/warlock-win-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -801,85 +620,62 @@
     "relative_path": "wrath-demo-win",
     "description": "Windows Wrath of the Gods Demo",
     "download_url": "/frs/demos/director/d3/en/wrath-demo-win.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
     "id": "drascula:drascula",
     "relative_path": "drascula-1.0",
     "description": "Freeware Version (English)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Drascula_ The Vampire Strikes Back/drascula-1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Drascula_ The Vampire Strikes Back/drascula-1.0.zip"
   },
   {
     "id": "dreamweb:dreamweb",
     "relative_path": "dreamweb-amiga-demo-en",
     "description": "Amiga  Demo",
     "download_url": "/frs/demos/dreamweb/dreamweb-amiga-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
     "id": "dreamweb:dreamweb",
     "relative_path": "dreamweb-cd-de-1.1",
     "description": "Freeware CD DOS Version (German)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-cd-de-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-cd-de-1.1.zip"
   },
   {
     "id": "dreamweb:dreamweb",
     "relative_path": "dreamweb-cd-es-1.1",
     "description": "Freeware CD DOS Version (Spanish)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-cd-es-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-cd-es-1.1.zip"
   },
   {
     "id": "dreamweb:dreamweb",
     "relative_path": "dreamweb-cd-fr-1.1",
     "description": "Freeware CD DOS Version (French)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-cd-fr-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-cd-fr-1.1.zip"
   },
   {
     "id": "dreamweb:dreamweb",
     "relative_path": "dreamweb-cd-it-1.1",
     "description": "Freeware CD DOS Version (Italian)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-cd-it-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-cd-it-1.1.zip"
   },
   {
     "id": "dreamweb:dreamweb",
     "relative_path": "dreamweb-cd-uk-1.1",
     "description": "Freeware CD DOS Version (English UK)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-cd-uk-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-cd-uk-1.1.zip"
   },
   {
     "id": "dreamweb:dreamweb",
     "relative_path": "dreamweb-cd-us-1.1",
     "description": "Freeware CD DOS Version (English US)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-cd-us-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-cd-us-1.1.zip"
   },
   {
     "id": "dreamweb:dreamweb",
     "relative_path": "dreamweb-dos-demo-cd-en",
     "description": "DOS CD Demo",
     "download_url": "/frs/demos/dreamweb/dreamweb-dos-demo-cd-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -887,18 +683,13 @@
     "relative_path": "dreamweb-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/dreamweb/dreamweb-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
     "id": "dreamweb:dreamweb",
     "relative_path": "dreamweb-uk-1.1",
     "description": "Freeware Floppy DOS Version (English UK)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-uk-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Dreamweb/dreamweb-uk-1.1.zip"
   },
   {
     "id": "freescape:castlemaster",
@@ -906,7 +697,6 @@
     "description": "Amiga Non-Interactive Demo",
     "download_url": "/frs/demos/freescape/castle-amiga-demo.zip",
     "languages": [
-      "en",
       "fr",
       "de"
     ],
@@ -917,9 +707,6 @@
     "relative_path": "castle-dos-demo",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/freescape/castle-dos-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -927,9 +714,6 @@
     "relative_path": "darkside-dos-demo",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/freescape/darkside-dos-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -937,9 +721,6 @@
     "relative_path": "darkside-zx-demo",
     "description": "ZX Spectrum  Demo",
     "download_url": "/frs/demos/freescape/darkside-zx-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "ZX Spectrum"
   },
   {
@@ -947,9 +728,6 @@
     "relative_path": "driller-amiga-demo",
     "description": "Amiga Non-Interactive Demo",
     "download_url": "/frs/demos/freescape/driller-amiga-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -957,9 +735,6 @@
     "relative_path": "driller-atarist-demo",
     "description": "Atari ST Non-Interactive Demo",
     "download_url": "/frs/demos/freescape/driller-atarist-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Atari ST"
   },
   {
@@ -967,9 +742,6 @@
     "relative_path": "driller-dos-demo",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/freescape/driller-dos-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -977,9 +749,6 @@
     "relative_path": "totaleclipse-cpc-demo",
     "description": "Amstrad CPC  Demo",
     "download_url": "/frs/demos/freescape/totaleclipse-cpc-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amstrad CPC"
   },
   {
@@ -987,9 +756,6 @@
     "relative_path": "totaleclipse-zx-demo-1",
     "description": "ZX Spectrum  Demo",
     "download_url": "/frs/demos/freescape/totaleclipse-zx-demo-1.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "ZX Spectrum"
   },
   {
@@ -997,132 +763,120 @@
     "relative_path": "totaleclipse-zx-demo-2",
     "description": "ZX Spectrum  Demo",
     "download_url": "/frs/demos/freescape/totaleclipse-zx-demo-2.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "ZX Spectrum"
   },
   {
     "id": "glk:adv350_zcode",
     "relative_path": "zcode-advent",
     "description": "Freeware",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
+    "company": "William Crowther and Donald Woods",
+    "download_url": "https://ifdb.org/viewgame?id=fft6pu91j85y4acv",
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
-    "download_url": "https://ifdb.org/viewgame?id=fft6pu91j85y4acv",
-    "company": "William Crowther and Donald Woods",
-    "name": "Colossal Cave Adventure",
-    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    "name": "Colossal Cave Adventure"
   },
   {
     "id": "glk:curses",
     "relative_path": "zcode-curses",
     "description": "Freeware",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
+    "company": "Graham Nelson",
+    "cover": "https://scummvm-data.kuendig.io/zcode-curses/cover.jpg",
+    "download_url": "https://ifdb.org/viewgame?id=plvzam05bmz3enh8",
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
-    "cover": "https://scummvm-data.kuendig.io/zcode-curses/cover.jpg",
-    "download_url": "https://ifdb.org/viewgame?id=plvzam05bmz3enh8",
-    "company": "Graham Nelson",
-    "name": "Curses",
-    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    "name": "Curses"
   },
   {
     "id": "glk:infocomsample3ztl",
     "relative_path": "zcode-sampler2",
     "description": "Demo/Freeware",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
+    "company": "Infocom",
+    "cover": "https://scummvm-data.kuendig.io/zcode-sampler2/cover.jpg",
+    "download_url": "https://ifdb.org/viewgame?id=p00ucaayobrt2paz",
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
-    "cover": "https://scummvm-data.kuendig.io/zcode-sampler2/cover.jpg",
-    "download_url": "https://ifdb.org/viewgame?id=p00ucaayobrt2paz",
-    "company": "Infocom",
-    "name": "Four-In-One Sampler II",
-    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    "name": "Four-In-One Sampler II"
   },
   {
     "id": "glk:infocomsample4zpiw",
     "relative_path": "zcode-sampler1",
     "description": "Demo/Freeware",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
+    "company": "Infocom",
+    "cover": "https://scummvm-data.kuendig.io/zcode-sampler1/cover.jpg",
+    "download_url": "https://ifdb.org/viewgame?id=wa8crlfz82pra14i",
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
-    "cover": "https://scummvm-data.kuendig.io/zcode-sampler1/cover.jpg",
-    "download_url": "https://ifdb.org/viewgame?id=wa8crlfz82pra14i",
-    "company": "Infocom",
-    "name": "Four-In-One Sampler I",
-    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    "name": "Four-In-One Sampler I"
   },
   {
     "id": "glk:minizork1",
     "relative_path": "minizork",
     "description": "Demo/Freeware",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
+    "company": "Infocom",
+    "download_url": "https://ifdb.org/viewgame?id=1rea34vqnz3mtyq1",
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
-    "download_url": "https://ifdb.org/viewgame?id=1rea34vqnz3mtyq1",
-    "company": "Infocom",
-    "name": "Mini-Zork",
-    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    "name": "Mini-Zork"
   },
   {
     "id": "glk:moonglow",
     "relative_path": "zcode-moonglow",
     "description": "Freeware",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
+    "company": "Dave Bernazzani",
+    "download_url": "https://ifdb.org/viewgame?id=5e9zrkcfgq2moinh",
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
-    "download_url": "https://ifdb.org/viewgame?id=5e9zrkcfgq2moinh",
-    "company": "Dave Bernazzani",
-    "name": "Moonglow",
-    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    "name": "Moonglow"
   },
   {
     "id": "glk:pj3_fantadimension",
     "relative_path": "zcode-fantasydimension",
     "description": "Freeware",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
+    "company": "Johan Berntsson",
+    "cover": "https://scummvm-data.kuendig.io/zcode-fantasydimension/cover.png",
+    "download_url": "https://ifdb.org/viewgame?id=9gcujue3zpxbhj6k",
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
-    "cover": "https://scummvm-data.kuendig.io/zcode-fantasydimension/cover.png",
-    "download_url": "https://ifdb.org/viewgame?id=9gcujue3zpxbhj6k",
-    "company": "Johan Berntsson",
-    "name": "The Fantasy Dimension",
-    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    "name": "The Fantasy Dimension"
   },
   {
     "id": "glk:pj3_submarinesabot",
     "relative_path": "zcode-submarine",
     "description": "Freeware",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
+    "company": "Garry Francis",
+    "cover": "https://scummvm-data.kuendig.io/zcode-submarine/cover.png",
+    "download_url": "https://ifdb.org/viewgame?id=rw2jsnyoqxsdvyug",
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
-    "cover": "https://scummvm-data.kuendig.io/zcode-submarine/cover.png",
-    "download_url": "https://ifdb.org/viewgame?id=rw2jsnyoqxsdvyug",
-    "company": "Garry Francis",
-    "name": "Submarine Sabotage",
-    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    "name": "Submarine Sabotage"
   },
   {
     "id": "glk:tristamisland",
     "relative_path": "zcode-tristam",
     "description": "Freeware",
+    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
+    "company": "Hugo Labrande",
+    "download_url": "https://ifdb.org/viewgame?id=6gtq9ahrolz2ry2",
     "languages": [
       "en"
     ],
-    "platform": "Unknown",
-    "download_url": "https://ifdb.org/viewgame?id=6gtq9ahrolz2ry2",
-    "company": "Hugo Labrande",
-    "name": "Tristam Island",
-    "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html"
+    "name": "Tristam Island"
   },
   {
     "id": "gob:adibou2",
@@ -1149,9 +903,6 @@
     "relative_path": "gob1-amiga_demo_en",
     "description": "Amiga  Demo",
     "download_url": "/frs/demos/gob/gob1-amiga_demo_en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -1179,9 +930,6 @@
     "relative_path": "gob1-dos-demo1-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/gob/gob1-dos-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1189,9 +937,6 @@
     "relative_path": "gob1-dos-demo2-en",
     "description": "DOS Alternative Demo",
     "download_url": "/frs/demos/gob/gob1-dos-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1199,9 +944,6 @@
     "relative_path": "gob2-amiga-demo1-en",
     "description": "Amiga  Demo",
     "download_url": "/frs/demos/gob/gob2-amiga-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -1209,9 +951,6 @@
     "relative_path": "gob2-amiga-demo2-en",
     "description": "Amiga Alternative Demo",
     "download_url": "/frs/demos/gob/gob2-amiga-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -1219,9 +958,6 @@
     "relative_path": "gob2-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/gob/gob2-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1229,9 +965,6 @@
     "relative_path": "gob2-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/gob/gob2-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1239,9 +972,6 @@
     "relative_path": "gob3-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/gob/gob3-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1269,9 +999,6 @@
     "relative_path": "gob3-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/gob/gob3-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1279,9 +1006,6 @@
     "relative_path": "lostintime-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/gob/lostintime-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1289,9 +1013,6 @@
     "relative_path": "urban-win-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/gob/urban-win-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1299,9 +1020,6 @@
     "relative_path": "ween-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/gob/ween-dos-demo-en.zip",
-    "languages": [
-      "en_US"
-    ],
     "platform": "DOS"
   },
   {
@@ -1319,9 +1037,6 @@
     "relative_path": "woodruff-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/gob/woodruff-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1329,19 +1044,15 @@
     "relative_path": "gotfree",
     "description": "Freeware",
     "download_url": "https://downloads.scummvm.org/frs/extras/God of Thunder/gotfree.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/gotfree/cover.png",
     "company": "Adept Software",
+    "cover": "https://scummvm-data.kuendig.io/gotfree/cover.png",
     "name": "God of Thunder"
   },
   {
     "id": "griffon:griffon",
     "relative_path": "griffon-1.0",
     "description": "Freeware Version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Griffon Legend/griffon-1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Griffon Legend/griffon-1.0.zip"
   },
   {
     "id": "grim:grim",
@@ -1388,9 +1099,6 @@
     "relative_path": "grim-win-demo1-en",
     "description": "Windows Small Demo",
     "download_url": "/frs/demos/grim/grim-win-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -1398,9 +1106,6 @@
     "relative_path": "grim-win-demo2-en",
     "description": "Windows Large Demo",
     "download_url": "/frs/demos/grim/grim-win-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -1408,9 +1113,6 @@
     "relative_path": "efmi_large_demo.sea",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/grim/efmi_large_demo.sea",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -1428,9 +1130,6 @@
     "relative_path": "emi-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/grim/emi-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -1448,9 +1147,6 @@
     "relative_path": "monkey4-win-cd-demo-en",
     "description": "Windows CD Demo",
     "download_url": "/frs/demos/grim/monkey4-win-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -1468,9 +1164,6 @@
     "relative_path": "11h-dos-cd-demo1-en",
     "description": "DOS Both Interactive and Non-Interactive Demo",
     "download_url": "/frs/demos/groovie/11h-dos-cd-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1478,9 +1171,6 @@
     "relative_path": "11h-dos-cd-demo2-en",
     "description": "DOS Interactive Demo",
     "download_url": "/frs/demos/groovie/11h-dos-cd-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1488,9 +1178,6 @@
     "relative_path": "11h-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/groovie/11h-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1498,9 +1185,6 @@
     "relative_path": "11h-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/groovie/11h-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1508,9 +1192,6 @@
     "relative_path": "clandestiny-dos-cd-demo-en",
     "description": "DOS Interactive Demo",
     "download_url": "/frs/demos/groovie/clandestiny-dos-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1518,9 +1199,6 @@
     "relative_path": "clandestiny-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/groovie/clandestiny-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1528,9 +1206,6 @@
     "relative_path": "clandestiny-mac-ni-demo",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/groovie/clandestiny-mac-ni-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -1538,9 +1213,6 @@
     "relative_path": "t7g-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/groovie/t7g-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1558,9 +1230,6 @@
     "relative_path": "hdb-demo-linux",
     "description": "Linux  Demo",
     "download_url": "/frs/demos/hdb/hdb-demo-linux.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Linux"
   },
   {
@@ -1568,9 +1237,6 @@
     "relative_path": "hdb-demo-ppc",
     "description": "Pocket PC  Demo",
     "download_url": "/frs/demos/hdb/hdb-demo-ppc.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Pocket PC"
   },
   {
@@ -1578,9 +1244,6 @@
     "relative_path": "hdb-demo-ppc-alt",
     "description": "Pocket PC Handango Demo",
     "download_url": "/frs/demos/hdb/hdb-demo-ppc-alt.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Pocket PC"
   },
   {
@@ -1588,9 +1251,6 @@
     "relative_path": "hdb-demo-win",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/hdb/hdb-demo-win.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -1598,9 +1258,6 @@
     "relative_path": "hopkins-linux-en",
     "description": "Linux  Demo",
     "download_url": "/frs/demos/hopkins/hopkins-linux-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Linux"
   },
   {
@@ -1608,9 +1265,6 @@
     "relative_path": "hopkins-win95-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/hopkins/hopkins-win95-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -1628,9 +1282,6 @@
     "relative_path": "hugo1-dos-1.1-demo-en",
     "description": "DOS V1.1 Demo",
     "download_url": "/frs/demos/hugo/hugo1-dos-1.1-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1638,9 +1289,6 @@
     "relative_path": "hugo1-dos-1.2-demo-en",
     "description": "DOS V1.2 Demo",
     "download_url": "/frs/demos/hugo/hugo1-dos-1.2-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1648,9 +1296,6 @@
     "relative_path": "hugo1-dos-1.3-demo-en",
     "description": "DOS V1.3 Demo",
     "download_url": "/frs/demos/hugo/hugo1-dos-1.3-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1658,9 +1303,6 @@
     "relative_path": "hugo1-dos-1.5-demo-en",
     "description": "DOS V1.5 Demo",
     "download_url": "/frs/demos/hugo/hugo1-dos-1.5-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1668,9 +1310,6 @@
     "relative_path": "hugo1-dos-1.6-demo-en",
     "description": "DOS V1.6 Demo",
     "download_url": "/frs/demos/hugo/hugo1-dos-1.6-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1678,9 +1317,6 @@
     "relative_path": "hugo1-dos-1.8-demo-en",
     "description": "DOS V1.8 Demo",
     "download_url": "/frs/demos/hugo/hugo1-dos-1.8-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1688,9 +1324,6 @@
     "relative_path": "hugo1-dos-1.9-demo-en",
     "description": "DOS V1.9 Demo",
     "download_url": "/frs/demos/hugo/hugo1-dos-1.9-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1698,9 +1331,6 @@
     "relative_path": "hugo1-dos-2.0-demo-en",
     "description": "DOS V2,0 Demo",
     "download_url": "/frs/demos/hugo/hugo1-dos-2.0-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1708,9 +1338,6 @@
     "relative_path": "hugo1-dos-2.1-demo-en",
     "description": "DOS V2.1 Demo",
     "download_url": "/frs/demos/hugo/hugo1-dos-2.1-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1718,9 +1345,6 @@
     "relative_path": "hugo2-dos-1.0-demo-en",
     "description": "DOS V1.0 Demo",
     "download_url": "/frs/demos/hugo/hugo2-dos-1.0-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1728,9 +1352,6 @@
     "relative_path": "hugo2-dos-1.2-demo-en",
     "description": "DOS V1.2 Demo",
     "download_url": "/frs/demos/hugo/hugo2-dos-1.2-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1738,9 +1359,6 @@
     "relative_path": "hugo2-dos-2.1-demo-en",
     "description": "DOS V2.1 Demo",
     "download_url": "/frs/demos/hugo/hugo2-dos-2.1-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1748,9 +1366,6 @@
     "relative_path": "hugo3-dos-1.0-demo-en",
     "description": "DOS V1.0 Demo",
     "download_url": "/frs/demos/hugo/hugo3-dos-1.0-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1758,9 +1373,6 @@
     "relative_path": "hugo3-dos-1.1-demo-en",
     "description": "DOS V1.1 Demo",
     "download_url": "/frs/demos/hugo/hugo3-dos-1.1-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1768,9 +1380,6 @@
     "relative_path": "hugo3-dos-2.0-demo-en",
     "description": "DOS V2.0 Demo",
     "download_url": "/frs/demos/hugo/hugo3-dos-2.0-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1778,9 +1387,6 @@
     "relative_path": "hugo3-dos-2.1-demo-en",
     "description": "DOS V2.1 Demo",
     "download_url": "/frs/demos/hugo/hugo3-dos-2.1-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1788,9 +1394,6 @@
     "relative_path": "sinistersix-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/hypno/sinistersix-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1798,9 +1401,6 @@
     "relative_path": "wetlands-dos-demo1-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/hypno/wetlands-dos-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1808,9 +1408,6 @@
     "relative_path": "wetlands-dos-demo2-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/hypno/wetlands-dos-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1818,9 +1415,6 @@
     "relative_path": "wetlands-dos-demo3-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/hypno/wetlands-dos-demo3-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1828,9 +1422,6 @@
     "relative_path": "wetlands-dos-demo4-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/hypno/wetlands-dos-demo4-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1838,9 +1429,6 @@
     "relative_path": "wetlands-dos-demo5-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/hypno/wetlands-dos-demo5-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1848,9 +1436,6 @@
     "relative_path": "wetlands-dos-ni-demo1-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/hypno/wetlands-dos-ni-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1858,9 +1443,6 @@
     "relative_path": "wetlands-dos-ni-demo2-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/hypno/wetlands-dos-ni-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1868,9 +1450,6 @@
     "relative_path": "icb-eng-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/icb/icb-eng-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -1878,9 +1457,6 @@
     "relative_path": "icb-win-demo-us",
     "description": "Windows English US Demo",
     "download_url": "/frs/demos/icb/icb-win-demo-us.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -1888,9 +1464,6 @@
     "relative_path": "duckman-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/illusions/duckman-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -1898,9 +1471,6 @@
     "relative_path": "kingdom-demo",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/kingdom/kingdom-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1908,9 +1478,6 @@
     "relative_path": "eob2-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/kyra/eob2-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1918,9 +1485,6 @@
     "relative_path": "kyra1-dos-cd-ni-demo-en",
     "description": "DOS CD Non-Interactive Demo",
     "download_url": "/frs/demos/kyra/kyra1-dos-cd-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1928,9 +1492,6 @@
     "relative_path": "kyra1-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/kyra/kyra1-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1938,9 +1499,6 @@
     "relative_path": "kyra2-dos-cd-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/kyra/kyra2-dos-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1948,9 +1506,6 @@
     "relative_path": "kyra2-dos-ni-demo1-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/kyra/kyra2-dos-ni-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1958,9 +1513,6 @@
     "relative_path": "kyra2-dos-ni-demo2-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/kyra/kyra2-dos-ni-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1968,9 +1520,6 @@
     "relative_path": "kyra3-dos-ni-demo-en",
     "description": "DOS Non-Engine Demo",
     "download_url": "/frs/demos/kyra/Non-Engine/kyra3-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1978,9 +1527,6 @@
     "relative_path": "lol-dos-cd-demo-en",
     "description": "DOS CD Demo",
     "download_url": "/frs/demos/kyra/lol-dos-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1988,9 +1534,6 @@
     "relative_path": "lol-dos-intro-ni-demo-en",
     "description": "DOS Non-Interactive Intro Demo",
     "download_url": "/frs/demos/kyra/lol-dos-intro-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -1998,9 +1541,6 @@
     "relative_path": "lol-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/kyra/lol-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2008,9 +1548,6 @@
     "relative_path": "lastexpress-trailer-en",
     "description": "Windows Trailer Demo",
     "download_url": "/frs/demos/lastexpress/lastexpress-trailer-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2018,60 +1555,43 @@
     "relative_path": "lastexpress-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/lastexpress/lastexpress-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
-    "platform": "Windows",
-    "cover": "https://scummvm-data.kuendig.io/lastexpress-win-demo-en/cover.png"
+    "platform": "Windows"
   },
   {
     "id": "lure:lure",
     "relative_path": "lure-1.1",
     "description": "Freeware Version (English)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Lure of the Temptress/lure-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Lure of the Temptress/lure-1.1.zip"
   },
   {
     "id": "lure:lure",
     "relative_path": "lure-de-1.1",
     "description": "Freeware Version (German)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Lure of the Temptress/lure-de-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Lure of the Temptress/lure-de-1.1.zip"
   },
   {
     "id": "lure:lure",
     "relative_path": "lure-es-1.1",
     "description": "Freeware Version (Spanish)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Lure of the Temptress/lure-es-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Lure of the Temptress/lure-es-1.1.zip"
   },
   {
     "id": "lure:lure",
     "relative_path": "lure-fr-1.1",
     "description": "Freeware Version (French)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Lure of the Temptress/lure-fr-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Lure of the Temptress/lure-fr-1.1.zip"
   },
   {
     "id": "lure:lure",
     "relative_path": "lure-it-1.1",
     "description": "Freeware Version (Italian)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Lure of the Temptress/lure-it-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Lure of the Temptress/lure-it-1.1.zip"
   },
   {
     "id": "lure:lure",
     "relative_path": "lure-st-demo-en",
     "description": "Atari ST  Demo",
     "download_url": "/frs/demos/lure/lure-st-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Atari ST"
   },
   {
@@ -2079,9 +1599,6 @@
     "relative_path": "burger-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/m4/burger-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2089,9 +1606,6 @@
     "relative_path": "burger-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/m4/burger-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2099,9 +1613,6 @@
     "relative_path": "riddle-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/m4/riddle-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2109,9 +1620,6 @@
     "relative_path": "rtz-dos-cd-demo1-en",
     "description": "DOS CD Demo",
     "download_url": "/frs/demos/made/rtz-dos-cd-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2119,9 +1627,6 @@
     "relative_path": "rtz-dos-cd-demo2-en",
     "description": "DOS CD Alternative Demo",
     "download_url": "/frs/demos/made/rtz-dos-cd-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2129,9 +1634,6 @@
     "relative_path": "rtz-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/made/rtz-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2139,9 +1641,6 @@
     "relative_path": "rtz-mac-demo-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/made/rtz-mac-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2149,9 +1648,6 @@
     "relative_path": "rex-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/mads/rex-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2159,9 +1655,6 @@
     "relative_path": "cloudsofxeen-dos-demo-en-ni",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/xeen/cloudsofxeen-dos-demo-en-ni.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2169,9 +1662,6 @@
     "relative_path": "darksideofxeen-dos-demo-en-ni",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/xeen/darksideofxeen-dos-demo-en-ni.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2179,9 +1669,6 @@
     "relative_path": "worldofxeen-dos-demo-en-ni",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/xeen/worldofxeen-dos-demo-en-ni.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2189,9 +1676,6 @@
     "relative_path": "arthur-mac-demo-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/mohawk/arthur-mac-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2200,7 +1684,6 @@
     "description": "Macintosh English/Spanish Demo",
     "download_url": "/frs/demos/mohawk/arthur-mac-demo-en-es.zip",
     "languages": [
-      "en",
       "es"
     ],
     "platform": "Macintosh"
@@ -2210,9 +1693,6 @@
     "relative_path": "arthur-mac-demo2-en",
     "description": "Macintosh Alternative Demo",
     "download_url": "/frs/demos/mohawk/arthur-mac-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2220,9 +1700,6 @@
     "relative_path": "arthur-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/mohawk/arthur-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2230,9 +1707,6 @@
     "relative_path": "arthur-win-demo-en-v1.1",
     "description": "Windows Alternative Demo",
     "download_url": "/frs/demos/mohawk/arthur-win-demo-en-v1.1.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2240,9 +1714,6 @@
     "relative_path": "arthurbday-mac-demo-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/mohawk/arthurbday-mac-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2250,9 +1721,6 @@
     "relative_path": "arthurbday-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/mohawk/arthurbday-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2260,9 +1728,6 @@
     "relative_path": "daniel-win-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/mohawk/daniel-win-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2270,9 +1735,6 @@
     "relative_path": "grandma-mac-demo-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/mohawk/grandma-mac-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2281,7 +1743,6 @@
     "description": "Macintosh English/Japanese/Spanish Demo",
     "download_url": "/frs/demos/mohawk/grandma-mac-demo-en-es-jp.zip",
     "languages": [
-      "en",
       "es",
       "ja"
     ],
@@ -2292,9 +1753,6 @@
     "relative_path": "grandma-mac-demo2-en",
     "description": "Macintosh Alternative Demo",
     "download_url": "/frs/demos/mohawk/grandma-mac-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2302,9 +1760,6 @@
     "relative_path": "grandma-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/mohawk/grandma-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2312,9 +1767,6 @@
     "relative_path": "grandma-win-demo-en-v1.1",
     "description": "Windows Alternative Demo",
     "download_url": "/frs/demos/mohawk/grandma-win-demo-en-v1.1.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2322,9 +1774,6 @@
     "relative_path": "greeneggs-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/mohawk/greeneggs-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2333,7 +1782,6 @@
     "description": "Windows English/Spanish Demo",
     "download_url": "/frs/demos/mohawk/harryhh-win-demo-en-es.zip",
     "languages": [
-      "en",
       "es"
     ],
     "platform": "Windows"
@@ -2343,9 +1791,6 @@
     "relative_path": "myst-win-cd-demo-en",
     "description": "Windows CD Demo",
     "download_url": "/frs/demos/mohawk/myst-win-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2353,9 +1798,6 @@
     "relative_path": "myst-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/mohawk/myst-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2363,9 +1805,6 @@
     "relative_path": "newkid-demo-mac-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/mohawk/newkid-demo-mac-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2373,9 +1812,6 @@
     "relative_path": "newkid-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/mohawk/newkid-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2383,9 +1819,6 @@
     "relative_path": "newkid-win-demo-en-v1.1",
     "description": "Windows Alternative Demo",
     "download_url": "/frs/demos/mohawk/newkid-win-demo-en-v1.1.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2393,9 +1826,6 @@
     "relative_path": "riven-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/mohawk/riven-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2403,9 +1833,6 @@
     "relative_path": "ruff-mac-demo-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/mohawk/ruff-mac-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2413,9 +1840,6 @@
     "relative_path": "ruff-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/mohawk/ruff-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2423,9 +1847,6 @@
     "relative_path": "tortoise-mac-demo-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/mohawk/tortoise-mac-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2433,9 +1854,6 @@
     "relative_path": "tortoise-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/mohawk/tortoise-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2444,7 +1862,6 @@
     "description": "Windows English/French/German Demo",
     "download_url": "/frs/demos/mohawk/tortoise-win-demo-en-fr-de.zip",
     "languages": [
-      "en",
       "fr",
       "de"
     ],
@@ -2455,9 +1872,6 @@
     "relative_path": "tortoise-win-demo-en-v1.1",
     "description": "Windows Alternative Demo",
     "download_url": "/frs/demos/mohawk/tortoise-win-demo-en-v1.1.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2465,9 +1879,6 @@
     "relative_path": "obsidian-mac-demo",
     "description": "Macintosh Demo w/Cinematic Trailer, SegaSoft CD Demo",
     "download_url": "/frs/demos/mtropolis/obsidian-mac-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2475,9 +1886,6 @@
     "relative_path": "obsidian-win-demo",
     "description": "Windows Demo, 26th October 1996, PC Gamer 2.12 (Jan '97) Demo",
     "download_url": "/frs/demos/mtropolis/obsidian-win-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2485,9 +1893,6 @@
     "relative_path": "obsidian-win-demo2",
     "description": "Windows Demo, 22nd October 1996 Demo",
     "download_url": "/frs/demos/mtropolis/obsidian-win-demo2.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2495,9 +1900,6 @@
     "relative_path": "obsidian-win-demo3",
     "description": "Windows Demo w/Cinematic Trailer, 4th October 1996, Ocean/Infogrames Show Case December 1997 Demo",
     "download_url": "/frs/demos/mtropolis/obsidian-win-demo3.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2505,9 +1907,6 @@
     "relative_path": "obsidian-win-demo4",
     "description": "Windows Demo w/Cinematic Trailer, 3rd October 1996 Demo",
     "download_url": "/frs/demos/mtropolis/obsidian-win-demo4.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2515,9 +1914,6 @@
     "relative_path": "neverhood-demo-big-en",
     "description": "Windows Large Demo",
     "download_url": "/frs/demos/neverhood/neverhood-demo-big-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2525,9 +1921,6 @@
     "relative_path": "neverhood-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/neverhood/neverhood-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2535,9 +1928,6 @@
     "relative_path": "neverhood-win-demo2-en",
     "description": "Windows Alternative Demo",
     "download_url": "/frs/demos/neverhood/neverhood-win-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2545,9 +1935,6 @@
     "relative_path": "neverhood-win-lite-demo-en",
     "description": "Windows Small Demo",
     "download_url": "/frs/demos/neverhood/neverhood-win-lite-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2584,60 +1971,44 @@
     "id": "parallaction:nippon",
     "relative_path": "nippon-1.0",
     "description": "Freeware DOS Version (English/French/German/Italian)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Nippon Safes/nippon-1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Nippon Safes/nippon-1.0.zip"
   },
   {
     "id": "parallaction:nippon",
     "relative_path": "nippon-alt-1.0",
     "description": "Freeware DOS Alternative Version (English/French/German/Italian). French is patched.",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Nippon Safes/nippon-alt-1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Nippon Safes/nippon-alt-1.0.zip"
   },
   {
     "id": "parallaction:nippon",
     "relative_path": "nippon-amiga-1.0",
     "description": "Freeware Amiga Version (English/French/German)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Nippon Safes/nippon-amiga-1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Nippon Safes/nippon-amiga-1.0.zip"
   },
   {
     "id": "parallaction:nippon",
     "relative_path": "nippon-amiga-demo-en",
     "description": "Amiga  Demo",
     "download_url": "/frs/demos/parallaction/nippon-amiga-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
     "id": "parallaction:nippon",
     "relative_path": "nippon-amiga-disks-1.0",
     "description": "Disk Images of Freeware Amiga Version (English/French/German)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Nippon Safes/nippon-amiga-disks-1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Nippon Safes/nippon-amiga-disks-1.0.zip"
   },
   {
     "id": "parallaction:nippon",
     "relative_path": "nippon-amiga-it-1.0",
     "description": "Freeware Amiga Version (Italian)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Nippon Safes/nippon-amiga-it-1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Nippon Safes/nippon-amiga-it-1.0.zip"
   },
   {
     "id": "pegasus:pegasus",
     "relative_path": "pegasus-dvd-mac-demo-en",
     "description": "Macintosh DVD Demo",
     "download_url": "/frs/demos/pegasus/pegasus-dvd-mac-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2645,9 +2016,6 @@
     "relative_path": "pegasus-dvd-win-demo-en",
     "description": "Windows DVD Demo",
     "download_url": "/frs/demos/pegasus/pegasus-dvd-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2655,9 +2023,6 @@
     "relative_path": "pegasus-mac-97-demo-en",
     "description": "Macintosh Mac 1997 release Demo",
     "download_url": "/frs/demos/pegasus/pegasus-mac-97-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2665,9 +2030,6 @@
     "relative_path": "pegasus-mac-demo-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/pegasus/pegasus-mac-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2675,9 +2037,6 @@
     "relative_path": "pegasus-mac-demo-en-nonmac-format",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/pegasus/pegasus-mac-demo-en-nonmac-format.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -2694,8 +2053,6 @@
     "id": "playground3d:playground3d",
     "relative_path": "playground3d",
     "description": "The Testing and Playground Environment for 3D Renderers",
-    "languages": null,
-    "platform": "Unknown",
     "company": "ScummVM",
     "name": "Playground 3D"
   },
@@ -2714,9 +2071,6 @@
     "relative_path": "private-eye-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/private/private-eye-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -2823,66 +2177,49 @@
     "id": "queen:queen",
     "relative_path": "FOTAQ_Floppy",
     "description": "Freeware Floppy Version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_Floppy.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_Floppy.zip"
   },
   {
     "id": "queen:queen",
     "relative_path": "FOTAQ_Fr_Floppy",
     "description": "Freeware Floppy Version (French)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_Fr_Floppy.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_Fr_Floppy.zip"
   },
   {
     "id": "queen:queen",
     "relative_path": "FOTAQ_Fr_Talkie_1.0",
     "description": "Freeware CD Version (French voices and subtitles, ogg compressed sfx/speech)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_Fr_Talkie_1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_Fr_Talkie_1.0.zip"
   },
   {
     "id": "queen:queen",
     "relative_path": "FOTAQ_Ger_talkie-1.0",
     "description": "Freeware CD Version (German voices and subtitles, ogg compressed sfx/speech)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_Ger_talkie-1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_Ger_talkie-1.0.zip"
   },
   {
     "id": "queen:queen",
     "relative_path": "FOTAQ_Heb_talkie",
     "description": "Freeware CD Version (Hebrew subtitles, English voices, ogg compressed sfx/speech)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_Heb_talkie.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_Heb_talkie.zip"
   },
   {
     "id": "queen:queen",
     "relative_path": "FOTAQ_It_Talkie_1.0",
     "description": "Freeware CD Version (Italian subtitles, English voices, ogg compressed sfx/speech)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_It_Talkie_1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_It_Talkie_1.0.zip"
   },
   {
     "id": "queen:queen",
     "relative_path": "FOTAQ_Talkie-original",
     "description": "Freeware CD Version (unmodified original)",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_Talkie-original.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Flight of the Amazon Queen/FOTAQ_Talkie-original.zip"
   },
   {
     "id": "queen:queen",
     "relative_path": "queen-amiga-demo-en",
     "description": "Amiga  Demo",
     "download_url": "/frs/demos/queen/queen-amiga-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -2890,9 +2227,6 @@
     "relative_path": "queen-amiga-demo2-en",
     "description": "Amiga Alternative Demo",
     "download_url": "/frs/demos/queen/queen-amiga-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -2900,9 +2234,6 @@
     "relative_path": "queen-amiga-interview-en",
     "description": "Amiga Interview Demo",
     "download_url": "/frs/demos/queen/queen-amiga-interview-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -2910,9 +2241,6 @@
     "relative_path": "queen-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/queen/queen-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2920,9 +2248,6 @@
     "relative_path": "queen-dos-demo-en-alt",
     "description": "DOS Alternative Demo",
     "download_url": "/frs/demos/queen/queen-dos-demo-en-alt.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2930,9 +2255,6 @@
     "relative_path": "queen-dos-interview-en",
     "description": "DOS Interview Demo",
     "download_url": "/frs/demos/queen/queen-dos-interview-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2950,9 +2272,6 @@
     "relative_path": "queen-dos-pcgames-demo-en",
     "description": "DOS PCGAMES Demo",
     "download_url": "/frs/demos/queen/queen-dos-pcgames-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2960,9 +2279,6 @@
     "relative_path": "ihnm-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/saga/ihnm-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -2990,9 +2306,6 @@
     "relative_path": "ite-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/saga/ite-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3000,9 +2313,6 @@
     "relative_path": "ite-linux-trial-demo-en",
     "description": "Linux Trial Version Demo",
     "download_url": "/frs/demos/saga/ite-linux-trial-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Linux"
   },
   {
@@ -3010,9 +2320,6 @@
     "relative_path": "ite-mac-trial-demo-en",
     "description": "Macintosh Trial Version Demo",
     "download_url": "/frs/demos/saga/ite-mac-trial-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -3020,9 +2327,6 @@
     "relative_path": "ite-win-new-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/saga/ite-win-new-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3030,9 +2334,6 @@
     "relative_path": "ite-win-old-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/saga/ite-win-old-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3040,9 +2341,6 @@
     "relative_path": "ite-win-trial-demo-en",
     "description": "Windows Trial Version Demo",
     "download_url": "/frs/demos/saga/ite-win-trial-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3050,9 +2348,6 @@
     "relative_path": "astrochicken-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/sci/astrochicken-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3060,9 +2355,6 @@
     "relative_path": "camelot-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/camelot-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3070,9 +2362,6 @@
     "relative_path": "castlebrain-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/castlebrain-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3080,9 +2369,6 @@
     "relative_path": "ecoquest-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/ecoquest-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3090,9 +2376,6 @@
     "relative_path": "ecoquest2-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/ecoquest2-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3100,9 +2383,6 @@
     "relative_path": "fairytales-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/fairytales-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3110,9 +2390,6 @@
     "relative_path": "freddypharkas-dos-demo1-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/sci/freddypharkas-dos-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3120,9 +2397,6 @@
     "relative_path": "freddypharkas-dos-demo2-en",
     "description": "DOS Alternative Demo",
     "download_url": "/frs/demos/sci/freddypharkas-dos-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3130,9 +2404,6 @@
     "relative_path": "freddypharkas-win-cd-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/sci/freddypharkas-win-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3140,9 +2411,6 @@
     "relative_path": "gk1-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/sci/gk1-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3150,9 +2418,6 @@
     "relative_path": "gk2-win-ni-demo-en",
     "description": "Windows Non-Interactive Demo",
     "download_url": "/frs/demos/sci/gk2-win-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3160,9 +2425,6 @@
     "relative_path": "hoyle3-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/hoyle3-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3170,9 +2432,6 @@
     "relative_path": "hoyle4-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/hoyle4-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3180,9 +2439,6 @@
     "relative_path": "hoyle5-win-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/sci/hoyle5-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3190,9 +2446,6 @@
     "relative_path": "iceman-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/iceman-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3200,9 +2453,6 @@
     "relative_path": "islandbrain-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/islandbrain-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3210,9 +2460,6 @@
     "relative_path": "kq1sci-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/kq1sci-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3220,9 +2467,6 @@
     "relative_path": "kq4sci-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/kq4sci-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3230,9 +2474,6 @@
     "relative_path": "kq6-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/kq6-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3240,9 +2481,6 @@
     "relative_path": "kq7-dos-win-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/kq7-dos-win-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3250,9 +2488,6 @@
     "relative_path": "laurabow-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/laurabow-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3260,9 +2495,6 @@
     "relative_path": "laurabow2-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/laurabow2-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3270,9 +2502,6 @@
     "relative_path": "lighthouse-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/sci/lighthouse-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3280,9 +2509,6 @@
     "relative_path": "lighthouse-win-demo2-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/sci/lighthouse-win-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3290,9 +2516,6 @@
     "relative_path": "lighthouse-win-ni-demo-en",
     "description": "Windows Non-Interactive Demo",
     "download_url": "/frs/demos/sci/lighthouse-win-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3300,9 +2523,6 @@
     "relative_path": "longbow-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/longbow-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3310,9 +2530,6 @@
     "relative_path": "lsl1sci-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/lsl1sci-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3320,9 +2537,6 @@
     "relative_path": "lsl2-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/lsl2-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3330,9 +2544,6 @@
     "relative_path": "lsl3-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/lsl3-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3340,9 +2551,6 @@
     "relative_path": "lsl5-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/lsl5-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3350,9 +2558,6 @@
     "relative_path": "lsl6-dos-ni-demo-en",
     "description": "DOS Non-Engine Demo",
     "download_url": "/frs/demos/sci/Non-Engine/lsl6-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3360,9 +2565,6 @@
     "relative_path": "lsl7-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/sci/lsl7-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3370,9 +2572,6 @@
     "relative_path": "mothergoose-win-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/sci/mothergoose-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3380,9 +2579,6 @@
     "relative_path": "pepper-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/sci/pepper-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3390,9 +2586,6 @@
     "relative_path": "pepper-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/pepper-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3400,9 +2593,6 @@
     "relative_path": "pepper-dos-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/sci/pepper-dos-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3410,9 +2600,6 @@
     "relative_path": "phantasmagoria-dos-win-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/sci/phantasmagoria-dos-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3420,9 +2607,6 @@
     "relative_path": "phantasmagoria-dos-win-demo1-en",
     "description": "DOS Alternative Demo",
     "download_url": "/frs/demos/sci/phantasmagoria-dos-win-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3430,9 +2614,6 @@
     "relative_path": "pq2-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/pq2-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3440,9 +2621,6 @@
     "relative_path": "pq3-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/pq3-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3450,9 +2628,6 @@
     "relative_path": "pq4-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/pq4-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3460,9 +2635,6 @@
     "relative_path": "pqswat-win-demo-en",
     "description": "Windows Unsupported Demo",
     "download_url": "/frs/demos/sci/pqswat-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3470,9 +2642,6 @@
     "relative_path": "qfg1-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/qfg1-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3480,9 +2649,6 @@
     "relative_path": "qfg1vga-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/qfg1vga-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3490,9 +2656,6 @@
     "relative_path": "qfg2-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/qfg2-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3500,9 +2663,6 @@
     "relative_path": "qfg3-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/qfg3-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3510,9 +2670,6 @@
     "relative_path": "qfg4-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/qfg4-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3520,9 +2677,6 @@
     "relative_path": "rama-dos-win-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/rama-dos-win-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3530,9 +2684,6 @@
     "relative_path": "shivers-win-cd-demo-en",
     "description": "Windows CD Demo",
     "download_url": "/frs/demos/sci/shivers-win-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3540,9 +2691,6 @@
     "relative_path": "shivers-win-demo-en",
     "description": "Windows Non-Interactive Demo",
     "download_url": "/frs/demos/sci/shivers-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3550,9 +2698,6 @@
     "relative_path": "shivers-win-demo2-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/sci/shivers-win-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3560,9 +2705,6 @@
     "relative_path": "slater-dos-demo.en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/sci/slater-dos-demo.en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3570,9 +2712,6 @@
     "relative_path": "sq1sci-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/sq1sci-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3580,9 +2719,6 @@
     "relative_path": "sq3-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sci/sq3-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3590,9 +2726,6 @@
     "relative_path": "sq5-dos-ni-demo-en",
     "description": "DOS Non-Engine Demo",
     "download_url": "/frs/demos/sci/Non-Engine/sq5-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3600,9 +2733,6 @@
     "relative_path": "sq6-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/sci/sq6-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3610,9 +2740,6 @@
     "relative_path": "sq6-win-demo1-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/sci/sq6-win-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3620,9 +2747,6 @@
     "relative_path": "sq6-win-demo2-en",
     "description": "Windows Alternative Demo",
     "download_url": "/frs/demos/sci/sq6-win-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3630,9 +2754,6 @@
     "relative_path": "torin-dos-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/sci/torin-dos-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3700,9 +2821,6 @@
     "relative_path": "atlantis-dos-demo1-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/scumm/atlantis-dos-demo1-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3710,9 +2828,6 @@
     "relative_path": "atlantis-dos-demo2-en",
     "description": "DOS Alternative Demo",
     "download_url": "/frs/demos/scumm/atlantis-dos-demo2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3720,9 +2835,6 @@
     "relative_path": "atlantis-dos-demo3-en",
     "description": "DOS Alternative 2 Demo",
     "download_url": "/frs/demos/scumm/atlantis-dos-demo3-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3730,9 +2842,6 @@
     "relative_path": "atlantis-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/atlantis-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3750,9 +2859,6 @@
     "relative_path": "atlantis-mac-demo",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/scumm/atlantis-mac-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -3860,9 +2966,6 @@
     "relative_path": "comi-win-large-demo-en",
     "description": "Windows Large Demo",
     "download_url": "/frs/demos/scumm/comi-win-large-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3870,9 +2973,6 @@
     "relative_path": "comi-win-small-demo-en",
     "description": "Windows Small Demo",
     "download_url": "/frs/demos/scumm/comi-win-small-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -3880,9 +2980,6 @@
     "relative_path": "dig-dos-demo-en",
     "description": "DOS CD Demo",
     "download_url": "/frs/demos/scumm/dig-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -3890,9 +2987,6 @@
     "relative_path": "dig-mac-demo-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/scumm/dig-mac-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -3910,9 +3004,6 @@
     "relative_path": "farm-win-demo-us",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/scumm/he/farm-win-demo-us.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -4210,9 +3301,6 @@
     "relative_path": "ft-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/scumm/ft-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4220,9 +3308,6 @@
     "relative_path": "ft-mac-demo-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/scumm/ft-mac-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -4230,9 +3315,6 @@
     "relative_path": "ft-mac-ni-demo-en",
     "description": "Macintosh Trailer Demo",
     "download_url": "/frs/demos/scumm/ft-mac-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -4240,9 +3322,6 @@
     "relative_path": "indy3-ega-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/indy3-ega-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4250,9 +3329,6 @@
     "relative_path": "loom-dos-long-demo-en",
     "description": "DOS Long Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/loom-dos-long-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4260,9 +3336,6 @@
     "relative_path": "loom-dos-short-demo-en",
     "description": "DOS Short Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/loom-dos-short-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4280,9 +3353,6 @@
     "relative_path": "maniac-c64-demo-en",
     "description": "Commodore 64  Demo",
     "download_url": "/frs/demos/scumm/maniac-c64-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Commodore 64"
   },
   {
@@ -4290,9 +3360,6 @@
     "relative_path": "maniac-dos-v1-ni-demo-en",
     "description": "DOS V1 Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/maniac-dos-v1-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4300,9 +3367,6 @@
     "relative_path": "maniac-dos-v2-ni-demo-en",
     "description": "DOS V2 Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/maniac-dos-v2-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4310,9 +3374,6 @@
     "relative_path": "monkey1-amiga-demo-en",
     "description": "Amiga  Demo",
     "download_url": "/frs/demos/scumm/monkey1-amiga-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -4330,9 +3391,6 @@
     "relative_path": "monkey1-dos-ega-demo-en",
     "description": "DOS EGA Demo",
     "download_url": "/frs/demos/scumm/monkey1-dos-ega-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4340,9 +3398,6 @@
     "relative_path": "mi2-dos-ni-slideshow-demo-en",
     "description": "DOS Non-Engine (Slideshow) Demo",
     "download_url": "/frs/demos/scumm/Non-Engine/mi2-dos-ni-slideshow-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4350,9 +3405,6 @@
     "relative_path": "monkey2-dos-ni-demo-en",
     "description": "DOS Unsupported Demo",
     "download_url": "/frs/demos/scumm/monkey2-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4500,9 +3552,6 @@
     "relative_path": "pass-dos-en",
     "description": "DOS EGA Demo",
     "download_url": "/frs/demos/scumm/pass-dos-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4800,9 +3849,6 @@
     "relative_path": "samnmax-dos-cd-demo-en",
     "description": "DOS CD Demo",
     "download_url": "/frs/demos/scumm/samnmax-dos-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4820,9 +3866,6 @@
     "relative_path": "samnmax-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/scumm/samnmax-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4830,9 +3873,6 @@
     "relative_path": "samnmax-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/samnmax-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4840,9 +3880,6 @@
     "relative_path": "samnmax-dos-wip-demo-en",
     "description": "DOS WIP Demo",
     "download_url": "/frs/demos/scumm/samnmax-dos-wip-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -4850,9 +3887,6 @@
     "relative_path": "samnmax-mac-demo-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/scumm/samnmax-mac-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -5020,9 +4054,6 @@
     "relative_path": "dott-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/dott-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5040,9 +4071,6 @@
     "relative_path": "dott-mac-ni-demo-en",
     "description": "Macintosh Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/dott-mac-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -5070,9 +4098,6 @@
     "relative_path": "zak-atari-ni-demo",
     "description": "Atari ST Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/zak-atari-ni-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Atari ST"
   },
   {
@@ -5080,9 +4105,6 @@
     "relative_path": "zak-fmtowns-indyloom-ni-demo",
     "description": "FM Towns Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/zak-fmtowns-indyloom-ni-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "FM Towns"
   },
   {
@@ -5090,9 +4112,6 @@
     "relative_path": "zak-fmtowns-indyzak-ni-demo",
     "description": "FM Towns Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/zak-fmtowns-indyzak-ni-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "FM Towns"
   },
   {
@@ -5100,9 +4119,6 @@
     "relative_path": "zak-fmtowns-zakloom-ni-demo",
     "description": "FM Towns Non-Interactive Demo",
     "download_url": "/frs/demos/scumm/zak-fmtowns-zakloom-ni-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "FM Towns"
   },
   {
@@ -5110,9 +4126,6 @@
     "relative_path": "scalpel-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/sherlock/scalpel-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5120,35 +4133,25 @@
     "relative_path": "scalpel-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sherlock/scalpel-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
     "id": "sky:sky",
     "relative_path": "bass-cd-1.2",
     "description": "Freeware CD Version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Beneath a Steel Sky/bass-cd-1.2.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Beneath a Steel Sky/bass-cd-1.2.zip"
   },
   {
     "id": "sky:sky",
     "relative_path": "BASS-Floppy-1.3",
     "description": "Freeware Floppy Version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Beneath a Steel Sky/BASS-Floppy-1.3.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Beneath a Steel Sky/BASS-Floppy-1.3.zip"
   },
   {
     "id": "sky:sky",
     "relative_path": "sky-amiga-demo-en",
     "description": "Amiga  Demo",
     "download_url": "/frs/demos/sky/sky-amiga-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Amiga"
   },
   {
@@ -5156,9 +4159,6 @@
     "relative_path": "sky-dos-ni-anm-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/sky/sky-dos-ni-anm-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5166,9 +4166,6 @@
     "relative_path": "sky-dos-v0109-demo-en",
     "description": "DOS v0109 Demo",
     "download_url": "/frs/demos/sky/sky-dos-v0109-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5176,9 +4173,6 @@
     "relative_path": "sky-dos-v0267-demo-en",
     "description": "DOS v0267 Demo",
     "download_url": "/frs/demos/sky/sky-dos-v0267-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5196,262 +4190,187 @@
     "relative_path": "sky-dos-v0365-cd-demo-en",
     "description": "DOS v0365 CD Demo",
     "download_url": "/frs/demos/sky/sky-dos-v0365-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
     "id": "sludge:atw",
     "relative_path": "atw",
     "description": "Version v0.1",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/atw.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/atw/cover.png",
-    "company": "JBush Productions",
-    "comment": "wrong folder structure, only subfolder data/ is needed"
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/atw.zip"
   },
   {
     "id": "sludge:cubert",
     "relative_path": "cubert",
     "description": "Version Dec 15, 2005",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/cubert/cover.png"
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert.zip"
   },
   {
     "id": "sludge:cubert",
     "relative_path": "cubert-04",
     "description": "Version Mar 9, 2004",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-04.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-04.zip"
   },
   {
     "id": "sludge:cubert",
     "relative_path": "cubert-1.1",
     "description": "Version v1.1, August 4, 2002",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-1.1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-1.1.zip"
   },
   {
     "id": "sludge:cubert",
     "relative_path": "cubert-1.1-1",
     "description": "Version v1.1, June 11, 2003",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-1.1-1.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-1.1-1.zip"
   },
   {
     "id": "sludge:cubert",
     "relative_path": "cubert-1.2",
     "description": "Version v1.2, August 16, 2002",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-1.2.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-1.2.zip"
   },
   {
     "id": "sludge:cubert",
     "relative_path": "cubert-1.25",
     "description": "Version v1.25, September 5, 2002",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-1.25.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/cubert-1.25.zip"
   },
   {
     "id": "sludge:frasse",
     "relative_path": "frasse-1.03",
     "description": "Version v1.03",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/frasse-1.03.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/frasse-1.03.zip"
   },
   {
     "id": "sludge:frasse",
     "relative_path": "frasse-1.04",
     "description": "Version v1.04",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/frasse-1.04.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/frasse-1.04.zip"
   },
   {
     "id": "sludge:frasse",
     "relative_path": "frasse-2.02",
     "description": "Version v2.02",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/frasse-2.02.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/frasse-2.02.zip"
   },
   {
     "id": "sludge:frasse",
     "relative_path": "frasse-2.03",
     "description": "Version v2.03",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/frasse-2.03.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/frasse-2.03.zip"
   },
   {
     "id": "sludge:interview",
     "relative_path": "interview",
     "description": "Freeware",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/interview.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/interview/cover.png"
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/interview.zip"
   },
   {
     "id": "sludge:leptonsquest",
     "relative_path": "leptonsquest",
     "description": "Windows version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/leptonsquest.zip",
-    "languages": [],
-    "platform": "",
-    "company": "IndieSquish"
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/leptonsquest.zip"
   },
   {
     "id": "sludge:leptonsquest",
     "relative_path": "leptonsquest-linux",
     "description": "Linux version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/leptonsquest-linux.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/leptonsquest-linux.zip"
   },
   {
     "id": "sludge:leptonsquest",
     "relative_path": "leptonsquest-mac",
     "description": "Mac version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/leptonsquest-mac.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/leptonsquest-mac.zip"
   },
   {
     "id": "sludge:life",
     "relative_path": "life",
     "description": "Freeware",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/life.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/life.zip"
   },
   {
     "id": "sludge:life",
     "relative_path": "lifeflashesby",
     "description": "SLG version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/lifeflashesby.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/lifeflashesby.zip"
   },
   {
     "id": "sludge:life",
     "relative_path": "LifeFlashesBy-setup.exe",
     "description": "Windows installer version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/https://games.squinky.me/downloads/lfb/LifeFlashesBy-setup.exe",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/https://games.squinky.me/downloads/lfb/LifeFlashesBy-setup.exe"
   },
   {
     "id": "sludge:mandy",
     "relative_path": "mandy-1.2",
     "description": "English, Slovak, v1.2",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/mandy-1.2.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/mandy-1.2.zip"
   },
   {
     "id": "sludge:mandy",
     "relative_path": "mandy-1.3",
     "description": "English, Italian, Slovak, v1.3",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/mandy-1.3.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/mandy-1.3.zip"
   },
   {
     "id": "sludge:mandy",
     "relative_path": "mandy-1.4",
     "description": "English, Italian, Polish, Slovak, v1.4",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/mandy-1.4.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/mandy-1.4.zip"
   },
   {
     "id": "sludge:nsc",
     "relative_path": "nsc",
     "description": "Version v1.03",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/nsc.zip",
-    "languages": [],
-    "platform": "",
-    "company": "Upper Orbit Software"
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/nsc.zip"
   },
   {
     "id": "sludge:outoforder",
     "relative_path": "ooo",
     "description": "Windows version, June 5, 2003",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/ooo.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/ooo.zip"
   },
   {
     "id": "sludge:outoforder",
     "relative_path": "outoforder",
     "description": "Linux version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/outoforder.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/outoforder.zip"
   },
   {
     "id": "sludge:robinsrescue",
     "relative_path": "robinsrescue",
     "description": "SLG version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/robinsrescue.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/robinsrescue/cover.png"
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/robinsrescue.zip"
   },
   {
     "id": "sludge:robinsrescue",
     "relative_path": "robinsrescue-alt",
     "description": "Alternative Version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/robinsrescue-alt.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/robinsrescue-alt.zip"
   },
   {
     "id": "sludge:robinsrescue",
     "relative_path": "robinsrescue-linux",
     "description": "Linux version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/robinsrescue-linux.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/robinsrescue-linux.zip"
   },
   {
     "id": "sludge:tgttpoacs",
     "relative_path": "tgttpoacs",
     "description": "Freeware",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/tgttpoacs.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/tgttpoacs/cover.png"
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/tgttpoacs.zip"
   },
   {
     "id": "sludge:tsotc",
     "relative_path": "tsotc-v6",
     "description": "Version v6",
-    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/tsotc-v6.zip",
-    "languages": [],
-    "platform": "",
-    "cover": "https://scummvm-data.kuendig.io/tsotc-v6/cover.jpg",
-    "company": "Sebastian Krzyszkowiak"
+    "download_url": "https://downloads.scummvm.org/frs/extras/SLUDGE/tsotc-v6.zip"
   },
   {
     "id": "stark:tlj",
     "relative_path": "tlj-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/stark/tlj-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -5459,9 +4378,6 @@
     "relative_path": "tlj-demo-en-early",
     "description": "Windows Early Demo",
     "download_url": "/frs/demos/stark/tlj-demo-en-early.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -5469,9 +4385,6 @@
     "relative_path": "tlj-demo-en-new",
     "description": "Windows New Demo",
     "download_url": "/frs/demos/stark/tlj-demo-en-new.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -5509,9 +4422,6 @@
     "relative_path": "sword1-mac-demo-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/sword1/sword1-mac-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -5519,9 +4429,6 @@
     "relative_path": "sword1-psx-demo-en",
     "description": "PlayStation  Demo",
     "download_url": "/frs/demos/sword1/sword1-psx-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "PlayStation"
   },
   {
@@ -5529,9 +4436,6 @@
     "relative_path": "sword1-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/sword1/sword1-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -5549,27 +4453,19 @@
     "relative_path": "sword1-win-preview-en",
     "description": "Windows Preview Demo",
     "download_url": "/frs/demos/sword1/sword1-win-preview-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
     "id": "sword25:sword25",
     "relative_path": "sword25-v1.0",
     "description": "Freeware Version",
-    "download_url": "https://downloads.scummvm.org/frs/extras/Broken Sword 2.5/sword25-v1.0.zip",
-    "languages": [],
-    "platform": ""
+    "download_url": "https://downloads.scummvm.org/frs/extras/Broken Sword 2.5/sword25-v1.0.zip"
   },
   {
     "id": "sword2:sword2",
     "relative_path": "sword2-psx-demo-en",
     "description": "PlayStation  Demo",
     "download_url": "/frs/demos/sword2/sword2-psx-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "PlayStation"
   },
   {
@@ -5577,9 +4473,6 @@
     "relative_path": "sword2-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/sword2/sword2-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -5597,9 +4490,6 @@
     "relative_path": "teen-dos-union-demo-en",
     "description": "DOS Union Demo",
     "download_url": "/frs/demos/teen/teen-dos-union-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5607,17 +4497,12 @@
     "relative_path": "teen-dos-wiztech-demo-en",
     "description": "DOS WizTech Demo",
     "download_url": "/frs/demos/teen/teen-dos-wiztech-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
     "id": "testbed:testbed",
     "relative_path": "testbed",
     "description": "The Backend Testing Framework",
-    "languages": null,
-    "platform": "Unknown",
     "company": "ScummVM",
     "name": "Testbed"
   },
@@ -5626,9 +4511,6 @@
     "relative_path": "dw-dos-cd-demo-en",
     "description": "DOS CD Demo",
     "download_url": "/frs/demos/tinsel/dw-dos-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5636,9 +4518,6 @@
     "relative_path": "dw-dos-floppy-demo-en",
     "description": "DOS Floppy Demo",
     "download_url": "/frs/demos/tinsel/dw-dos-floppy-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5646,9 +4525,6 @@
     "relative_path": "dw-mac-cd-demo-en",
     "description": "Macintosh  Demo",
     "download_url": "/frs/demos/tinsel/dw-mac-cd-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Macintosh"
   },
   {
@@ -5656,9 +4532,6 @@
     "relative_path": "dw-psx-demo-en",
     "description": "PlayStation  Demo",
     "download_url": "/frs/demos/tinsel/dw-psx-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "PlayStation"
   },
   {
@@ -5666,9 +4539,6 @@
     "relative_path": "dw2-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/tinsel/dw2-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5676,9 +4546,6 @@
     "relative_path": "dw2-psx-demo-en",
     "description": "PlayStation  Demo",
     "download_url": "/frs/demos/tinsel/dw2-psx-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "PlayStation"
   },
   {
@@ -5686,9 +4553,6 @@
     "relative_path": "dw2-win-demo-2-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/tinsel/dw2-win-demo-2-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -5696,9 +4560,6 @@
     "relative_path": "dw2-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/tinsel/dw2-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -5706,9 +4567,6 @@
     "relative_path": "toltecs-demo",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/toltecs/toltecs-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5726,9 +4584,6 @@
     "relative_path": "tony-demo",
     "description": "Windows Extracted Demo",
     "download_url": "/frs/demos/tony/tony-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -5736,9 +4591,6 @@
     "relative_path": "toon-demo",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/toon/toon-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5756,9 +4608,6 @@
     "relative_path": "touche-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/touche/touche-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5776,9 +4625,6 @@
     "relative_path": "nl-win-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/trecision/nl-win-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
@@ -5786,9 +4632,6 @@
     "relative_path": "blueforce-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/tsage/blueforce-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5796,9 +4639,6 @@
     "relative_path": "ringworld-demo-alt",
     "description": "DOS Alternative Demo",
     "download_url": "/frs/demos/tsage/ringworld-demo-alt.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5806,9 +4646,6 @@
     "relative_path": "ringworld-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/tsage/ringworld-dos-ni-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5816,9 +4653,6 @@
     "relative_path": "returntoringworld-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/tsage/returntoringworld-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5826,9 +4660,6 @@
     "relative_path": "tucker-dos-demo",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/tucker/tucker-dos-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5836,9 +4667,6 @@
     "relative_path": "tucker-dos-ni-demo",
     "description": "DOS Non-Interactive Demo",
     "download_url": "/frs/demos/tucker/tucker-dos-ni-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5846,7 +4674,6 @@
     "relative_path": "lba-demo-mult",
     "description": "DOS Multilanguage Demo",
     "download_url": "/frs/demos/twine/lba-demo-mult.zip",
-    "languages": [],
     "platform": "DOS"
   },
   {
@@ -5854,9 +4681,6 @@
     "relative_path": "remorse-dos-demo-en",
     "description": "DOS  Demo",
     "download_url": "/frs/demos/ultima/remorse-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "DOS"
   },
   {
@@ -5864,30 +4688,24 @@
     "relative_path": "voyeur-dos-demo-en",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/voyeur/voyeur-dos-demo-en.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
     "id": "wage:afm",
     "relative_path": "afm-1.8",
     "description": "Version 1.8",
-    "languages": null,
     "platform": "Macintosh"
   },
   {
     "id": "wage:amot",
     "relative_path": "amot-1.8",
     "description": "Version 1.8",
-    "languages": null,
     "platform": "Macintosh"
   },
   {
     "id": "wage:drakmythcastle",
     "relative_path": "drakmythcastle",
     "description": "Freeware",
-    "languages": null,
     "platform": "Macintosh",
     "company": "James C. Gehrig & Virginia Batcheff"
   },
@@ -5895,7 +4713,6 @@
     "id": "wage:grailquest",
     "relative_path": "grailquest-demo",
     "description": "Demo",
-    "languages": null,
     "platform": "Macintosh",
     "company": "Artworx",
     "name": "GrailQuest: Adventure in the Age of King Arthur"
@@ -5904,21 +4721,18 @@
     "id": "wage:raysmaze",
     "relative_path": "raysmaze",
     "description": "Freeware",
-    "languages": null,
     "platform": "Macintosh"
   },
   {
     "id": "wage:raysmaze",
     "relative_path": "raysmaze-alt",
     "description": "Alternative Version",
-    "languages": null,
     "platform": "Macintosh"
   },
   {
     "id": "wage:twisted",
     "relative_path": "twisted-1.6",
     "description": "Version 1.6",
-    "languages": null,
     "platform": "Macintosh"
   },
   {
@@ -5926,9 +4740,6 @@
     "relative_path": "helga_deep_in_trouble-demo",
     "description": "Windows  Demo",
     "download_url": "/frs/demos/wintermute/helga_deep_in_trouble-demo.zip",
-    "languages": [
-      "en"
-    ],
     "platform": "Windows"
   },
   {
