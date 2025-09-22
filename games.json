@@ -1278,6 +1278,15 @@
     "platform": "Windows"
   },
   {
+    "id": "hpl1:penumbraoverture",
+    "relative_path": "penumbra-overture-mac",
+    "description": "Mac Demo",
+    "company": "Frictional Games",
+    "cover": "https://scummvm-data.kuendig.io/penumbra-overture-mac/cover.png",
+    "download_link": "https://www.moddb.com/games/penumbra-overture/downloads/penumbra-overture-demo-mac",
+    "name": "Penumbra: Overture"
+  },
+  {
     "id": "hugo:hugo1",
     "relative_path": "hugo1-dos-1.1-demo-en",
     "description": "DOS V1.1 Demo",
