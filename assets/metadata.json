@@ -152,6 +152,14 @@
     "nsc": {
         "company": "Upper Orbit Software"
     },
+    "penumbra-overture-mac": {
+        "company": "Frictional Games",
+        "cover": "https://scummvm-data.kuendig.io/penumbra-overture-mac/cover.png",
+        "description": "Mac Demo",
+        "download_link": "https://www.moddb.com/games/penumbra-overture/downloads/penumbra-overture-demo-mac",
+        "id": "hpl1:penumbraoverture",
+        "name": "Penumbra: Overture"
+    },
     "playground3d": {
         "company": "ScummVM",
         "description": "The Testing and Playground Environment for 3D Renderers",
