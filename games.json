@@ -3341,6 +3341,18 @@
     "platform": "DOS"
   },
   {
+    "id": "scumm:indyloom",
+    "relative_path": "zak-fmtowns-indyloom-ni-demo",
+    "description": null,
+    "comment": "Not in compatibility table, manually added"
+  },
+  {
+    "id": "scumm:indyzak",
+    "relative_path": "zak-fmtowns-indyzak-ni-demo",
+    "description": null,
+    "comment": "Not in compatibility table, manually added"
+  },
+  {
     "id": "scumm:loom",
     "relative_path": "loom-dos-long-demo-en",
     "description": "DOS Long Non-Interactive Demo",
@@ -4117,25 +4129,10 @@
     "platform": "Atari ST"
   },
   {
-    "id": "scumm:zak",
-    "relative_path": "zak-fmtowns-indyloom-ni-demo",
-    "description": "FM Towns Non-Interactive Demo",
-    "download_url": "/frs/demos/scumm/zak-fmtowns-indyloom-ni-demo.zip",
-    "platform": "FM Towns"
-  },
-  {
-    "id": "scumm:zak",
-    "relative_path": "zak-fmtowns-indyzak-ni-demo",
-    "description": "FM Towns Non-Interactive Demo",
-    "download_url": "/frs/demos/scumm/zak-fmtowns-indyzak-ni-demo.zip",
-    "platform": "FM Towns"
-  },
-  {
-    "id": "scumm:zak",
+    "id": "scumm:zakloom",
     "relative_path": "zak-fmtowns-zakloom-ni-demo",
-    "description": "FM Towns Non-Interactive Demo",
-    "download_url": "/frs/demos/scumm/zak-fmtowns-zakloom-ni-demo.zip",
-    "platform": "FM Towns"
+    "description": null,
+    "comment": "Not in compatibility table, manually added"
   },
   {
     "id": "sherlock:scalpel",
