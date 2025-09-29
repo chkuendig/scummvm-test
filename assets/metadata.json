@@ -242,6 +242,18 @@
             "en_US"
         ]
     },
+    "zak-fmtowns-indyloom-ni-demo": {
+        "comment": "Not in compatibility table, manually added",
+        "id": "scumm:indyloom"
+    },
+    "zak-fmtowns-indyzak-ni-demo": {
+        "comment": "Not in compatibility table, manually added",
+        "id": "scumm:indyzak"
+    },
+    "zak-fmtowns-zakloom-ni-demo": {
+        "comment": "Not in compatibility table, manually added",
+        "id": "scumm:zakloom"
+    },
     "zcode-advent": {
         "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
         "company": "William Crowther and Donald Woods",
