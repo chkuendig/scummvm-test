@@ -282,6 +282,16 @@
   },
   {
     "id": "alcachofa:aventuradecine",
+    "relative_path": "aventuradecine-win-demo-de",
+    "description": "Windows  Demo",
+    "download_url": "/frs/demos/alcachofa/aventuradecine-win-demo-de.zip",
+    "languages": [
+      "de"
+    ],
+    "platform": "Windows"
+  },
+  {
+    "id": "alcachofa:aventuradecine",
     "relative_path": "CleverSmartDemoCD",
     "description": "Demo",
     "platform": "Windows",
