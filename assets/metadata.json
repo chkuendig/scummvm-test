@@ -30,19 +30,9 @@
         "comment": "Also broken on native: ERROR: Missing file BLUE.RLB!",
         "skip": true
     },
-    "burger-dos-demo-en": {
-        "comment": "https://downloads.scummvm.org/frs/demos/m4/burger-dos-demo-en.zip but renamed lowercase",
-        "description": "DOS Demo",
-        "id": "m4:burger",
-        "skip": true
-    },
-    "burger-dos-ni-demo-en": {
-        "comment": "doesn't work on case sensitive filesystems",
-        "skip": true
-    },
     "cantitoe": {
         "description": "Freeware",
-        "id": "age:cantitoe"
+        "id": "wage:cantitoe"
     },
     "chewy-dos-demo-de": {
         "comment": "Game not implemented",
@@ -187,12 +177,6 @@
         ],
         "name": "RedNex",
         "platform": "Macintosh"
-    },
-    "riddle-dos-demo-en": {
-        "comment": "https://downloads.scummvm.org/frs/demos/m4/riddle-dos-demo-en.zip but renamed lowercase",
-        "description": "DOS Demo",
-        "id": "m4:riddle",
-        "skip": true
     },
     "robinsrescue": {
         "cover": "https://scummvm-data.kuendig.io/robinsrescue/cover.png"
