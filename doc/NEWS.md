@@ -27,6 +27,7 @@ For a more comprehensive changelog of the latest experimental code, see:
    - Added support for WAGE-based game. More than 160 titles so far.
    - Added support for Penumbra: Overture.
    - Added support for Tex Murphy: Martian Memorandum
+   - Added support for Mort&Phil: A Movie Adventure (Special Edition).
 
  Access:
    - Added keymapper support.
@@ -88,7 +89,7 @@ For a more comprehensive changelog of the latest experimental code, see:
    - Added Russian version support to lure.dat.
 
  MADE:
-  - Added Text-to-Speech support.
+   - Added Text-to-Speech support.
 
  MM:
    - Fixed protection from elements spell.
@@ -198,6 +199,7 @@ For a more comprehensive changelog of the latest experimental code, see:
 
  Wintermute:
    - 3D renderer enabled by default for 2D games.
+   - Added Text-to-Speech support.
 
 #### 2.9.1 "Slappin da BASS" (2025-05-25)
 

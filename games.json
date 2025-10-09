@@ -26,11 +26,6 @@
     "download_url": "https://downloads.scummvm.org/frs/extras/Mystery House/mysthous-fr.zip"
   },
   {
-    "id": "age:cantitoe",
-    "relative_path": "cantitoe",
-    "description": "Freeware"
-  },
-  {
     "id": "agi:kq4",
     "relative_path": "kq4-dos-ni-demo-en",
     "description": "DOS Non-Interactive Demo",
@@ -4724,6 +4719,11 @@
     "relative_path": "amot-1.8",
     "description": "Version 1.8",
     "platform": "Macintosh"
+  },
+  {
+    "id": "wage:cantitoe",
+    "relative_path": "cantitoe",
+    "description": "Freeware"
   },
   {
     "id": "wage:drakmythcastle",
