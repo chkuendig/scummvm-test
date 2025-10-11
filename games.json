@@ -286,19 +286,6 @@
     "platform": "Windows"
   },
   {
-    "id": "alcachofa:aventuradecine",
-    "relative_path": "CleverSmartDemoCD",
-    "description": "Demo",
-    "platform": "Windows",
-    "comment": "Source: https://archive.org/details/pca-1105",
-    "company": "Alcachofa Soft",
-    "cover": "https://scummvm-data.kuendig.io/CleverSmartDemoCD/cover.png",
-    "languages": [
-      "de"
-    ],
-    "name": "Clever & Smart - A Movie Adventure"
-  },
-  {
     "id": "asylum:asylum",
     "relative_path": "asylum-demo",
     "description": "Windows  Demo",
@@ -316,10 +303,7 @@
     "id": "bagel:mazeodoom",
     "relative_path": "MAZEDOOM",
     "description": "Maze O' Doom (Demo)",
-    "platform": "Windows",
-    "company": "Boffo Games",
-    "cover": "https://scummvm-data.kuendig.io/MAZEDOOM/cover.png",
-    "name": "Hodj 'n' Podj"
+    "platform": "Windows"
   },
   {
     "id": "bagel:spacebar",
@@ -573,8 +557,6 @@
     "relative_path": "meetmediaband",
     "description": "Freeware",
     "comment": "declared Freeware by Marc Canter",
-    "company": "Canter Technology",
-    "cover": "https://scummvm-data.kuendig.io/meetmediaband/cover.png",
     "download_url": "https://archive.org/details/meetmediaband",
     "languages": [
       "en"
@@ -585,12 +567,11 @@
     "relative_path": "theapartment3",
     "description": "Interactive Demo (D3)",
     "platform": "Macintosh",
-    "cover": "https://scummvm-data.kuendig.io/theapartment3/cover.png",
+    "company": "MacroMind",
     "download_url": "https://downloads.scummvm.org/frs/demos/director/theapartment3.zip",
     "languages": [
       "en"
-    ],
-    "name": "The Apartment"
+    ]
   },
   {
     "id": "director:warlock",
@@ -795,7 +776,6 @@
     "description": "Freeware",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
     "company": "Graham Nelson",
-    "cover": "https://scummvm-data.kuendig.io/zcode-curses/cover.jpg",
     "download_url": "https://ifdb.org/viewgame?id=plvzam05bmz3enh8",
     "languages": [
       "en"
@@ -808,7 +788,6 @@
     "description": "Demo/Freeware",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
     "company": "Infocom",
-    "cover": "https://scummvm-data.kuendig.io/zcode-sampler2/cover.jpg",
     "download_url": "https://ifdb.org/viewgame?id=p00ucaayobrt2paz",
     "languages": [
       "en"
@@ -821,7 +800,6 @@
     "description": "Demo/Freeware",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
     "company": "Infocom",
-    "cover": "https://scummvm-data.kuendig.io/zcode-sampler1/cover.jpg",
     "download_url": "https://ifdb.org/viewgame?id=wa8crlfz82pra14i",
     "languages": [
       "en"
@@ -858,7 +836,6 @@
     "description": "Freeware",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
     "company": "Johan Berntsson",
-    "cover": "https://scummvm-data.kuendig.io/zcode-fantasydimension/cover.png",
     "download_url": "https://ifdb.org/viewgame?id=9gcujue3zpxbhj6k",
     "languages": [
       "en"
@@ -871,7 +848,6 @@
     "description": "Freeware",
     "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
     "company": "Garry Francis",
-    "cover": "https://scummvm-data.kuendig.io/zcode-submarine/cover.png",
     "download_url": "https://ifdb.org/viewgame?id=rw2jsnyoqxsdvyug",
     "languages": [
       "en"
@@ -1055,10 +1031,7 @@
     "id": "got:got",
     "relative_path": "gotfree",
     "description": "Freeware",
-    "download_url": "https://downloads.scummvm.org/frs/extras/God of Thunder/gotfree.zip",
-    "company": "Adept Software",
-    "cover": "https://scummvm-data.kuendig.io/gotfree/cover.png",
-    "name": "God of Thunder"
+    "download_url": "https://downloads.scummvm.org/frs/extras/God of Thunder/gotfree.zip"
   },
   {
     "id": "griffon:griffon",
@@ -1293,10 +1266,7 @@
     "id": "hpl1:penumbraoverture",
     "relative_path": "penumbra-overture-mac",
     "description": "Mac Demo",
-    "company": "Frictional Games",
-    "cover": "https://scummvm-data.kuendig.io/penumbra-overture-mac/cover.png",
-    "download_link": "https://www.moddb.com/games/penumbra-overture/downloads/penumbra-overture-demo-mac",
-    "name": "Penumbra: Overture"
+    "download_link": "https://www.moddb.com/games/penumbra-overture/downloads/penumbra-overture-demo-mac"
   },
   {
     "id": "hugo:hugo1",
@@ -4737,8 +4707,7 @@
     "relative_path": "grailquest-demo",
     "description": "Demo",
     "platform": "Macintosh",
-    "company": "Artworx",
-    "name": "GrailQuest: Adventure in the Age of King Arthur"
+    "company": "Artworx"
   },
   {
     "id": "wage:raysmaze",

@@ -99,6 +99,7 @@
 	<engine id="toltecs" name="3 Skulls of the Toltecs" alt_name="" enabled="TRUE"/>
 	<engine id="tony" name="Tony Tough and the Night of Roasted Moths" alt_name="" enabled="TRUE"/>
 	<engine id="toon" name="Toonstruck" alt_name="" enabled="TRUE"/>
+	<engine id="tot" name="Trick or Treat" alt_name="" enabled="TRUE"/>
 	<engine id="touche" name="Touché: The Adventures of the Fifth Musketeer" alt_name="" enabled="TRUE"/>
 	<engine id="trecision" name="Trecision Adventure Module" alt_name="" enabled="TRUE"/>
 	<engine id="tsage" name="TsAGE" alt_name="Tsunami Adventure Game Engine" enabled="TRUE"/>
