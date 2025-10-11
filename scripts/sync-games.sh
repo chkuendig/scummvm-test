@@ -20,6 +20,14 @@
 
 set -e # exit when any command fails
 
+##### TODO:
+# this should be three separate sripts: (this will also make it easier to run them locally)
+# - sync-games.py: script to sync games from frs to sftp (only needs to check skip true/false to override what's implied from the gsheet).
+# - generate-json.py: script to generate games.json from what's on the server (based on only demo-metadata and the demos gsheet tab),
+#   which should only include demo-specific data (rest should come from the xml at runtime). 
+#   this should probably validate we have data for every subfolder and a subfolder for all entries in the metadata (since these might be manually synced)
+# - adjust-icons-xml.py: script to adjust the xml files in scummvm-icons with game and company names (based on the metadata)
+
 # adjust index to data baseurl
 jq '.games +=  {"baseUrl":env.DATA_BASEURL}' scummvm/build-emscripten/data/index.json > scummvm/build-emscripten/data/index.json.tmp && mv scummvm/build-emscripten/data/index.json.tmp scummvm/build-emscripten/data/index.json
 
