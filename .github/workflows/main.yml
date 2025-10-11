@@ -176,6 +176,7 @@ jobs:
             key: gui-icons-${{ env.SCUMMVM_ICONS_COMMIT }}
       - if: ${{ steps.cache-icons.outputs.cache-hit != 'true' }}
         run: |
+          sed -i 's/scummvm\/scummvm-icons/chkuendig\/scummvm-icons/g' scummvm-icons/gen-set.py
           scripts/update-icons.sh
           python3 scummvm/dists/emscripten/build-make_http_index.py scummvm/build-emscripten/data/
   sync-games:

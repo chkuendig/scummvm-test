@@ -9,23 +9,11 @@
         "id": "wage:amot",
         "platform": "Macintosh"
     },
-    "asylum-demo": {
-        "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
-    },
-    "asylum-demo2": {
-        "cover": "https://scummvm-test.kuendig.io/data/gui-icons/icons/asylum-sanitarium.png"
-    },
     "atw": {
         "comment": "wrong folder structure, only subfolder data/ is needed",
-        "company": "JBush Productions",
-        "cover": "https://scummvm-data.kuendig.io/atw/cover.png"
+        "company": "JBush Productions"
     },
-    "beamish-dos-demo2-en": {
-        "cover": "https://scummvm-data.kuendig.io/beamish-dos-demo2-en/cover.png"
-    },
-    "betterd-demo-mac-ja": {
-        "cover": "https://scummvm-data.kuendig.io/betterd-demo-mac-ja/cover.png"
-    },
+    "aventuradecine-win-demo-de": {},
     "blueforce-dos-ni-demo-en": {
         "comment": "Also broken on native: ERROR: Missing file BLUE.RLB!",
         "skip": true
@@ -38,24 +26,8 @@
         "comment": "Game not implemented",
         "skip": true
     },
-    "CleverSmartDemoCD": {
-        "comment": "Source: https://archive.org/details/pca-1105",
-        "company": "Alcachofa Soft",
-        "cover": "https://scummvm-data.kuendig.io/CleverSmartDemoCD/cover.png",
-        "description": "Demo",
-        "id": "alcachofa:aventuradecine",
-        "languages": [
-            "de"
-        ],
-        "name": "Clever & Smart - A Movie Adventure",
-        "platform": "Windows"
-    },
-    "cubert": {
-        "cover": "https://scummvm-data.kuendig.io/cubert/cover.png"
-    },
-    "darkseed-dos-demo-en": {
-        "cover": "https://scummvm-data.kuendig.io/darkseed-dos-demo-en/cover.png"
-    },
+    "cubert": {},
+    "darkseed-dos-demo-en": {},
     "drakmythcastle": {
         "company": "James C. Gehrig & Virginia Batcheff",
         "description": "Freeware",
@@ -67,22 +39,16 @@
         "skip": true
     },
     "gotfree": {
-        "company": "Adept Software",
-        "cover": "https://scummvm-data.kuendig.io/gotfree/cover.png",
         "description": "Freeware",
-        "id": "got:got",
-        "name": "God of Thunder"
+        "id": "got:got"
     },
     "grailquest-demo": {
         "company": "Artworx",
         "description": "Demo",
         "id": "wage:grailquest",
-        "name": "GrailQuest: Adventure in the Age of King Arthur",
         "platform": "Macintosh"
     },
-    "interview": {
-        "cover": "https://scummvm-data.kuendig.io/interview/cover.png"
-    },
+    "interview": {},
     "kyra3-dos-ni-demo-en": {
         "comment": "doesn't work in native either - Game Data not found",
         "skip": true
@@ -91,9 +57,7 @@
         "comment": "not a demo, just a videofile 'The_Last_Express-Trailer.avi'",
         "skip": true
     },
-    "lastexpress-win-demo-en": {
-        "cover": "https://scummvm-data.kuendig.io/lastexpress-win-demo-en/cover.png"
-    },
+    "lastexpress-win-demo-en": {},
     "leptonsquest": {
         "company": "IndieSquish"
     },
@@ -106,17 +70,12 @@
         "skip": true
     },
     "MAZEDOOM": {
-        "company": "Boffo Games",
-        "cover": "https://scummvm-data.kuendig.io/MAZEDOOM/cover.png",
         "description": "Maze O' Doom (Demo)",
         "id": "bagel:mazeodoom",
-        "name": "Hodj 'n' Podj",
         "platform": "Windows"
     },
     "meetmediaband": {
         "comment": "declared Freeware by Marc Canter",
-        "company": "Canter Technology",
-        "cover": "https://scummvm-data.kuendig.io/meetmediaband/cover.png",
         "description": "Freeware",
         "download_url": "https://archive.org/details/meetmediaband",
         "id": "director:mediaband",
@@ -143,12 +102,9 @@
         "company": "Upper Orbit Software"
     },
     "penumbra-overture-mac": {
-        "company": "Frictional Games",
-        "cover": "https://scummvm-data.kuendig.io/penumbra-overture-mac/cover.png",
         "description": "Mac Demo",
         "download_link": "https://www.moddb.com/games/penumbra-overture/downloads/penumbra-overture-demo-mac",
-        "id": "hpl1:penumbraoverture",
-        "name": "Penumbra: Overture"
+        "id": "hpl1:penumbraoverture"
     },
     "playground3d": {
         "company": "ScummVM",
@@ -178,9 +134,7 @@
         "name": "RedNex",
         "platform": "Macintosh"
     },
-    "robinsrescue": {
-        "cover": "https://scummvm-data.kuendig.io/robinsrescue/cover.png"
-    },
+    "robinsrescue": {},
     "shivah-demo": {
         "id": "ags:shivahkosher"
     },
@@ -194,23 +148,19 @@
         "id": "testbed:testbed",
         "name": "Testbed"
     },
-    "tgttpoacs": {
-        "cover": "https://scummvm-data.kuendig.io/tgttpoacs/cover.png"
-    },
+    "tgttpoacs": {},
     "theapartment3": {
-        "cover": "https://scummvm-data.kuendig.io/theapartment3/cover.png",
+        "company": "MacroMind",
         "description": "Interactive Demo (D3)",
         "download_url": "https://downloads.scummvm.org/frs/demos/director/theapartment3.zip",
         "id": "director:theapartment",
         "languages": [
             "en"
         ],
-        "name": "The Apartment",
         "platform": "Macintosh"
     },
     "tsotc-v6": {
-        "company": "Sebastian Krzyszkowiak",
-        "cover": "https://scummvm-data.kuendig.io/tsotc-v6/cover.jpg"
+        "company": "Sebastian Krzyszkowiak"
     },
     "twisted-1.6": {
         "description": "Version 1.6",
@@ -252,7 +202,6 @@
     "zcode-curses": {
         "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
         "company": "Graham Nelson",
-        "cover": "https://scummvm-data.kuendig.io/zcode-curses/cover.jpg",
         "description": "Freeware",
         "download_url": "https://ifdb.org/viewgame?id=plvzam05bmz3enh8",
         "id": "glk:curses",
@@ -264,7 +213,6 @@
     "zcode-fantasydimension": {
         "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
         "company": "Johan Berntsson",
-        "cover": "https://scummvm-data.kuendig.io/zcode-fantasydimension/cover.png",
         "description": "Freeware",
         "download_url": "https://ifdb.org/viewgame?id=9gcujue3zpxbhj6k",
         "id": "glk:pj3_fantadimension",
@@ -287,7 +235,6 @@
     "zcode-sampler1": {
         "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
         "company": "Infocom",
-        "cover": "https://scummvm-data.kuendig.io/zcode-sampler1/cover.jpg",
         "description": "Demo/Freeware",
         "download_url": "https://ifdb.org/viewgame?id=wa8crlfz82pra14i",
         "id": "glk:infocomsample4zpiw",
@@ -299,7 +246,6 @@
     "zcode-sampler2": {
         "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
         "company": "Infocom",
-        "cover": "https://scummvm-data.kuendig.io/zcode-sampler2/cover.jpg",
         "description": "Demo/Freeware",
         "download_url": "https://ifdb.org/viewgame?id=p00ucaayobrt2paz",
         "id": "glk:infocomsample3ztl",
@@ -311,7 +257,6 @@
     "zcode-submarine": {
         "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",
         "company": "Garry Francis",
-        "cover": "https://scummvm-data.kuendig.io/zcode-submarine/cover.png",
         "description": "Freeware",
         "download_url": "https://ifdb.org/viewgame?id=rw2jsnyoqxsdvyug",
         "id": "glk:pj3_submarinesabot",
