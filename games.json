@@ -306,6 +306,12 @@
     "platform": "Windows"
   },
   {
+    "id": "bagel:mazeodoom",
+    "relative_path": "mazeodoom-win-demo-en",
+    "description": null,
+    "comment": "Not in compatibility table, manually added"
+  },
+  {
     "id": "bagel:spacebar",
     "relative_path": "spacebar-win-demo-medium",
     "description": "Windows Medium Demo",
