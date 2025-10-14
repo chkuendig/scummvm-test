@@ -34,10 +34,6 @@
         "id": "wage:drakmythcastle",
         "platform": "Macintosh"
     },
-    "efmi_large_demo": {
-        "comment": "Game data not found: doesn't work on native either",
-        "skip": true
-    },
     "gotfree": {
         "description": "Freeware",
         "id": "got:got"
@@ -61,18 +57,14 @@
     "leptonsquest": {
         "company": "IndieSquish"
     },
-    "LifeFlashesBy-setup": {
-        "comment": "Wrongly packed",
-        "skip": true
-    },
     "lsl1-demo-pl": {
         "comment": "doesn't work on native either - Game Data not found (SNDDIR, PICDIR are files instead of folders)",
         "skip": true
     },
-    "MAZEDOOM": {
-        "description": "Maze O' Doom (Demo)",
+    "mazeodoom-win-demo-en": {
+        "comment": "Not in compatibility table, manually added",
         "id": "bagel:mazeodoom",
-        "platform": "Windows"
+        "skip": false
     },
     "meetmediaband": {
         "comment": "declared Freeware by Marc Canter",
@@ -127,7 +119,7 @@
         "cover": "https://scummvm-data.kuendig.io/RedNex/cover.png",
         "description": "MacFormat August 1996 Demo",
         "download_url": "https://discmaster.textfiles.com/browse/27017/macformat-040.iso/mac/Demos/RedNex",
-        "id": "director:director",
+        "id": "director:rednex",
         "languages": [
             "en"
         ],
@@ -152,12 +144,12 @@
     "theapartment3": {
         "company": "MacroMind",
         "description": "Interactive Demo (D3)",
-        "download_url": "https://downloads.scummvm.org/frs/demos/director/theapartment3.zip",
         "id": "director:theapartment",
         "languages": [
             "en"
         ],
-        "platform": "Macintosh"
+        "platform": "Macintosh",
+        "skip": false
     },
     "tsotc-v6": {
         "company": "Sebastian Krzyszkowiak"
@@ -178,19 +170,18 @@
     },
     "zak-fmtowns-indyloom-ni-demo": {
         "comment": "Not in compatibility table, manually added",
-        "id": "scumm:indyloom"
-    },
-    "mazeodoom-win-demo-en": {
-        "comment": "Not in compatibility table, manually added",
-        "id": "bagel:mazeodoom"
+        "id": "scumm:indyloom",
+        "skip": false
     },
     "zak-fmtowns-indyzak-ni-demo": {
         "comment": "Not in compatibility table, manually added",
-        "id": "scumm:indyzak"
+        "id": "scumm:indyzak",
+        "skip": false
     },
     "zak-fmtowns-zakloom-ni-demo": {
         "comment": "Not in compatibility table, manually added",
-        "id": "scumm:zakloom"
+        "id": "scumm:zakloom",
+        "skip": false
     },
     "zcode-advent": {
         "comment": "Recommended from https://www.ioccc.org/2024/mills/index.html",

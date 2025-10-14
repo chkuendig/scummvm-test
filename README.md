@@ -11,4 +11,4 @@ For details, please check out the following write-ups:
 If you want to just try out the demo, go to [scummvm.kuendig.io](https://scummvm.kuendig.io). 
 
 ## Building
-If you want to build this yourself, please check out the [Emscripten README](https://github.com/chkuendig/scummvm/blob/emscripten/dists/emscripten/README.md) in the ScummVM source tree.
+If you want to build this yourself, please check out the [README of the build scripts](scripts/README.md) and the [Emscripten README](https://github.com/chkuendig/scummvm/blob/emscripten/dists/emscripten/README.md) in the ScummVM source tree.

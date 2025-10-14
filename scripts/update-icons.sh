@@ -33,6 +33,9 @@ if [[ -d "$icons_dir" ]]; then
   cp -r "${icons_dir}/default/icons" "${scummvm_dir}/build-emscripten/data/gui-icons/"
   cd "${icons_dir}"
   python3 gen-set.py
+  echo "Manually patch games.xml and company.xml with metadata.json info"
+  cd "${root_dir}/scripts"
+  python3 update-icons-xml.py
   echo "add icons"
   cp -r "${icons_dir}/icons/"* "${scummvm_dir}/build-emscripten/data/gui-icons/icons/"
   echo "add xml"

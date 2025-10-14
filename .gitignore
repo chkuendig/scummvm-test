@@ -1,2 +1,4 @@
 node_modules/
 games.json
+screenshots/
+scripts/__pycache__
