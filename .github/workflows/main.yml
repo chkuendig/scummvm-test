@@ -293,6 +293,17 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: scummvm/build-emscripten # The folder the action should deploy.
+      - name: Upload to Hostinger ☁️
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          source: "scummvm/build-emscripten/*"
+          target: ~/domains/scummvm.kuendig.io/public_html
+          rm: true
+          strip_components: 2
+          host: ${{ secrets.HOSTINGER_SSH_HOST }}
+          port: ${{ secrets.HOSTINGER_SSH_PORT }}
+          username: ${{ secrets.HOSTINGER_SSH_USERNAME }}
+          password: ${{ secrets.HOSTINGER_SSH_PASSWORD }}
       - name: Archive website artifacts
         uses: actions/upload-artifact@v4
         with:
