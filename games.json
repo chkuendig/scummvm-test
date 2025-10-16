@@ -9,6 +9,7 @@
   {
     "relative_path": "martian-demo",
     "id": "access:martian",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/access/martian-demo.zip",
     "platform": "DOS"
   },
@@ -80,6 +81,7 @@
   {
     "relative_path": "simon1-acorn-demo-en",
     "id": "agos:simon1",
+    "description": "Acorn 32-bit Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/agos/simon1-acorn-demo-en.zip",
     "platform": "Acorn 32-bit"
   },
@@ -93,12 +95,14 @@
   {
     "relative_path": "simon1-amiga-cd32-demo-en",
     "id": "agos:simon1",
+    "description": "Amiga CD32 Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/agos/simon1-amiga-cd32-demo-en.zip",
     "platform": "Amiga CD32"
   },
   {
     "relative_path": "simon1-amiga-floppy-demo-en",
     "id": "agos:simon1",
+    "description": "Amiga Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/agos/simon1-amiga-floppy-demo-en.zip",
     "platform": "Amiga"
   },
@@ -119,6 +123,7 @@
   {
     "relative_path": "simon1-dos-floppy-demo-en",
     "id": "agos:simon1",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/agos/simon1-dos-floppy-demo-en.zip",
     "platform": "DOS"
   },
@@ -159,90 +164,105 @@
   {
     "relative_path": "blackwell_legacy-demo",
     "id": "ags:blackwell1",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/blackwell_legacy-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "blackwell_unbound-demo",
     "id": "ags:blackwell2",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/blackwell_unbound-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "blackwell_convergence-demo",
     "id": "ags:blackwell3",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/blackwell_convergence-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "blackwell_deception-demo",
     "id": "ags:blackwell4",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/blackwell_deception-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "blackwell_epiphany-demo",
     "id": "ags:blackwell5",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/blackwell_epiphany-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "da_new_guys2-demo",
     "id": "ags:danewguys2",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/da_new_guys2-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "gemini_rue-demo",
     "id": "ags:geminirue",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/gemini_rue-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "golden_wake-demo",
     "id": "ags:goldenwake",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/golden_wake-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "my_big_sister-demo",
     "id": "ags:mybigsister",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/my_big_sister-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "primordia-demo",
     "id": "ags:primordia",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/primordia-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "resonance-demo",
     "id": "ags:resonance",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/resonance-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "shardlight-demo",
     "id": "ags:shardlight",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/shardlight-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "shivah-demo",
     "id": "ags:shivahkosher",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/shivah-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "technobabylon-demo",
     "id": "ags:technobabylon",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ags/technobabylon-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "aventuradecine-win-demo-de",
     "id": "alcachofa:aventuradecine",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/alcachofa/aventuradecine-win-demo-de.zip",
     "languages": [
       "de"
@@ -252,6 +272,7 @@
   {
     "relative_path": "asylum-demo",
     "id": "asylum:asylum",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/asylum/asylum-demo.zip",
     "platform": "Windows"
   },
@@ -265,6 +286,7 @@
   {
     "relative_path": "mazeodoom-win-demo-en",
     "id": "bagel:mazeodoom",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/bagel/mazeodoom-win-demo-en.zip",
     "platform": "Windows"
   },
@@ -285,6 +307,7 @@
   {
     "relative_path": "bbvs-demo",
     "id": "bbvs:bbvs",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/bbvs/bbvs-demo.zip",
     "platform": "Windows"
   },
@@ -312,6 +335,7 @@
   {
     "relative_path": "buried-demo-win-ca",
     "id": "buried:buried",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/buried/buried-demo-win-ca.zip",
     "languages": [
       "ca"
@@ -321,12 +345,14 @@
   {
     "relative_path": "buried-win-demo-en",
     "id": "buried:buried",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/buried/buried-win-demo-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "sfinx-demo-pl",
     "id": "cge2:sfinx",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/cge2/sfinx-demo-pl.zip",
     "languages": [
       "pl"
@@ -387,36 +413,42 @@
   {
     "relative_path": "babayaga-demo-mac",
     "id": "composer:babayaga",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/composer/babayaga-demo-mac.zip",
     "platform": "Macintosh"
   },
   {
     "relative_path": "babayaga-demo-win",
     "id": "composer:babayaga",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/composer/babayaga-demo-win.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "littlesamurai-demo-mac",
     "id": "composer:littlesamurai",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/composer/littlesamurai-demo-mac.zip",
     "platform": "Macintosh"
   },
   {
     "relative_path": "littlesamurai-demo-win",
     "id": "composer:littlesamurai",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/composer/littlesamurai-demo-win.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "unrest-demo",
     "id": "crab:unrest",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/crab/unrest-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "versailles-dos-demo-ni",
     "id": "cryomni3d:versailles",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/cryomni3d/versailles-dos-demo-ni.zip",
     "languages": [
       "nl"
@@ -426,6 +458,7 @@
   {
     "relative_path": "darkseed-dos-demo-en",
     "id": "darkseed:darkseed",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/darkseed/darkseed-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -446,6 +479,7 @@
   {
     "relative_path": "beamish-dos-demo2-en",
     "id": "dgds:beamish",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/dgds/beamish-dos-demo2-en.zip",
     "platform": "DOS"
   },
@@ -457,13 +491,6 @@
     "languages": [
       "ja"
     ],
-    "platform": "Macintosh"
-  },
-  {
-    "relative_path": "RedNex",
-    "id": "director:director",
-    "description": "MacFormat August 1996 Demo",
-    "download_url": "https://discmaster.textfiles.com/browse/27017/macformat-040.iso/mac/Demos/RedNex",
     "platform": "Macintosh"
   },
   {
@@ -485,6 +512,13 @@
     "id": "director:mediaband",
     "description": "Freeware",
     "download_url": "https://archive.org/details/meetmediaband"
+  },
+  {
+    "relative_path": "RedNex",
+    "id": "director:rednex",
+    "description": "MacFormat August 1996 Demo",
+    "download_url": "https://discmaster.textfiles.com/browse/27017/macformat-040.iso/mac/Demos/RedNex",
+    "platform": "Macintosh"
   },
   {
     "relative_path": "theapartment3",
@@ -524,6 +558,7 @@
   {
     "relative_path": "warlock-win-demo",
     "id": "director:warlock",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/director/warlock-win-demo.zip",
     "platform": "Windows"
   },
@@ -543,6 +578,7 @@
   {
     "relative_path": "dreamweb-amiga-demo-en",
     "id": "dreamweb:dreamweb",
+    "description": "Amiga Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/dreamweb/dreamweb-amiga-demo-en.zip",
     "platform": "Amiga"
   },
@@ -592,6 +628,7 @@
   {
     "relative_path": "dreamweb-dos-demo-en",
     "id": "dreamweb:dreamweb",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/dreamweb/dreamweb-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -616,18 +653,21 @@
   {
     "relative_path": "castle-dos-demo",
     "id": "freescape:castlemaster",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/freescape/castle-dos-demo.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "darkside-dos-demo",
     "id": "freescape:darkside",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/freescape/darkside-dos-demo.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "darkside-zx-demo",
     "id": "freescape:darkside",
+    "description": "ZX Spectrum Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/freescape/darkside-zx-demo.zip",
     "platform": "ZX Spectrum"
   },
@@ -655,18 +695,21 @@
   {
     "relative_path": "totaleclipse-cpc-demo",
     "id": "freescape:totaleclipse",
+    "description": "Amstrad CPC Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/freescape/totaleclipse-cpc-demo.zip",
     "platform": "Amstrad CPC"
   },
   {
     "relative_path": "totaleclipse-zx-demo-1",
     "id": "freescape:totaleclipse",
+    "description": "ZX Spectrum Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/freescape/totaleclipse-zx-demo-1.zip",
     "platform": "ZX Spectrum"
   },
   {
     "relative_path": "totaleclipse-zx-demo-2",
     "id": "freescape:totaleclipse",
+    "description": "ZX Spectrum Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/freescape/totaleclipse-zx-demo-2.zip",
     "platform": "ZX Spectrum"
   },
@@ -747,12 +790,14 @@
   {
     "relative_path": "gob1-amiga_demo_en",
     "id": "gob:gob1",
+    "description": "Amiga Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/gob/gob1-amiga_demo_en.zip",
     "platform": "Amiga"
   },
   {
     "relative_path": "gob1-cdi-demo-fr",
     "id": "gob:gob1",
+    "description": "Philips CD-i Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/gob/gob1-cdi-demo-fr.zip",
     "languages": [
       "fr"
@@ -772,6 +817,7 @@
   {
     "relative_path": "gob1-dos-demo1-en",
     "id": "gob:gob1",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/gob/gob1-dos-demo1-en.zip",
     "platform": "DOS"
   },
@@ -785,6 +831,7 @@
   {
     "relative_path": "gob2-amiga-demo1-en",
     "id": "gob:gob2",
+    "description": "Amiga Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/gob/gob2-amiga-demo1-en.zip",
     "platform": "Amiga"
   },
@@ -798,6 +845,7 @@
   {
     "relative_path": "gob2-dos-demo-en",
     "id": "gob:gob2",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/gob/gob2-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -811,6 +859,7 @@
   {
     "relative_path": "gob3-dos-demo-en",
     "id": "gob:gob3",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/gob/gob3-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -858,6 +907,7 @@
   {
     "relative_path": "ween-dos-demo-en",
     "id": "gob:ween",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/gob/ween-dos-demo-en.zip",
     "languages": [
       "en_US"
@@ -867,6 +917,7 @@
   {
     "relative_path": "ween-dos-demo2-uk",
     "id": "gob:ween",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/gob/ween-dos-demo2-uk.zip",
     "languages": [
       "en_GB"
@@ -959,6 +1010,7 @@
   {
     "relative_path": "emi-win-demo-en",
     "id": "grim:monkey4",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/grim/emi-win-demo-en.zip",
     "platform": "Windows"
   },
@@ -1006,6 +1058,7 @@
   {
     "relative_path": "11h-dos-demo-en",
     "id": "groovie:11h",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/groovie/11h-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -1033,12 +1086,14 @@
   {
     "relative_path": "clandestiny-mac-ni-demo",
     "id": "groovie:clandestiny",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/groovie/clandestiny-mac-ni-demo.zip",
     "platform": "Macintosh"
   },
   {
     "relative_path": "t7g-dos-demo-en",
     "id": "groovie:t7g",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/groovie/t7g-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -1055,12 +1110,14 @@
   {
     "relative_path": "hdb-demo-linux",
     "id": "hdb:hdb",
+    "description": "Linux Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/hdb/hdb-demo-linux.zip",
     "platform": "Linux"
   },
   {
     "relative_path": "hdb-demo-ppc",
     "id": "hdb:hdb",
+    "description": "Pocket PC Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/hdb/hdb-demo-ppc.zip",
     "platform": "Pocket PC"
   },
@@ -1074,18 +1131,21 @@
   {
     "relative_path": "hdb-demo-win",
     "id": "hdb:hdb",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/hdb/hdb-demo-win.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "hopkins-linux-en",
     "id": "hopkins:hopkins",
+    "description": "Linux Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/hopkins/hopkins-linux-en.zip",
     "platform": "Linux"
   },
   {
     "relative_path": "hopkins-win95-en",
     "id": "hopkins:hopkins",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/hopkins/hopkins-win95-en.zip",
     "platform": "Windows"
   },
@@ -1219,36 +1279,42 @@
   {
     "relative_path": "sinistersix-dos-demo-en",
     "id": "hypno:sinistersix",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/hypno/sinistersix-dos-demo-en.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "wetlands-dos-demo1-en",
     "id": "hypno:wetlands",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/hypno/wetlands-dos-demo1-en.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "wetlands-dos-demo2-en",
     "id": "hypno:wetlands",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/hypno/wetlands-dos-demo2-en.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "wetlands-dos-demo3-en",
     "id": "hypno:wetlands",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/hypno/wetlands-dos-demo3-en.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "wetlands-dos-demo4-en",
     "id": "hypno:wetlands",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/hypno/wetlands-dos-demo4-en.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "wetlands-dos-demo5-en",
     "id": "hypno:wetlands",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/hypno/wetlands-dos-demo5-en.zip",
     "platform": "DOS"
   },
@@ -1269,6 +1335,7 @@
   {
     "relative_path": "icb-eng-demo",
     "id": "icb:icb",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/icb/icb-eng-demo.zip",
     "platform": "Windows"
   },
@@ -1282,12 +1349,14 @@
   {
     "relative_path": "duckman-demo",
     "id": "illusions:duckman",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/illusions/duckman-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "kingdom-demo",
     "id": "kingdom:kingdom",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/kingdom/kingdom-demo.zip",
     "platform": "DOS"
   },
@@ -1315,6 +1384,7 @@
   {
     "relative_path": "kyra2-dos-cd-demo-en",
     "id": "kyra:kyra2",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/kyra/kyra2-dos-cd-demo-en.zip",
     "platform": "DOS"
   },
@@ -1356,6 +1426,7 @@
   {
     "relative_path": "lastexpress-win-demo-en",
     "id": "lastexpress:lastexpress",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/lastexpress/lastexpress-win-demo-en.zip",
     "platform": "Windows"
   },
@@ -1392,12 +1463,14 @@
   {
     "relative_path": "lure-st-demo-en",
     "id": "lure:lure",
+    "description": "Atari ST Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/lure/lure-st-demo-en.zip",
     "platform": "Atari ST"
   },
   {
     "relative_path": "burger-dos-demo-en",
     "id": "m4:burger",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/m4/burger-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -1411,6 +1484,7 @@
   {
     "relative_path": "riddle-dos-demo-en",
     "id": "m4:riddle",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/m4/riddle-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -1438,12 +1512,14 @@
   {
     "relative_path": "rtz-mac-demo-en",
     "id": "made:rtz",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/made/rtz-mac-demo-en.zip",
     "platform": "Macintosh"
   },
   {
     "relative_path": "rex-dos-demo-en",
     "id": "mads:nebular",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mads/rex-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -1471,6 +1547,7 @@
   {
     "relative_path": "arthur-mac-demo-en",
     "id": "mohawk:arthur",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/arthur-mac-demo-en.zip",
     "platform": "Macintosh"
   },
@@ -1495,6 +1572,7 @@
   {
     "relative_path": "arthur-win-demo-en",
     "id": "mohawk:arthur",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/arthur-win-demo-en.zip",
     "platform": "Windows"
   },
@@ -1508,24 +1586,28 @@
   {
     "relative_path": "arthurbday-mac-demo-en",
     "id": "mohawk:arthurbday",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/arthurbday-mac-demo-en.zip",
     "platform": "Macintosh"
   },
   {
     "relative_path": "arthurbday-win-demo-en",
     "id": "mohawk:arthurbday",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/arthurbday-win-demo-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "daniel-win-demo",
     "id": "mohawk:daniel",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/daniel-win-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "grandma-mac-demo-en",
     "id": "mohawk:grandma",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/grandma-mac-demo-en.zip",
     "platform": "Macintosh"
   },
@@ -1551,6 +1633,7 @@
   {
     "relative_path": "grandma-win-demo-en",
     "id": "mohawk:grandma",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/grandma-win-demo-en.zip",
     "platform": "Windows"
   },
@@ -1564,6 +1647,7 @@
   {
     "relative_path": "greeneggs-win-demo-en",
     "id": "mohawk:greeneggs",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/greeneggs-win-demo-en.zip",
     "platform": "Windows"
   },
@@ -1588,18 +1672,21 @@
   {
     "relative_path": "myst-win-demo-en",
     "id": "mohawk:myst",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/myst-win-demo-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "newkid-demo-mac-en",
     "id": "mohawk:newkid",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/newkid-demo-mac-en.zip",
     "platform": "Macintosh"
   },
   {
     "relative_path": "newkid-win-demo-en",
     "id": "mohawk:newkid",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/newkid-win-demo-en.zip",
     "platform": "Windows"
   },
@@ -1613,30 +1700,35 @@
   {
     "relative_path": "riven-win-demo-en",
     "id": "mohawk:riven",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/riven-win-demo-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "ruff-mac-demo-en",
     "id": "mohawk:ruff",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/ruff-mac-demo-en.zip",
     "platform": "Macintosh"
   },
   {
     "relative_path": "ruff-win-demo-en",
     "id": "mohawk:ruff",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/ruff-win-demo-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "tortoise-mac-demo-en",
     "id": "mohawk:tortoise",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/tortoise-mac-demo-en.zip",
     "platform": "Macintosh"
   },
   {
     "relative_path": "tortoise-win-demo-en",
     "id": "mohawk:tortoise",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/mohawk/tortoise-win-demo-en.zip",
     "platform": "Windows"
   },
@@ -1704,6 +1796,7 @@
   {
     "relative_path": "neverhood-win-demo-en",
     "id": "neverhood:neverhood",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/neverhood/neverhood-win-demo-en.zip",
     "platform": "Windows"
   },
@@ -1772,6 +1865,7 @@
   {
     "relative_path": "nippon-amiga-demo-en",
     "id": "parallaction:nippon",
+    "description": "Amiga Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/parallaction/nippon-amiga-demo-en.zip",
     "platform": "Amiga"
   },
@@ -1811,12 +1905,14 @@
   {
     "relative_path": "pegasus-mac-demo-en",
     "id": "pegasus:pegasus",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/pegasus/pegasus-mac-demo-en.zip",
     "platform": "Macintosh"
   },
   {
     "relative_path": "pegasus-mac-demo-en-nonmac-format",
     "id": "pegasus:pegasus",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/pegasus/pegasus-mac-demo-en-nonmac-format.zip",
     "platform": "Macintosh"
   },
@@ -1848,6 +1944,7 @@
   {
     "relative_path": "private-eye-demo-en",
     "id": "private:private-eye",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/private/private-eye-demo-en.zip",
     "platform": "Windows"
   },
@@ -1904,6 +2001,7 @@
   {
     "relative_path": "3mice1-demo",
     "id": "qdengine:3mice1",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/qdengine/3mice1-demo.zip",
     "languages": [
       "ru"
@@ -1913,6 +2011,7 @@
   {
     "relative_path": "3mice2-demo1",
     "id": "qdengine:3mice2",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/qdengine/3mice2-demo1.zip",
     "languages": [
       "ru"
@@ -1942,6 +2041,7 @@
   {
     "relative_path": "mng-demo",
     "id": "qdengine:mng",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/qdengine/mng-demo.zip",
     "languages": [
       "ru"
@@ -1993,6 +2093,7 @@
   {
     "relative_path": "queen-amiga-demo-en",
     "id": "queen:queen",
+    "description": "Amiga Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/queen/queen-amiga-demo-en.zip",
     "platform": "Amiga"
   },
@@ -2013,6 +2114,7 @@
   {
     "relative_path": "queen-dos-demo-en",
     "id": "queen:queen",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/queen/queen-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -2050,6 +2152,7 @@
   {
     "relative_path": "ihnm-dos-demo-en",
     "id": "saga:ihnm",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/saga/ihnm-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -2097,12 +2200,14 @@
   {
     "relative_path": "ite-win-new-demo-en",
     "id": "saga:ite",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/saga/ite-win-new-demo-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "ite-win-old-demo-en",
     "id": "saga:ite",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/saga/ite-win-old-demo-en.zip",
     "platform": "Windows"
   },
@@ -2116,6 +2221,7 @@
   {
     "relative_path": "astrochicken-dos-demo-en",
     "id": "sci:astrochicken",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/astrochicken-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -2157,6 +2263,7 @@
   {
     "relative_path": "freddypharkas-dos-demo1-en",
     "id": "sci:freddypharkas",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/freddypharkas-dos-demo1-en.zip",
     "platform": "DOS"
   },
@@ -2170,12 +2277,14 @@
   {
     "relative_path": "freddypharkas-win-cd-demo-en",
     "id": "sci:freddypharkas",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/freddypharkas-win-cd-demo-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "gk1-dos-demo-en",
     "id": "sci:gk1",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/gk1-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -2203,6 +2312,7 @@
   {
     "relative_path": "hoyle5-win-demo-en",
     "id": "sci:hoyle5",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/hoyle5-win-demo-en.zip",
     "platform": "DOS"
   },
@@ -2265,12 +2375,14 @@
   {
     "relative_path": "lighthouse-win-demo-en",
     "id": "sci:lighthouse",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/lighthouse-win-demo-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "lighthouse-win-demo2-en",
     "id": "sci:lighthouse",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/lighthouse-win-demo2-en.zip",
     "platform": "Windows"
   },
@@ -2326,18 +2438,21 @@
   {
     "relative_path": "lsl7-dos-demo-en",
     "id": "sci:lsl7",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/lsl7-dos-demo-en.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "mothergoose-win-demo-en",
     "id": "sci:mothergoose",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/mothergoose-win-demo-en.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "pepper-dos-demo-en",
     "id": "sci:pepper",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/pepper-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -2351,12 +2466,14 @@
   {
     "relative_path": "pepper-dos-win-demo-en",
     "id": "sci:pepper",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/pepper-dos-win-demo-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "phantasmagoria-dos-win-demo-en",
     "id": "sci:phantasmagoria",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/phantasmagoria-dos-win-demo-en.zip",
     "platform": "DOS"
   },
@@ -2454,12 +2571,14 @@
   {
     "relative_path": "shivers-win-demo2-en",
     "id": "sci:shivers",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/shivers-win-demo2-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "slater-dos-demo.en",
     "id": "sci:slater",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/slater-dos-demo.en.zip",
     "platform": "DOS"
   },
@@ -2487,12 +2606,14 @@
   {
     "relative_path": "sq6-dos-demo-en",
     "id": "sci:sq6",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/sq6-dos-demo-en.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "sq6-win-demo1-en",
     "id": "sci:sq6",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/sq6-win-demo1-en.zip",
     "platform": "Windows"
   },
@@ -2506,12 +2627,14 @@
   {
     "relative_path": "torin-dos-win-demo-en",
     "id": "sci:torin",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sci/torin-dos-win-demo-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "airport-mac-demo-us",
     "id": "scumm:airport",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/airport-mac-demo-us.zip",
     "languages": [
       "en_US"
@@ -2531,6 +2654,7 @@
   {
     "relative_path": "airport-win-demo-us",
     "id": "scumm:airport",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/airport-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -2560,6 +2684,7 @@
   {
     "relative_path": "arttime-win-demo-us",
     "id": "scumm:arttime",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/arttime-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -2569,6 +2694,7 @@
   {
     "relative_path": "atlantis-dos-demo1-en",
     "id": "scumm:atlantis",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/atlantis-dos-demo1-en.zip",
     "platform": "DOS"
   },
@@ -2606,6 +2732,7 @@
   {
     "relative_path": "atlantis-mac-demo",
     "id": "scumm:atlantis",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/atlantis-mac-demo.zip",
     "platform": "Macintosh"
   },
@@ -2632,6 +2759,7 @@
   {
     "relative_path": "baseball2001-win-demo-us",
     "id": "scumm:baseball2001",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/baseball2001-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -2641,6 +2769,7 @@
   {
     "relative_path": "BluesABCTime-win-demo1-us",
     "id": "scumm:bluesabctime",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/BluesABCTime-win-demo1-us.zip",
     "languages": [
       "en_US"
@@ -2670,6 +2799,7 @@
   {
     "relative_path": "BluesBirthday-win-demo1-us",
     "id": "scumm:bluesbirthday",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/BluesBirthday-win-demo1-us.zip",
     "languages": [
       "en_US"
@@ -2699,6 +2829,7 @@
   {
     "relative_path": "brstorm-dos-demo-us",
     "id": "scumm:brstorm",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/brstorm-dos-demo-us.zip",
     "languages": [
       "en_US"
@@ -2729,6 +2860,7 @@
   {
     "relative_path": "dig-mac-demo-en",
     "id": "scumm:dig",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/dig-mac-demo-en.zip",
     "platform": "Macintosh"
   },
@@ -2745,6 +2877,7 @@
   {
     "relative_path": "farm-win-demo-us",
     "id": "scumm:farm",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/farm-win-demo-us.zip",
     "platform": "Windows"
   },
@@ -2761,6 +2894,7 @@
   {
     "relative_path": "fbear-dos-demo-us",
     "id": "scumm:fbear",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/fbear-dos-demo-us.zip",
     "languages": [
       "en_US"
@@ -2770,6 +2904,7 @@
   {
     "relative_path": "fbear-mac-demo-us",
     "id": "scumm:fbear",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/fbear-mac-demo-us.zip",
     "languages": [
       "en_US"
@@ -2779,6 +2914,7 @@
   {
     "relative_path": "fbear-win-demo-us",
     "id": "scumm:fbear",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/fbear-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -2788,6 +2924,7 @@
   {
     "relative_path": "football-win-demo-us",
     "id": "scumm:football",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/football-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -2797,6 +2934,7 @@
   {
     "relative_path": "freddi-mac-demo_us",
     "id": "scumm:freddi",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/freddi-mac-demo_us.zip",
     "languages": [
       "en_US"
@@ -2836,6 +2974,7 @@
   {
     "relative_path": "freddi-win-demo-us",
     "id": "scumm:freddi",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/freddi-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -2865,6 +3004,7 @@
   {
     "relative_path": "freddi2-win-demo-us",
     "id": "scumm:freddi2",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/freddi2-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -2914,6 +3054,7 @@
   {
     "relative_path": "freddi3-win-demo-us",
     "id": "scumm:freddi3",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/freddi3-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -2953,6 +3094,7 @@
   {
     "relative_path": "freddi4-win-demo-us",
     "id": "scumm:freddi4",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/freddi4-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3022,6 +3164,7 @@
   {
     "relative_path": "freddicove-win-demo-us",
     "id": "scumm:freddicove",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/freddicove-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3031,12 +3174,14 @@
   {
     "relative_path": "ft-dos-demo-en",
     "id": "scumm:ft",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/ft-dos-demo-en.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "ft-mac-demo-en",
     "id": "scumm:ft",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/ft-mac-demo-en.zip",
     "platform": "Macintosh"
   },
@@ -3085,6 +3230,7 @@
   {
     "relative_path": "lost-win-demo-us",
     "id": "scumm:lost",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/lost-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3094,6 +3240,7 @@
   {
     "relative_path": "maniac-c64-demo-en",
     "id": "scumm:maniac",
+    "description": "Commodore 64 Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/maniac-c64-demo-en.zip",
     "platform": "Commodore 64"
   },
@@ -3114,6 +3261,7 @@
   {
     "relative_path": "monkey1-amiga-demo-en",
     "id": "scumm:monkey",
+    "description": "Amiga Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/monkey1-amiga-demo-en.zip",
     "platform": "Amiga"
   },
@@ -3151,6 +3299,7 @@
   {
     "relative_path": "moonbase-win-demo-us",
     "id": "scumm:moonbase",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/moonbase-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3170,6 +3319,7 @@
   {
     "relative_path": "pajama-win-demo-us",
     "id": "scumm:pajama",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/pajama-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3209,6 +3359,7 @@
   {
     "relative_path": "pajama2-win-demo-us",
     "id": "scumm:pajama2",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/pajama2-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3268,6 +3419,7 @@
   {
     "relative_path": "pajama3-win-demo-us",
     "id": "scumm:pajama3",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/pajama3-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3324,6 +3476,7 @@
   {
     "relative_path": "puttmoon-dos-demo-us",
     "id": "scumm:puttmoon",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/puttmoon-dos-demo-us.zip",
     "languages": [
       "en_US"
@@ -3333,6 +3486,7 @@
   {
     "relative_path": "puttmoon-mac-demo-us",
     "id": "scumm:puttmoon",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/puttmoon-mac-demo-us.zip",
     "languages": [
       "en_US"
@@ -3342,6 +3496,7 @@
   {
     "relative_path": "puttmoon-win-demo-us",
     "id": "scumm:puttmoon",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/puttmoon-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3351,6 +3506,7 @@
   {
     "relative_path": "puttputt-dos-demo-us",
     "id": "scumm:puttputt",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/puttputt-dos-demo-us.zip",
     "languages": [
       "en_US"
@@ -3360,6 +3516,7 @@
   {
     "relative_path": "puttputt-mac-demo-us",
     "id": "scumm:puttputt",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/puttputt-mac-demo-us.zip",
     "languages": [
       "en_US"
@@ -3369,6 +3526,7 @@
   {
     "relative_path": "puttputt-win-demo-us",
     "id": "scumm:puttputt",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/puttputt-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3428,6 +3586,7 @@
   {
     "relative_path": "puttrace-win-demo-us",
     "id": "scumm:puttrace",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/puttrace-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3487,6 +3646,7 @@
   {
     "relative_path": "putttime-win-demo-us",
     "id": "scumm:putttime",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/putttime-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3506,6 +3666,7 @@
   {
     "relative_path": "puttzoo-mac-demo-us",
     "id": "scumm:puttzoo",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/puttzoo-mac-demo-us.zip",
     "languages": [
       "en_US"
@@ -3545,6 +3706,7 @@
   {
     "relative_path": "puttzoo-win-demo-us",
     "id": "scumm:puttzoo",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/puttzoo-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3564,6 +3726,7 @@
   {
     "relative_path": "readtime-win-demo-us",
     "id": "scumm:readtime",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/readtime-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3590,6 +3753,7 @@
   {
     "relative_path": "samnmax-dos-demo-en",
     "id": "scumm:samnmax",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/samnmax-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -3610,6 +3774,7 @@
   {
     "relative_path": "samnmax-mac-demo-en",
     "id": "scumm:samnmax",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/samnmax-mac-demo-en.zip",
     "platform": "Macintosh"
   },
@@ -3636,6 +3801,7 @@
   {
     "relative_path": "spyfox-win-demo1-us",
     "id": "scumm:spyfox",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/spyfox-win-demo1-us.zip",
     "languages": [
       "en_US"
@@ -3715,6 +3881,7 @@
   {
     "relative_path": "spyfox2-win-demo-us",
     "id": "scumm:spyfox2",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/spyfox2-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3744,6 +3911,7 @@
   {
     "relative_path": "spyozon-win-demo-us",
     "id": "scumm:spyozon",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/spyozon-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3797,6 +3965,7 @@
   {
     "relative_path": "thinker1-win-demo-us",
     "id": "scumm:thinker1",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/thinker1-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3806,6 +3975,7 @@
   {
     "relative_path": "thinkerk-win-demo-us",
     "id": "scumm:thinkerk",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/scumm/he/thinkerk-win-demo-us.zip",
     "languages": [
       "en_US"
@@ -3829,6 +3999,7 @@
   {
     "relative_path": "scalpel-dos-demo-en",
     "id": "sherlock:scalpel",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sherlock/scalpel-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -3854,6 +4025,7 @@
   {
     "relative_path": "sky-amiga-demo-en",
     "id": "sky:sky",
+    "description": "Amiga Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sky/sky-amiga-demo-en.zip",
     "platform": "Amiga"
   },
@@ -4066,6 +4238,7 @@
   {
     "relative_path": "tlj-demo-en",
     "id": "stark:tlj",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/stark/tlj-demo-en.zip",
     "platform": "Windows"
   },
@@ -4116,18 +4289,21 @@
   {
     "relative_path": "sword1-mac-demo-en",
     "id": "sword1:sword1",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sword1/sword1-mac-demo-en.zip",
     "platform": "Macintosh"
   },
   {
     "relative_path": "sword1-psx-demo-en",
     "id": "sword1:sword1",
+    "description": "PlayStation Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sword1/sword1-psx-demo-en.zip",
     "platform": "PlayStation"
   },
   {
     "relative_path": "sword1-win-demo-en",
     "id": "sword1:sword1",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sword1/sword1-win-demo-en.zip",
     "platform": "Windows"
   },
@@ -4157,12 +4333,14 @@
   {
     "relative_path": "sword2-psx-demo-en",
     "id": "sword2:sword2",
+    "description": "PlayStation Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sword2/sword2-psx-demo-en.zip",
     "platform": "PlayStation"
   },
   {
     "relative_path": "sword2-win-demo-en",
     "id": "sword2:sword2",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/sword2/sword2-win-demo-en.zip",
     "platform": "Windows"
   },
@@ -4212,42 +4390,49 @@
   {
     "relative_path": "dw-mac-cd-demo-en",
     "id": "tinsel:dw",
+    "description": "Macintosh Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/tinsel/dw-mac-cd-demo-en.zip",
     "platform": "Macintosh"
   },
   {
     "relative_path": "dw-psx-demo-en",
     "id": "tinsel:dw",
+    "description": "PlayStation Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/tinsel/dw-psx-demo-en.zip",
     "platform": "PlayStation"
   },
   {
     "relative_path": "dw2-dos-demo-en",
     "id": "tinsel:dw2",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/tinsel/dw2-dos-demo-en.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "dw2-psx-demo-en",
     "id": "tinsel:dw2",
+    "description": "PlayStation Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/tinsel/dw2-psx-demo-en.zip",
     "platform": "PlayStation"
   },
   {
     "relative_path": "dw2-win-demo-2-en",
     "id": "tinsel:dw2",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/tinsel/dw2-win-demo-2-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "dw2-win-demo-en",
     "id": "tinsel:dw2",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/tinsel/dw2-win-demo-en.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "toltecs-demo",
     "id": "toltecs:toltecs",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/toltecs/toltecs-demo.zip",
     "platform": "DOS"
   },
@@ -4271,6 +4456,7 @@
   {
     "relative_path": "toon-demo",
     "id": "toon:toon",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/toon/toon-demo.zip",
     "platform": "DOS"
   },
@@ -4287,6 +4473,7 @@
   {
     "relative_path": "touche-dos-demo-en",
     "id": "touche:touche",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/touche/touche-dos-demo-en.zip",
     "platform": "DOS"
   },
@@ -4303,6 +4490,7 @@
   {
     "relative_path": "nl-win-demo-en",
     "id": "trecision:nl",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/trecision/nl-win-demo-en.zip",
     "platform": "Windows"
   },
@@ -4323,12 +4511,14 @@
   {
     "relative_path": "returntoringworld-dos-demo-en",
     "id": "tsage:ringworld2",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/tsage/returntoringworld-dos-demo-en.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "tucker-dos-demo",
     "id": "tucker:tucker",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/tucker/tucker-dos-demo.zip",
     "platform": "DOS"
   },
@@ -4349,12 +4539,14 @@
   {
     "relative_path": "remorse-dos-demo-en",
     "id": "ultima:remorse",
+    "description": "DOS Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/ultima/remorse-dos-demo-en.zip",
     "platform": "DOS"
   },
   {
     "relative_path": "voyeur-dos-demo-en",
     "id": "voyeur:voyeur",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/voyeur/voyeur-dos-demo-en.zip",
     "platform": "Windows"
   },
@@ -4408,12 +4600,14 @@
   {
     "relative_path": "helga_deep_in_trouble-demo",
     "id": "wintermute:helga",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/wintermute/helga_deep_in_trouble-demo.zip",
     "platform": "Windows"
   },
   {
     "relative_path": "ritter-demo-de",
     "id": "wintermute:ritter",
+    "description": "Windows Demo",
     "download_url": "https://downloads.scummvm.org/frs/demos/wintermute/ritter-demo-de.zip",
     "languages": [
       "de"
