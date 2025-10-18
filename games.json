@@ -4471,6 +4471,16 @@
     "platform": "DOS"
   },
   {
+    "relative_path": "tot-dos-demo-es",
+    "id": "tot:tot",
+    "description": "DOS Demo",
+    "download_url": "https://downloads.scummvm.org/frs/demos/tot/tot-dos-demo-es.zip",
+    "languages": [
+      "es"
+    ],
+    "platform": "DOS"
+  },
+  {
     "relative_path": "touche-dos-demo-en",
     "id": "touche:touche",
     "description": "DOS Demo",
