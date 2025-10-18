@@ -218,6 +218,9 @@ jobs:
           jq '.games +=  {"baseUrl":"${{ env.DATA_BASEURL }}"}' scummvm/build-emscripten/data/index.json > scummvm/build-emscripten/data/index.json.tmp && mv scummvm/build-emscripten/data/index.json.tmp scummvm/build-emscripten/data/index.json
       - run: |
           echo "AddType 'application/wasm' wasm so" > scummvm/build-emscripten/.htaccess
+      - name: Copy default scummvm.ini
+        run: |
+          cp assets/scummvm.ini scummvm/build-emscripten/scummvm.ini
       - uses: JamesIves/github-pages-deploy-action@v4.7.2
         with:
           branch: gh-pages # The branch the action should deploy to.
